@@ -1,0 +1,79 @@
+@font-face {
+    font-family: CodeReg;
+    src: url(fonts/codereg.otf);
+}
+@font-face {
+    font-family: CodeBold;
+    src: url(fonts/codebold.otf);
+}
+
+body {
+	background: #ffffff url('../img/bg.jpg') top center no-repeat;
+	background-size: cover;
+}
+
+h1,
+h2 {
+	font-family: 'CodeBold';
+	font-weight: 400;
+	text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+	letter-spacing: 5px;
+}
+h3,
+h4,
+p {
+	font-weight: 400;
+	text-shadow: 0px 2px 0px rgba(22, 59, 129, 0.5);
+}
+h1 {
+	font-size: 96px;
+	line-height: 96px;
+}
+h2 {
+	font-size: 37px;
+}
+h3 {
+	font-size: 21px;
+}
+h4 {
+	font-size: 16px;
+	line-height: 35px;
+}
+p {
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.pink-btn {
+	margin: -2px 0 0 0;
+	padding: 15px 42px;
+	background: #b42f5b;
+	color: #ffffff;
+	display: inline-block;
+	border-radius: 5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+}
+.pink-btn:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background: #ab2854;
+}
+.pink-btn:active {
+	margin: 0px 0 -2px 0;
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(156, 41, 82, 0.75);
+	-moz-box-shadow:    0px 2px 0px 0px rgba(156, 41, 82, 0.75);
+	box-shadow:         0px 2px 0px 0px rgba(156, 41, 82, 0.75);
+}
+
+::selection {
+	background: #b42f5b;
+}
+::-moz-selection {
+	background: #b42f5b;
+}

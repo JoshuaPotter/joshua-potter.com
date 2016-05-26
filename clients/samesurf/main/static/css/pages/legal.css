@@ -1,0 +1,129 @@
+#topnavbar	{
+	height:44px;
+	width:100%;
+	background-color:rgb(234,234,234);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(215,215,215);
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(255,255,255);
+}
+
+#topnavbar span	{
+	font-size: 12px;
+	color:rgb(118,118,118);
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#leftalignmenu	{
+	width: 500px;
+	height: 44px;
+	display: table;
+}	
+
+#titlebar	{
+	height:440px;
+	width:100%;
+	background-color: rgb(251,251,251);
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:rgb(233,233,233);
+}
+
+
+#titletext	{
+	font-size: 22px;
+	color: rgb(65,65,65);
+	text-align: center;
+	margin-top: 46px;
+}	
+
+#titleinfobox	{
+	width: 917px;
+	height: 356px;
+	background-color: rgb(244,244,244);
+	vertical-align: middle;
+	position: absolute;
+	top: 40px;
+}	
+
+#privpolbox	{
+	height: 215px;
+	width:100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(215,215,215);
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(215,215,215);
+	background-color: rgb(240,240,240);
+	vertical-align: middle;
+}
+
+.infobox	{
+	height: 225px;
+	background-color: rgb(244,244,244);
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.infobox2	{
+	width: 280px;
+	height: 225px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 12px;
+	margin-right: 10px;
+}
+
+.infoboxtext	{
+	font-size: 10px;
+	font-family: gotham_boldregular;
+	color: rgb(65,65,65);
+	line-height: 30px;
+	padding: 5px;
+}
+
+.infoboxtext a	{	
+	font-size: 10px;
+	font-family: gotham_boldregular;
+	color: rgb(65,65,65);
+}
+
+.infoboxtext a:visited	{	
+	font-size: 10px;
+	font-family: gotham_boldregular;
+	color: rgb(65,65,65);
+}			
+
+.centredcontent	{
+	width:917px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+#content1	{	
+	height:15500px;
+	width:100%;
+	background-color: rgb(244,244,244);
+}
+
+.content1title	{
+	font-family: gotham_boldregular;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.content1text 	{
+	font-size: 13px;
+	line-height: 20px;
+	padding-top: 100px;
+	text-align: justify;
+}	

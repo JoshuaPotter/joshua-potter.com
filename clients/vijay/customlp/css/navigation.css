@@ -1,0 +1,49 @@
+#navigation {
+	padding: 11px 19px 10px;
+	background: -moz-linear-gradient(top,  rgba(45,45,45,1) 0%, rgba(76,76,76,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(45,45,45,1)), color-stop(100%,rgba(76,76,76,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(45,45,45,1) 0%,rgba(76,76,76,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(45,45,45,1) 0%,rgba(76,76,76,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(45,45,45,1) 0%,rgba(76,76,76,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(45,45,45,1) 0%,rgba(76,76,76,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#4c4c4c',GradientType=0 ); /* IE6-9 */
+}
+#navigation .nav-bar-responsive {
+	padding: 0 15px;
+	font-size: 18px;
+	text-align: center;
+	display: none;
+	color: #ffffff;
+}
+#navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: normal;
+	display: block;
+}
+#navigation ul li {
+	margin-right: 22px;
+	display: inline-block;
+}
+#navigation ul li:last-child {
+	margin-right: 0;
+}
+#navigation ul li a {
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+}
+
+@media all and (max-width: 991px) {
+	#navigation {
+		padding: 8px;
+	}
+	#navigation .nav-bar-responsive {
+		display: block;
+	}
+	#navigation ul {
+		display: none;
+	}
+}

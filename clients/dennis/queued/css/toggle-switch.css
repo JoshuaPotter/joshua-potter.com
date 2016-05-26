@@ -1,0 +1,66 @@
+#toggle-label {
+	margin-bottom: -8px;
+	cursor: pointer;
+}
+input#toggle, input#toggle2 {
+	max-height: 0;
+	max-width: 0;
+	opacity: 0;
+}
+
+/* The following provides the "container" for our toggle in its default (off) state */
+
+input#toggle + label, input#toggle2 + label {
+	display: inline-block;
+	position: relative;
+	text-indent: -5000px;
+	box-shadow: inset 0 0 0px 1px #78c339;
+	height: 30px;
+	width: 50px;
+	border-radius: 15px;
+	background: #78c339;
+}
+
+/* The following provides the green background for the "on" state of our toggle - it is hidden when the switch is off */
+
+input#toggle + label:before, input#toggle2 + label:before {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 30px;
+	width: 30px;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	background: rgba(19,191,17,0);
+	-webkit-transition: .25s ease-in-out;
+}
+
+/* The following provides the actual switch and its drop shadow */
+
+input#toggle + label:after, input#toggle2 + label:after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 30px;
+	width: 30px;
+	top: 0;
+	left: 0px;
+	border-radius: 15px;
+	background: white;
+	box-shadow: inset 0 0 0 1px #78c339, 0 2px 4px rgba(0,0,0,.2);
+	-webkit-transition: .25s ease-in-out;
+}
+
+/* The following defines the "on" state for the switch */
+
+input#toggle:checked + label:before, input#toggle2:checked + label:before {
+	width: 50px;
+	background: #fff;
+	box-shadow: inset 0 0 0px 1px #d5d5d5;
+}
+
+input#toggle:checked + label:after, input#toggle2:checked + label:after {
+	left: 20px;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.2);
+}

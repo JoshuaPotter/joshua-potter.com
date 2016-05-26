@@ -1,0 +1,24 @@
+Options +Indexes
+
+# STRONG HTACCESS PROTECTION
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+ order allow,deny
+ deny from all
+</Files>
+
+# DIRECTORY CUSTOMIZATION
+<IfModule mod_autoindex.c>
+
+# SET INDEX OPTIONS
+IndexOptions IgnoreCase FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble
+
+# SET DISPLAY ORDER
+IndexOrderDefault Descending Name
+
+# SPECIFY HEADER FILE
+HeaderName /dev/dankazzpreview/dap-header.html
+ 
+# SPECIFY FOOTER FILE
+ReadmeName /dev/dankazzpreview/dap-footer.html
+
+</IfModule>

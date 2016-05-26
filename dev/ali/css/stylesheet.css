@@ -1,0 +1,202 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 40px;
+	font-family: "Lato", sans-serif;
+    overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+#hero {
+	background: #5ECAAA;
+}
+
+#hero .hero-valign {
+	display: table;
+	height: calc(100vh - 80px);
+}
+
+#hero h1 {
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Playfair Display", serif;
+	padding: 70px;
+	margin: 0;
+	font-size: 86px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 1;
+}
+
+#navigation {
+	padding: 40px 0 50px;
+}
+
+#navigation .nav-left,
+#navigation .nav-right {
+	padding-top: 16px;
+}
+
+#navigation .nav-left {
+	text-align: left;
+}
+
+#navigation .nav-center {
+	text-align: center;
+}
+
+#navigation .nav-right {
+	text-align: right;
+}
+
+#navigation .nav-left a,
+#navigation .nav-right a {
+	color: rgba(0, 0, 0, .55);
+	line-height: 1;
+}
+
+#navigation .nav-left a {
+	margin-right: 50px;
+}
+
+#navigation .nav-right a {
+	margin-left: 50px;
+}
+
+#navigation .nav-left a:hover,
+#navigation .nav-right a:hover,
+#navigation a.active {
+	color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+}
+
+#intro {
+	padding: 100px 0;
+	text-align: center;
+	background: #5ECAAA;
+}
+
+h2 {
+	margin: 0 auto;
+	font-family: "Playfair Display", serif;
+	width: 100%;
+	max-width: 550px;
+	color: #ffffff;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 1.75;
+	text-shadow: 1px 1px 0px rgb(38, 179, 135);
+}
+
+h2 span {
+	margin: 0 10px;
+	font-size: 28px;
+	font-family: "Lato", serif;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 300;
+}
+
+#portfolio {
+	padding: 50px 0;
+}
+
+.grid .grid-item {
+	margin-bottom: 15px;
+}
+
+.pt-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	background: #f7f9f9;
+}
+
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+	z-index: 1;
+}
+
+.no-js body {
+	overflow: auto;
+}
+
+.pt-trigger-container {
+	position: absolute;
+	width: 300px;
+	z-index: 999999;
+	left: 50%;
+	margin-top: 75px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.pt-trigger {
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0 10px;
+	padding: 0 20px;
+	line-height: 40px;
+	height: 40px;
+	letter-spacing: 1px;
+	width: 100%;
+	cursor: pointer;
+	display: block;
+	font-family: Calibri;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/*No Animation Support Message Style*/
+
+.pt-message {
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #da475c;
+	color: #fff;
+	text-align: center;
+}
+
+.pt-message p {
+	margin: 0;
+	line-height: 60px;
+	font-size: 26px;
+}
+
+.no-cssanimations .pt-message {
+	display: block;
+}

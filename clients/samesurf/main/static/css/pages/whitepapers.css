@@ -1,0 +1,51 @@
+#pic_bg {
+	padding: 150px 0;
+	text-align: center;
+	background: url('/static/images/pages/whitepapers.jpg') center no-repeat;
+	background-size: cover;
+}
+#pic_bg h1 {
+	font-family: gotham_boldregular;
+	font-size: 42px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.container {
+	margin: 0 auto;
+	width: 917px;
+	text-align: center;
+	color: #4a4a4a;
+	font-family: gotham_bookregular;
+	line-height: 30px;
+	font-size: 18px;
+}
+.block {
+	padding: 100px 0;
+}
+.light {
+	background: #fbfbfc;
+	border-bottom: 1px solid #e9e9e9;
+}
+.dark {
+	background: #f6f6f6;
+	border-bottom: 1px solid #e9e9e9;
+}
+.row {
+	margin: -19px -95px;
+}
+.row .col-md-4 {
+	width: 25%;
+	padding: 19px;
+	display: inline-block;
+}
+.row .col-md-4 img {
+	max-width: 100%;
+	height: auto;
+}
+.centredcontent {
+	width: 917px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	overflow: auto;
+}

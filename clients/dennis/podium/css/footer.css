@@ -1,0 +1,118 @@
+/* 
+
+Applicable pages
+	- Landing
+	- Profile/Photo/Settings
+
+Table of Contents
+	- Landing Footer
+	- Main Footer
+
+*/
+
+/* Landing Footer */
+
+#landing-footer {
+	padding: 77px 0;
+	background: #30363e;
+	color: #999b9d;
+	text-align: center;
+}
+#landing-footer h2 {
+	padding-bottom: 10px;
+	position: relative;
+	font-size: 24px;
+}
+#landing-footer h2 .fb-like {
+	margin-left: 5px;
+}
+#landing-footer .border {
+	margin: 0 auto 30px;
+	padding: 30px 0 0;
+	border-bottom: 1px solid #454a52;
+	width: 141px;
+}
+#landing-footer .quick-links .dot {
+	margin: 0 20px;
+}
+#landing-footer .quick-links a {
+	color: #999b9d;
+	text-decoration: none;
+}
+#landing-footer .quick-links a:hover {
+	text-decoration: underline;
+}
+#landing-footer h3 {
+	padding: 20px 0 0;
+	font-size: 14px;
+	font-weight: 400;
+}
+@media all and (max-width: 780px) {
+	#landing-footer {
+		padding: 50px 4%;
+	}
+	#landing-footer .quick-links {
+		display: none;
+	}
+	#landing-footer .buttons {
+		padding: 10px;
+	}
+	#landing-footer .buttons a {
+		display: none;
+	}
+	#landing-footer .buttons .responsive {
+		padding: 20px 20px;
+		display: inline-block;
+		background-position: center center;
+	}
+	#landing-footer .buttons .facebook {
+		margin-right: 10px;
+	}
+}
+
+/* Main Containers */
+
+#main-footer {
+	background: #30363e;
+	font-size: 14px;
+	color: #999b9d;
+	border-top: 3px solid #87cb17;
+}
+#main-footer .container {
+	margin: 0 auto;
+	width: 1170px;
+	max-height: 69px;
+	overflow: hidden;
+}
+#main-footer .container ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#main-footer .container ul li {
+	padding: 30px 15px;
+	float: left;
+	display: inline-block;
+	border-left: 1px solid #454a52;
+}
+#main-footer .container a {
+	color: #999b9d;
+	text-decoration: none;
+}
+#main-footer .container .no-border {
+	border: none;
+}
+#main-footer .container .apple {
+	padding-left: 45px;
+	background: url('../img/logos/apple/apple.png') 15px 20px no-repeat;
+}
+@media all and (max-width: 1200px) {
+	#main-footer .container {
+		width: 1100px;
+	}
+}
+@media all and (max-width: 1175px) {
+	#main-footer .container {
+		width: 90%;
+	}
+}

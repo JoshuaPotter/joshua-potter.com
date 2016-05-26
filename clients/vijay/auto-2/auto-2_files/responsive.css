@@ -1,0 +1,283 @@
+@media only screen and (max-width : 500px) {
+	section#cont p a img.alignright {
+		text-align: center;
+		padding: 0 0 20px 0;
+	}
+    
+    .wp-image-25 {
+        margin: 6px auto 100px auto !important;
+    }
+    
+    body {
+        overflow-x: hidden;   
+    }
+    
+    #related .ad img {
+        margin: 0 0 -17px 0;
+    }
+    
+    #related .ad img {
+        border: 0 !important;   
+    }
+	
+	#wrapper {
+		background: white;
+	}
+    
+    #wrapper .container {
+        box-shadow: none !important;   
+    }
+    
+    footer {
+        box-shadow: none !important;   
+    }
+    
+    .section {
+        padding: 0 15px !important;
+    }
+    
+    section#disc {
+        margin: 0 6px !important;
+    }
+	
+	section#cont {
+		padding: 0 !important;
+	}
+	
+	p a img {
+		width: 100%;
+        height: 50%;
+	}
+	
+	logo.main img {
+		width: 60% !important;
+	}
+	#related {
+		box-shadow: none;
+		margin: 0 0 50px 0 !important;
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	
+	#related .article img {
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+	
+	.wp-image-145 {
+		margin: 6px 19px 210px 0 !important;
+	}
+	
+	#related .article a {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#related .ad img {
+		width: 100% !important;
+	}
+	
+	#related h1 {
+		text-align: center;
+	}
+	
+	section#cont .text p {
+		text-align: justify !important;
+	}
+	
+	section#cont p a img {
+		margin: 6px 0 -5px 0;
+	}
+    
+    p img {
+        width: 96% !important;
+        margin: 0 auto !important;
+        text-align: center;
+        display: block;
+    }
+    
+    section#cont p a img.alignright {
+        float: none !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+	
+	.span_1_of_3.post {
+		max-height: 423px;
+	}
+	
+	ul.navigation {
+		display: none !important;
+	}
+	
+	header .logo {
+		margin: 35px 0 0 20px !important;
+	}
+	
+	header .nav-dropdown {
+		background: url("../imgs/nav-dropdown.png") no-repeat;
+		width: 38px;
+		height: 29px;
+		display: inline-block;
+		position: absolute;
+		right: 40px;
+		top: 31px;
+		cursor: pointer;
+	}
+	
+	section#cont .ezcol-three-quarter {
+		width: 100% !important;
+	}
+	
+	section#cont .ezcol-one-quarter {
+		width: 0% !important;
+	}
+
+	footer .section.group {
+		display: none;
+	}
+	
+		footer #disc {
+			text-align: justify;
+		}
+	
+	section#cont .text,
+	section#cont .text .date {
+		text-align: center;
+	}
+	
+	section#cont .text .date {
+		padding: 0 0 27px 0;
+	}
+	
+	#related .ad img {
+		width: 40%;
+	}
+	
+	#related {
+		margin: 0 auto 30px auto;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	section#cont {
+		padding: 5%;
+	}
+	
+	.span_2_of_3 {
+		width: 100%;
+	}
+	
+	.span_1_of_3 {
+		width: 100%;
+	}
+	
+	#wrapper .container {
+		padding: 0;
+	}
+	
+	.col {
+		float: none;
+	}
+	
+	section#cont .text p {
+		text-align: center;
+	}
+	
+	#related:last-child {
+		margin: 0 auto 60px auto !important;
+	}
+	
+	.section {
+		padding: 0 35px;
+	}
+	
+	section#disc {
+		margin: 0 35px;
+	}
+	.copyright {
+		text-align: center;
+		padding: 20px 0;
+		height: auto;
+	}
+	
+		.copyright h1 {
+			display: block;
+			float: none !important;
+			padding: 0 !important;
+		}
+		
+		.copyright h2 {
+			padding: 10px 0 0 0;
+			text-align: center !important;
+		}
+		
+	section#filter .left {
+		width: 56% !important;
+		padding: 0 0 0 30px !important;
+	}
+	
+	.cat {display: none; }
+	
+	section#featured .block .body .content h1 {
+		width: 100% !important;
+		text-align: center !important;
+	}
+	
+	section#featured {
+		padding: 30px 30px;
+	}
+	
+	#tos {
+		padding: 32px 30px;
+	}
+	
+}
+
+@media only screen and (min-width : 1080px) {
+	ul.mobile {
+		display: none !important;
+		
+	}
+}
+
+@media only screen and (max-width : 916px) {
+	section#filter {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 865px) {
+	section#subscribe {
+		display: none;
+	}
+	
+	section#featured .block .body .content a {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 525px) {
+	header .logo img {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width : 434px) {
+	header .logo {
+		margin: 40px 0 0 20px !important;
+	}
+	
+	header .logo img {
+		width: 60%;
+	}
+	
+	.copyright {
+		line-height: 15px;
+	}
+}

@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Pepper Island</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="css/apollo.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+</head>
+
+<body>
+	<div id="preloader">
+		<video loop autoplay poster="http://dummyimage.com/4096x2304/374850/374850">
+			<source src="assets/video/pepperisland_loader01.mp4" type="video/mp4">
+			<source src="assets/video/pepperisland_loader01.webm" type="video/webm">
+			<p>Please update your browser to visit Pepper Island</p>
+		</video>
+	</div>
+	<header id="navigation">
+		<div class="row row-valign">
+			<div class="col-r-2">
+				<img src="assets/images/logo.png" alt="Pepperweb" />
+			</div>
+			<div class="col-r-10 text-dm-right">
+				<i id="responsive-btn" class="fa fa-bars fa-lg"></i>
+				<ul id="island-navigation" class="ul-h-nav">
+					<li><a href="#" class="ux-ui">UX &amp; UI</a></li>
+					<li><a href="#" class="branding">Branding</a></li>
+					<li><a href="#" class="illustration">Illustration</a></li>
+					<li><a href="#" class="web-development">Web Development</a></li>
+					<li><a href="#" class="app-development">App Development</a></li>
+					<li><a href="#" class="digital-marketing">Digital Marketing</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul id="island-navigation-responsive" class="ul-h-nav">
+				<li><a href="#" class="ux-ui">UX &amp; UI</a></li>
+				<li><a href="#" class="branding">Branding</a></li>
+				<li><a href="#" class="illustration">Illustration</a></li>
+				<li><a href="#" class="web-development">Web Development</a></li>
+				<li><a href="#" class="app-development">App Development</a></li>
+				<li><a href="#" class="digital-marketing">Digital Marketing</a></li>
+			</ul>
+	</header>
+	<section id="island-container">
+		<div id="side-wrapper">
+			<!-- click & drag icon -->
+			<div id="click-drag-wrapper">
+				<img src="assets/images/click-drag-icon.png" alt="Click & Drag" />
+				<small>Click &amp; Drag</small>
+			</div>
+			<!-- zoom slider -->
+			<div id="zoom-wrapper">
+				+
+				<div id="zoom"></div>
+				-
+				<small>Zoom</small>
+			</div>
+		</div>
+		<!-- island -->
+		<div id="island-source">
+			<section class="ux-ui"></section>
+			<section class="branding"></section>
+			<section class="illustration"></section>
+			<section class="web-development"></section>
+			<section class="digital-marketing"></section>
+			<section class="app-development"></section>
+			<video loop autoplay id="island-source-video">
+				<source src="assets/video/pepperisland_plan07.mp4" type="video/mp4">
+				<source src="assets/video/pepperisland_plan07.webm" type="video/webm">
+				<p>Please update your browser to visit Pepper Island</p>
+			</video>
+			<div id="island-source-mobile"></div>
+		</div>
+	</section>
+	<div id="bg-cover"></div>
+	<div id="app-development" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/app/department.png" alt="App Development" />
+			</div>
+			<div class="department-title">
+				App Development
+			</div>
+			<div class="department-subtitle">
+				Many Platforms, One Experience
+			</div>
+			<div class="department-description">
+				The best apps are beautiful beneath the surface too. We engineer clean, organized code that's easy to maintain and build upon. Bring us your mock-ups and we'll help you bring them to life.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="department-areas-list row">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/platform.png');"></div>
+						<span class="department-area-title">
+							Platform Strategy
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/apps.png');"></div>
+						<span class="department-area-title">
+							Mobile Apps
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/websites.png');"></div>
+						<span class="department-area-title">
+							Mobile Websites
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/native.png');"></div>
+						<span class="department-area-title">
+							Native Functionality
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/user.png');"></div>
+						<span class="department-area-title">
+							User Experience
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/app/new.png');"></div>
+						<span class="department-area-title">
+							New Horizons
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<div id="web-development" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/web/department.png" alt="Web Development" />
+			</div>
+			<div class="department-title">
+				Web Development
+			</div>
+			<div class="department-subtitle">
+				Building Tomorrow's Sites Today
+			</div>
+			<div class="department-description">
+				We build modern, sustainable web presences that are equally at home on any screen, just like your customers. We don't believe in buzzwords and trends, we believe in results, and to get them we'll use whatever tool is right for the job.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="row department-areas-list">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/strategic.png');"></div>
+						<span class="department-area-title">
+							Strategic Development
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/user.png');"></div>
+						<span class="department-area-title">
+							User Focused Design
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/build.png');"></div>
+						<span class="department-area-title">
+							Build To Scale
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/ecommerce.png');"></div>
+						<span class="department-area-title">
+							E-Commerce
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/content.png');"></div>
+						<span class="department-area-title">
+							Content Management
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/web/technology.png');"></div>
+						<span class="department-area-title">
+							Technology
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<div id="illustration" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/illustration/department.png" alt="Illustration" />
+			</div>
+			<div class="department-title">
+				Illustration
+			</div>
+			<div class="department-subtitle">
+				Draw Attention
+			</div>
+			<div class="department-description">
+				Strong visuals aren't just eye candy, they're the key to keeping an audience engaged from beginning to end. Our team of dedicated artists specialize in turning briefs into brilliant artwork for websites, campaigns, and publications.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="row department-areas-list">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/infographics.png');"></div>
+						<span class="department-area-title">
+							Infographics
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/vector.png');"></div>
+						<span class="department-area-title">
+							Vector<br/> Art
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/pixel.png');"></div>
+						<span class="department-area-title">
+							Pixel<br/> Art
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/concept.png');"></div>
+						<span class="department-area-title">
+							Concept<br/> Art
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/3d.png');"></div>
+						<span class="department-area-title">
+							3D<br/> Modeling
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/illustration/flat.png');"></div>
+						<span class="department-area-title">
+							Flat Illustration
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<div id="branding" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/branding/department.png" alt="Branding" />
+			</div>
+			<div class="department-title">
+				Branding
+			</div>
+			<div class="department-subtitle">
+				Show Your True Colors
+			</div>
+			<div class="department-description">
+				The best brands are built with precision, purpose, and perspective. We dig deep to find the core of your business, giving it shape and presenting it in a memorable form that you'll be proud to stand behind.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="row department-areas-list">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/brand.png');"></div>
+						<span class="department-area-title">
+							Brand Development
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/visual.png');"></div>
+						<span class="department-area-title">
+							Visual<br/> Identity
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/communication.png');"></div>
+						<span class="department-area-title">
+							Communication Design
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/experimental.png');"></div>
+						<span class="department-area-title">
+							Experimental Design
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/typography.png');"></div>
+						<span class="department-area-title">
+							Typography
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/branding/mascot.png');"></div>
+						<span class="department-area-title">
+							Mascot
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<div id="ux-ui" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/ux-ui/department.png" alt="Ux & Ui" />
+			</div>
+			<div class="department-title">
+				Ux &amp; Ui
+			</div>
+			<div class="department-subtitle">
+				Designed for Interaction
+			</div>
+			<div class="department-description">
+				A product is more than a collection of content. Every aspect of presentation contributes to the user experience, and the way we interact with things shapes our understanding of them. We design products that are made to be used, not just looked at.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="row department-areas-list">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/design.png');"></div>
+						<span class="department-area-title">
+							Design Strategy
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/information.png');"></div>
+						<span class="department-area-title">
+							Information Planning
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/prototyping.png');"></div>
+						<span class="department-area-title">
+							Prototyping
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/interface.png');"></div>
+						<span class="department-area-title">
+							Interface Design
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/user.png');"></div>
+						<span class="department-area-title">
+							User Experience
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/ux-ui/interaction.png');"></div>
+						<span class="department-area-title">
+							Interaction
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<div id="digital-marketing" class="modal">
+		<div class="modal-close"><span>X</span></div>
+		<div class="modal-content">
+			<div class="department-image">
+				<img src="assets/images/departments/digital/department.png" alt="Digital Marketing" />
+			</div>
+			<div class="department-title">
+				Digital Marketing
+			</div>
+			<div class="department-subtitle">
+				Smart Strategies for Connected Campaigns
+			</div>
+			<div class="department-description">
+				Put the pepper to work on your next campaign. We leverage<br/> research, experience, and ninja-like targeting to make sure your<br/> marketing efforts hit home with precision and potency.
+			</div>
+			<div class="department-areas">
+				<div class="department-areas-title">
+					Areas of Expertise
+				</div>
+				<div class="row department-areas-list">
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/research.png');"></div>
+						<span class="department-area-title">
+							Research
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/connected.png');"></div>
+						<span class="department-area-title">
+							Connected Strategy
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/seo.png');"></div>
+						<span class="department-area-title">
+							SEO
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/sfm.png');"></div>
+						<span class="department-area-title">
+							SFM
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/marketing.png');"></div>
+						<span class="department-area-title">
+							Marketing Engagement
+						</span>
+					</div>
+					<div class="col-nr-2">
+						<div class="department-area-image" style="background-image: url('assets/images/departments/digital/smm.png');"></div>
+						<span class="department-area-title">
+							SMM
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-buttons">
+			<div class="modal-call">Get a Call Back</div>
+			<form class="modal-call-dropdown">
+				<input type="text" placeholder="Full Name" name="full-name" />
+				<input type="tel" placeholder="Phone Number" name="phone-number" />
+				<input type="submit" value="Send" name="submit" />
+				<!-- apply class="sent" to send button to apply style change -->
+			</form>
+			<a href="//pepperweb.me/contact-us" class="modal-contact" target="_blank">Contact Us</a>
+		</div>
+	</div>
+	<script src="js/jquery.panzoom.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>

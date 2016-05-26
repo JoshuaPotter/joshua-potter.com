@@ -1,0 +1,66 @@
+#artist-section {
+	padding: 80px;
+	background-position: center 20%;
+	background-size: cover;
+	background-repeat: none;
+}
+#artist-section h1 {
+	font-size: 90px;
+	color: #ffffff;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+	font-weight: 800;
+	font-family: 'Open Sans';
+}
+#artist-section .buttons {
+	padding: 25px 0 0 0;
+	margin: 0 auto;
+}
+#artist-section .buttons ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: block;
+}
+#artist-section .buttons ul li {
+	display: inline-block;
+}
+#artist-section .buttons ul li a {
+	padding: 15px;
+	margin: 10px 5px;
+	display: block;
+	background: #1b1b1b;
+	color: #ffffff;
+	font-weight: 700;
+	border-radius: 4px;
+}
+#artist-section .buttons ul li a:hover {
+	background: #000000;
+	text-decoration: none;
+}
+#artist-section .video {
+	padding: 5px;
+	padding-bottom: 0;
+	margin-top: 25px;
+	background: #1B1B1B;
+	display: inline-block;
+}
+
+@media all and (max-width: 991px) {
+	#artist-section h1 {
+		font-size: 60px;
+	}
+	#artist-section .buttons {
+		padding: 25px 0 0 0;
+	}
+	#artist-section .buttons ul li a {
+		padding: 10px;
+		margin: 5px;
+	}
+	#artist-section .video {
+		margin-top: 35px;
+	}
+	#artist-section .video iframe {
+		width: 100%;
+		height: auto;
+	}
+}

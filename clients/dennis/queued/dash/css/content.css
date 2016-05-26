@@ -1,0 +1,515 @@
+#content {
+	position: relative;
+	background: #ffffff;
+	min-height: calc(100% - 75px);
+}
+#account-sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	background: #5d6e8a;
+	width: 280px;
+	float: left;
+}
+#account-sidebar .add-account {
+	padding: 20px;
+	text-align: center;
+	background: #465772;
+}
+#account-sidebar .add-account .add-account-btn {
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #23bae5;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 100;
+}
+#account-sidebar .add-account .add-account-btn:hover {
+	background: #1faad2;
+}
+#account-sidebar .account-entry {
+	padding: 20px;
+	display: block;
+}
+#account-sidebar .account-entry:hover {
+	background: #465772;
+}
+#account-sidebar .active,
+#account-sidebar .active:hover {
+	background: #3a4a63;
+	box-shadow: inset 5px 0 0 #50abf1;
+}
+#account-sidebar .account-entry .image,
+#account-sidebar .account-entry .name {
+	float: left;
+}
+#account-sidebar .account-entry img {
+	margin: 0 20px 0 0;
+	border-radius: 500px;
+	width: 60px;
+	height: 60px;
+}
+#account-sidebar .account-entry .handle {
+	line-height: normal;
+	margin: 0 0 12px;
+	color: #ffffff;
+	font-size: 20px;
+}
+#account-sidebar .account-entry .type {
+	color: #99a6be;
+	font-size: 18px;
+}
+#account-sidebar .account-entry .type .social-icon {
+	margin: 0 5px 0 0;
+	padding: 5px 6px;
+	border-radius: 2px;
+	color: #ffffff;
+	font-size: 14px;
+	width: 25px;
+	text-align: center;
+}
+#account-sidebar .account-entry .type .fa-twitter {
+	background: #44a2eb;
+}
+#account-sidebar .account-entry .type .fa-facebook {
+	background: #2a498e;
+}
+
+#account-actions {
+	margin-left: 280px;
+	float: left;
+	background: #ffffff;
+	width: calc(100% - 280px);
+}
+#account-actions .account-actions-tabs ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+}
+#account-actions .account-actions-tabs ul li {
+	display: block;
+	width: 25%;
+	float: left;
+}
+#account-actions .account-actions-tabs ul li a {
+	padding: 29px 10px 30px;
+	text-align: center;
+	color: #ffffff;
+	background: #5d6e8a;
+	display: block;
+	font-size: 20px;
+	text-decoration: none !important;
+}
+#account-actions .account-actions-tabs ul li .active {
+	background: #ffffff !important;
+	box-shadow: inset 0 5px 0 0 #50abf1;
+	color: #667999 !important;
+}
+#account-actions .account-actions-tabs ul li a:hover {
+	background: #465772;
+}
+#account-actions #content-container {
+	padding: 40px 40px 20px;
+}
+
+/* HEADERS */
+
+#content-container h1,
+#content-container h2 {
+	margin: 0 0 10px;
+	color: #545a66;
+	font-weight: 100;
+}
+#content-container h1 {
+	font-size: 34px;
+}
+#content-container h2 {
+	font-size: 20px;
+}
+
+
+/* CONTENT TAB */
+
+.content-container-tabs {
+	padding-bottom: 30px;
+}
+.content-container-tabs ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	border-bottom: 1px solid #ebedf0
+}
+.content-container-tabs ul li {
+	margin-bottom: -1px;
+	display: inline-block;
+}
+.content-container-tabs ul li a {
+	margin-left: 10px;
+	padding: 0 20px 20px;
+	display: inline-block;
+	font-size: 18px;
+	color: #b4bdce;
+	text-decoration: none !important;
+}
+.content-container-tabs ul li .active {
+	color: #545a66 !important;
+	box-shadow: inset 0 -3px 0 0 #50abf1 !important;
+}
+.content-container-tabs ul li a:hover {
+	color: #b4bdce;
+	box-shadow: inset 0 -3px 0 0 #ebedf0;
+	text-decoration: none;
+}
+.content-container-tabs ul li a:active {
+	box-shadow: inset 0 -3px 0 0 #50abf1 !important;
+}
+
+/* CONTENT TAB - QUEUE */
+
+.share-textarea {
+	padding: 0 0 30px;
+}
+.share-textarea .share-select-accounts {
+	padding: 20px 25px 15px;
+	background: #f2f5fb;
+	border-top: 1px solid #e0e2e4;
+	border-left: 1px solid #e0e2e4;
+	border-right: 1px solid #e0e2e4;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.share-textarea .share-select-accounts .share-account-entry {
+	position: relative;
+	margin-right: 35px;
+	display: inline-block;
+	float: left;
+}
+.share-textarea .share-select-accounts .share-account-entry:last-child {
+	margin-right: 0;
+}
+.share-textarea .share-select-accounts .share-account-entry .remove {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+	text-align: center;
+	font-size: 45px;
+	font-weight: 100;
+	background: rgba(226,232,246,.85);
+	border: 1px solid #545a66;
+	color: #545a66;
+	border-radius: 500px;
+	display: none;
+	cursor: pointer;
+}
+.share-textarea .share-select-accounts .share-account-entry:hover .remove {
+	display: block;
+	text-decoration: none !important;
+}
+.share-textarea .share-select-accounts .share-account-entry img {
+	width: 60px;
+	height: 60px;
+	border-radius: 500px;
+}
+.share-textarea .share-select-accounts .share-account-entry .social-icon {
+	position: absolute;
+	top: -3px;
+	right: -8px;
+	z-index: 25;
+	padding: 7px 0;
+	width: 30px;
+	border-radius: 500px;
+	text-align: center;
+	color: #ffffff;
+}
+.share-textarea .share-select-accounts .share-account-entry .fa-twitter {
+	background: #44a2eb;
+}
+.share-textarea .share-select-accounts .share-account-entry .fa-facebook {
+	background: #2a498e;
+}
+.share-textarea .share-select-accounts .share-account-add .social-icon {
+	opacity: 0;
+}
+.share-textarea .share-select-accounts .share-account-add a {
+	background: #e2e8f6 url('../img/icons/add-account-plus.png') center no-repeat;
+	border-radius: 500px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+.share-textarea .share-select-accounts .share-account-add a:hover {
+	background-color: #d3d8e5;
+}
+.share-textarea .share-textarea-input {
+	margin: 0 0 -6px;
+	padding: 15px 25px;
+	border: none;
+	border-left: 1px solid #e0e2e4;
+	border-right: 1px solid #e0e2e4;
+	font-size: 20px;
+	color: #6c6c6c;
+	font-weight: 100;
+	width: 100%;
+	min-height: 180px;
+}
+.share-textarea .share-textarea-input:focus {
+	outline: none;
+}
+.share-textarea .share-submission {
+	padding: 15px 25px;
+	background: #ffffff;
+	border-bottom: 1px solid #e0e2e4;
+	border-left: 1px solid #e0e2e4;
+	border-right: 1px solid #e0e2e4;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.share-textarea .share-submission .fa-image {
+	color: #a2aab8;
+}
+.share-textarea .share-submission .character-counter {
+	font-size: 16px;
+	color: #aeb5c1;
+}
+.share-textarea .share-submission .share-btns {
+	text-align: right;
+}
+.share-textarea .share-submission .share-btns .btn {
+	margin-left: 10px;
+	min-width: 150px;
+}
+.share-split .share-textarea .share-submission .share-btns .btn  {
+	min-width: inherit;
+}
+.content-timeline {
+	padding-left: 15px;
+}
+.content-timeline-wrapper {
+	border-left: 1px solid #e7e7e7;
+}
+.content-timeline-wrapper .date {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #9b9b9b;
+}
+.content-timeline-wrapper .date .dot {
+	margin-left: -7px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: #50abf1;
+	border-radius: 500px;
+	border: 2px solid #ffffff;
+}
+.content-timeline-wrapper .date .relative-date {
+	color: #23bae5;
+}
+.content-timeline-wrapper .post {
+	margin-bottom: 30px;
+}
+.content-timeline-wrapper .post .type {
+	float: left;
+	margin: 10px 15px 0 -20px;
+	padding: 9px 0;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	font-size: 18px;
+	border-radius: 500px;
+}
+.content-timeline-wrapper .link .type {
+	background: #3fd2e7;
+	color: #ffffff;
+}
+.content-timeline-wrapper .image .type {
+	background: #fecb72;
+	color: #ffffff;
+}
+.content-timeline-wrapper .post .post-box {
+	position: relative;
+	float: left;
+	padding: 20px 25px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px;
+	width: calc(100% - 35px);
+	display: inline-block;
+}
+.content-timeline-wrapper .post .post-box:hover,
+.content-timeline-wrapper .image .post-box:hover .post-image {
+	border-color: #7acce5;
+}
+.content-timeline-wrapper .post .post-box:after,
+.content-timeline-wrapper .post .post-box:before {
+	right: 100%;
+	top: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.content-timeline-wrapper .post .post-box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.content-timeline-wrapper .post .post-box:before {
+	border-color: rgba(231, 231, 231, 0);
+	border-right-color: #e7e7e7;
+	border-width: 11px;
+	margin-top: -11px;
+}
+.content-timeline-wrapper .post .post-box:hover:before {
+	border-right-color: #7acce5;
+}
+.content-timeline-wrapper .image .post-box .post-wrapper {
+	width: calc(100% - 170px);
+	float: left;
+}
+.content-timeline-wrapper .image .post-box .post-image {
+	width: 150px;
+	height: 150px;
+	float: right;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	border: 1px solid #545a66;
+}
+.content-timeline-wrapper .post .post-box .post-content,
+.content-timeline-wrapper .post .post-box .post-content p {
+	margin-bottom: 20px;
+	color: #545a66;
+	font-size: 20px;
+}
+.content-timeline-wrapper .post .post-box .post-content p:last-child {
+	margin: 0;
+}
+.content-timeline-wrapper .post .post-box .post-footer,
+.content-timeline-wrapper .post .post-box .post-footer a {
+	color: #8991a1;
+}
+.content-timeline-wrapper .post .post-box .post-footer a:hover {
+	color: #5b616d !important;
+}
+.content-timeline-wrapper .post .post-box .post-footer .time {
+	font-size: 16px;
+}
+.content-timeline-wrapper .post .post-box:hover .post-footer .time {
+	margin-right: 20px;
+}
+.content-timeline-wrapper .post .post-box .post-footer .actions {
+	display: none;
+}
+.content-timeline-wrapper .post .post-box:hover .post-footer .actions {
+	display: inline-block;
+}
+.content-timeline-wrapper .post .post-box .post-footer .actions a {
+	margin-right: 10px;
+	font-size: 16px;
+}
+.content-timeline-wrapper .post .post-box .post-footer .actions a:hover {
+	text-decoration: none;
+}
+.content-timeline-wrapper .post .post-box .post-footer .actions i {
+	margin-right: 5px;
+}
+
+/* ANALYTICS TAB */
+
+.content-timeline .with-analytics .post-box {
+	padding-bottom: 0;
+}
+.content-timeline .with-analytics .post-box .post-footer .actions a {
+	font-size: 16px;
+}
+.content-timeline .with-analytics .post-box .post-analytics {
+	margin: 20px -25px 0;
+	border-top: 1px solid #e7e7e7;
+}
+.content-timeline .with-analytics .post-box:hover .post-analytics,
+.content-timeline .with-analytics .post-box:hover .analytics-details {
+	border-color: #7acce5;
+}
+.content-timeline .with-analytics .post-box .post-analytics .analytics-block {
+	padding: 15px;
+	border-right: 1px solid #e7e7e7;
+	text-align: center;
+}
+.content-timeline .with-analytics .post-box .post-analytics .analytics-block:last-child {
+	border-right: none;
+}
+.content-timeline .with-analytics .post-box:hover .post-analytics .analytics-block {
+	border-color: #7acce5;
+}
+.content-timeline .with-analytics .post-box .post-analytics .analytics-block .analytics-number {
+	font-size: 24px;
+	font-weight: 700;
+	color: #545a66;
+}
+.content-timeline .with-analytics .post-box .post-analytics .analytics-block .analytics-type {
+	font-size: 16px;
+	color: #8991a1;
+}
+.content-timeline .with-analytics .post-box .analytics-details {
+	margin: 0 -25px;
+	padding: 25px 0;
+	border-top: 1px solid #e7e7e7;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry {
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry:last-child {
+	margin-bottom: 0;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry .details-content img {
+	border-radius: 500px;
+	width: 40px;
+	height: 40px;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry .details-content {
+	font-size: 16px;
+	color: #adb2bd;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry .details-interaction {
+	text-align: right;
+}
+.content-timeline .with-analytics .post-box .analytics-details .entry .details-interaction .btn {
+	padding: 5px 15px;
+	font-size: 16px;
+}
+
+/*
+@media all and (max-width: 1600px) {
+	#account-sidebar .account-entry img {
+		margin: 0 10px 0 0;
+		width: 50px;
+		height: 50px;
+	}
+	#account-sidebar .account-entry .handle {
+		font-size: 17px;
+	}
+	#account-sidebar .account-entry .type {
+		font-size: 15px;
+	}
+}
+*/

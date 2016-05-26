@@ -1,0 +1,26 @@
+<?php
+	$this->setTitle("enter new domains");
+	$this->addCSSFile("/static/test.css");
+	$this->addJSFile("/static/test.js");
+?>
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<form id="domain_addaccess" method="post" action="">
+	<fieldset>
+		<div id="domain_add_access" class="input_field">
+    		<label>add new user</label>
+			<input name="email" type="text" <?php util_html::attr("value", $view->defaults, "email")?>> 
+			<span class="error"><?php util_html::text($view->errors, "email")?></span>
+		</div>
+		<input type="submit">
+    </fieldset>
+</form>
+

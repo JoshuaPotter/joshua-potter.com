@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Exposely - Dashboard</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+		<!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+		<!-- font awesome -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- custom css -->
+		<link rel="stylesheet" type="text/css" href="../css/fonts/proxima-nova.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+	</head>
+
+	<body>
+		<div id="dash-container">
+			<div id="menu" role="navigation" class="dash-sidebar">
+				<div class="nav-wrap">
+					<div class="logo">
+						<a href="#" class="logo-img">
+							<img src="../img/logos/exposely-lg.png" alt="Exposely" />
+						</a>
+					</div>
+
+					<ul>
+						<li><a href="#" class="campaign-link active"><img src="img/icons/campaigns-icon.png" alt="Campaigns" /> Campaigns </a></li>
+						<li><a href="#" class="accounts-link"><img src="img/icons/accounts-icon.png" alt="Accounts" /> Accounts</a></li>
+						<li><a href="#" class="earnings-link last-child"><img src="img/icons/earnings-icon.png" alt="Campaigns" /> Earnings</a></li>
+					</ul>
+
+					<ul class="bottom-links">
+						<div class="account-info clearfix">
+							<img class="avatar-icon" src="img/avatar.jpg" />
+							<p>
+								MIHNEA ZAMFIR
+							</p>
+						</div>
+						<li>
+							<a href="#" class="settings-link"><img src="img/icons/settings-icon.png" alt="Settings" /> 
+								<p>Settings</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="log-out-link">
+								<img src="img/icons/log-out-icon.png" alt="Log Out" />
+								<p>
+									Log Out
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dash-content">
+				<div class="page-heading clearfix">
+					<div class="nav-button">
+						<i class="fa fa-bars fa-2x" id="nav-button-icon"></i>
+					</div>
+					<div class="page-title">
+						<h1>
+							Earnings
+						</h1>
+					</div>
+					<ul class="sort-by">
+						<li class="active">Today</li>
+						<li>This Week</li>
+						<li>This Month</li>
+						<li>This Year</li>
+					</ul>
+					<ul class="date-period">
+						<li class="active">From Jan 1st<i class="fa fa-caret-down"></i></li>
+						<li>To Sep 16th <i class="fa fa-caret-down"></i></li>
+					</ul>
+				</div>
+				<div class="growth-graph">
+					graph
+				</div>
+				<div class="earnings-overview clearfix">
+					<div class="col-md-3">
+						<div class="block">
+							<span>$7,592</span>
+							<h4>
+								Total Earnings <i class="fa fa-question-circle"></i>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block">
+							<span>$181k</span>
+							<h4>
+								Current Balance <i class="fa fa-question-circle"></i>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block">
+							<span>$492</span>
+							<h4>
+								Average Per Day <i class="fa fa-question-circle"></i>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="block">
+							<span>$2.46</span>
+							<h4>
+								Earnings per 1k Followers <i class="fa fa-question-circle"></i>
+							</h4>
+						</div>
+					</div>
+				</div>
+				<div class="list-table">
+					<div class="table-header clearfix">
+						<div class="col-md-3">
+							<div class="block">
+								Date
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block">
+								Amount of Actions
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block">
+								Campaigns
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block">
+								Total Earnings
+							</div>
+						</div>
+					</div>
+					<div class="table-body">
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+						<div class="table-row clearfix">
+							<div class="col-md-3">
+								<div class="block">
+									December 2013
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									1,275
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									2
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="block">
+									$1,237.00
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-table">
+					<div class="table-header clearfix">
+						<div class="col-md-6">
+							<div class="block">
+								Campaign
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="block">
+								Amount of Actions
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="block">
+								Campaigns
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="block">
+								Total Earnings
+							</div>
+						</div>
+					</div>
+					<div class="table-body">
+						
+						<div class="campaign-item">
+							<div class="block row">
+								<div class="col-md-6">
+									<a href="#" class="col-md-3 avatar" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPiPWT_1zCY6xee-bYwB-fVj0Q8Kry_Llzdb3T0dr9bgS8SPtr');">
+										<div class="icon">
+											<i class="fa fa-clock-o fa-lg"></i>
+										</div>
+									</a>
+									<div class="col-md-9 description">
+										<h1>
+											Traveling through Europe
+										</h1>
+										<p class="device">
+											Tablet, Desktop <span class="country">USA</span>
+										</p>
+									</div>
+								</div>
+								<div class="stats">
+									<div class="col-md-2">
+										<span class="stat-num">$28</span>
+										<h4>
+											Per Conversion
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="social-media">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-pinterest"></i>
+										</span>
+										<h4>
+											Platforms
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="stat-num">$1966.00</span>
+										<h4>
+											Finish Date
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="campaign-item">
+							<div class="block row">
+								<div class="col-md-6">
+									<a href="#" class="col-md-3 avatar" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPiPWT_1zCY6xee-bYwB-fVj0Q8Kry_Llzdb3T0dr9bgS8SPtr');">
+										<div class="icon">
+											<i class="fa fa-clock-o fa-lg"></i>
+										</div>
+									</a>
+									<div class="col-md-9 description">
+										<h1>
+											Traveling through Europe
+										</h1>
+										<p class="device">
+											Tablet, Desktop <span class="country">USA</span>
+										</p>
+									</div>
+								</div>
+								<div class="stats">
+									<div class="col-md-2">
+										<span class="stat-num">$28</span>
+										<h4>
+											Per Conversion
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="social-media">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-pinterest"></i>
+										</span>
+										<h4>
+											Platforms
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="stat-num">$1966.00</span>
+										<h4>
+											Finish Date
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="campaign-item">
+							<div class="block row">
+								<div class="col-md-6">
+									<a href="#" class="col-md-3 avatar" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPiPWT_1zCY6xee-bYwB-fVj0Q8Kry_Llzdb3T0dr9bgS8SPtr');">
+										<div class="icon">
+											<i class="fa fa-clock-o fa-lg"></i>
+										</div>
+									</a>
+									<div class="col-md-9 description">
+										<h1>
+											Traveling through Europe
+										</h1>
+										<p class="device">
+											Tablet, Desktop <span class="country">USA</span>
+										</p>
+									</div>
+								</div>
+								<div class="stats">
+									<div class="col-md-2">
+										<span class="stat-num">$28</span>
+										<h4>
+											Per Conversion
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="social-media">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-pinterest"></i>
+										</span>
+										<h4>
+											Platforms
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="stat-num">$1966.00</span>
+										<h4>
+											Finish Date
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="campaign-item">
+							<div class="block row">
+								<div class="col-md-6">
+									<a href="#" class="col-md-3 avatar" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPiPWT_1zCY6xee-bYwB-fVj0Q8Kry_Llzdb3T0dr9bgS8SPtr');">
+										<div class="icon">
+											<i class="fa fa-clock-o fa-lg"></i>
+										</div>
+									</a>
+									<div class="col-md-9 description">
+										<h1>
+											Traveling through Europe
+										</h1>
+										<p class="device">
+											Tablet, Desktop <span class="country">USA</span>
+										</p>
+									</div>
+								</div>
+								<div class="stats">
+									<div class="col-md-2">
+										<span class="stat-num">$28</span>
+										<h4>
+											Per Conversion
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="social-media">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-pinterest"></i>
+										</span>
+										<h4>
+											Platforms
+										</h4>
+									</div>
+									<div class="col-md-2">
+										<span class="stat-num">$1966.00</span>
+										<h4>
+											Finish Date
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var campaignListHeight = $('.dash-content').height() - $('.heading').height() - $('.growth-graph').height();
+			$('.campaign-list').css({
+				minHeight: campaignListHeight + 10
+			})
+		});
+	</script>
+	<script src="js/bigSlide.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>

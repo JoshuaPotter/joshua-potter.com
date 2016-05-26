@@ -1,0 +1,328 @@
+#header {
+	width: 100%;
+	height: 74px;
+	background-color: rgb(39, 39, 39);
+}
+
+#nav {
+	background-color: rgb(39, 39, 39);
+	width: 916px;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+#site_nav {
+	width: 190px;
+	height: 100%;
+	cursor: pointer;
+}
+
+#site_nav:hover {
+	background-color: rgb(27,27,27);
+}
+
+#navlogo {
+	background-image: url(../images/navlogo.png);
+	width: 120px;
+	height: 23px;
+	position: relative;
+	top: 26px;
+	margin-left: 25px;
+	margin-right: 12px;
+	display: inline-block;
+}
+
+#navlogo_arrow {
+	position: absolute;
+	top: 34px;
+	width: 8px;
+	height: 6px;
+	background-image: url(../images/header_arrow_down.png);
+	display: inline-block;
+}
+
+.top_chop {
+	margin-left: -5px;
+	overflow: hidden;
+	padding: 0 5px 5px;
+	display: block;
+}
+
+.header_site_choose {
+	position: absolute;
+	top: 74px;
+	width: 240px;
+	z-index: 1000;
+}
+
+.whats_samesurf_chop,
+.uses_chop {
+	z-index: 1000;
+	position: absolute;
+	top: 74px;
+}
+
+#header_site_drop {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: rgba(0,0,0,.2) 0 1px 9px 0px;
+	background-color: #FFFFFF;
+	display: none;
+	z-index: 1000;
+}
+
+.site_drop_content {
+	width: 100%;
+	height: 50px;
+	display: table;
+	-webkit-transition: all 125ms ease-in-out;
+	-moz-transition: all 125ms ease-in-out;
+	-o-transition: all 125ms ease-in-out;
+	-ms-transition: all 125ms ease-in-out;
+	transition: all 125ms ease-in-out;
+}
+
+.link_logo {
+	width: 56px;
+	height: 50px;
+	display: table-cell;
+}
+
+#logo_samesurf {
+	background-image: url(../images/logo-samesurf.png);
+}
+
+#logo_samesurfvideo {
+	background-image: url(../images/logo-video.png);
+}
+
+#logo_sameslide {
+	background-image: url(../images/logo-sameslide.png);
+}
+
+#logo_publicrooms {
+	background-image: url(../images/logo-publicrooms.png);
+}
+
+#site_publicrooms:hover {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.site_drop_content:hover {
+	background-color: rgb(242,242,242);
+}
+
+.site_title {
+	color: rgb(40,40,40);
+	font-size: 12px;
+	font-family: gotham_mediumregular;
+	margin-top: 13px;
+}
+
+.site_description {
+	color: rgb(200,200,200);
+	font-size: 10px;
+}
+
+#whats_samesurf, #uses {
+	color: rgb(214,214,214);
+	font-size: 12px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#whats_samesurf {
+	width: 190px;
+}
+
+#uses {
+	width: 100px;
+}
+
+#whats_samesurf:hover, #uses:hover {
+	background-color: rgb(27,27,27);
+}
+
+.drop_menu_box {
+	width: 190px;
+	line-height: 33px;
+	text-align: left;
+	font-size: 12px;
+	background-color: #1b1b1b;
+	box-shadow: rgba(0,0,0,.2) 0 1px 9px 0px;
+	display: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+.drop_menu_box a:hover {
+	text-decoration: none;
+}
+
+.drop_menu_content {
+	color: #ffffff;
+	border-bottom: 1px solid #101010;
+	padding-left: 15px;
+	-webkit-transition: all 125ms ease-in-out;
+	-moz-transition: all 125ms ease-in-out;
+	-o-transition: all 125ms ease-in-out;
+	-ms-transition: all 125ms ease-in-out;
+	transition: all 125ms ease-in-out;
+}
+
+.drop_menu_content:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#header_account {
+	width: 180px;
+	font-size: 12px;
+	color: rgb(204, 204, 204);
+	border-left-width: 2px;
+	border-right-width: 2px;
+	border-style: groove;
+	border-color: rgb(52,52,52);
+	border-bottom: 0;
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#header_account a {
+	color: rgb(204, 204, 204);
+	text-decoration: none !important;
+}
+
+#header_account:hover {
+	background-color: rgb(27,27,27);
+}
+
+#header_account_head {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#account_head_icon {
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+	background-image: url(../images/default_account_icon.png);
+	display: inline-block;
+}
+
+#account_head_text {
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+#account_head_arrow {
+	width: 8px;
+	height: 6px;
+	margin-left: 5px;
+	background-image: url(../images/header_arrow_down.png);
+	display: inline-block;
+}
+
+#header_account_body {
+	position: absolute;
+	top: 74px;
+	width: 177px;
+	font-size: 14px;
+	border-top: 1px solid black;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-color: rgb(27, 27, 27);
+	display: none;
+	z-index: 1000;
+}
+
+.header_account_body_content {
+	padding: 8px 15px;
+	color: #ffffff;
+	font-size: 13px;
+	border-bottom: 1px solid #101010;
+	-webkit-transition: all 125ms ease-in-out;
+	-moz-transition: all 125ms ease-in-out;
+	-o-transition: all 125ms ease-in-out;
+	-ms-transition: all 125ms ease-in-out;
+	transition: all 125ms ease-in-out;
+}
+
+.header_account_body_content:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.login_account {
+	display: none;
+}
+
+#header_account_bottom {
+	font-size: 12px;
+	padding: 15px 22px;
+	border-top-width: 0px;
+	border-top-style: solid;
+	border-top-color: black;
+}
+
+#header_account_session {
+	background-color: rgb(122,173,240);
+	width: 136px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 2px;
+	color: #ffffff;
+	-webkit-transition: background-color 125ms ease-in-out;
+	-moz-transition: background-color 125ms ease-in-out;
+	-o-transition: background-color 125ms ease-in-out;
+	-ms-transition: background-color 125ms ease-in-out;
+	transition: background-color 125ms ease-in-out;
+}
+
+#header_account_session:hover {
+	background-color: #467CD5;
+}
+
+#sub_header {
+	width: 100%;
+	height: 45px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(250,250,250);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(215,215,215);
+	background-color: rgb(234,234,234);
+}
+
+#sub_nav {
+	background-color: rgb(234,234,234);
+	width: 916px;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+#sub_navlinks {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#sub_navlinks a {
+	font-size: 75%;
+	color: rgb(118,118,118);
+	margin-right: 25px;
+	font-family: gotham_mediumregular;
+}
+
+#sub_navlinks a:hover {
+	text-decoration: underline;
+}

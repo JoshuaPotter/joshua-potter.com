@@ -1,0 +1,229 @@
+#content {
+	background: #ffffff;
+}
+
+.featured-customers {
+	padding: 20px 15px;
+	text-align: center;
+	border-bottom: 2px solid #f7f8f9;
+}
+.featured-customers p {
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: #adb3c4;
+}
+.featured-customers img {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.block {
+	padding: 75px 15px;
+	border-bottom: 1px solid #dcdde5;
+}
+.block h1 {
+	padding: 0;
+	margin: 0 0 15px;
+	color: #000000;
+	font-size: 42px;
+	font-weight: 100;
+	text-align: center;
+}
+.block h2 {
+	padding: 0;
+	margin: 0 0 85px;
+	color: #777777;
+	font-size: 26px;
+	font-weight: 100;
+	text-align: center;
+}
+.block h3 {
+	padding: 0;
+	margin: 0 0 10px;
+	color: #1766aa;
+	font-size: 24px;
+	font-weight: 400;
+}
+.block h4 {
+	padding: 0;
+	margin: 0 0 30px;
+	color: #4e5054;
+	font-size: 28px;
+}
+.block p {
+	padding: 0;
+	margin: 0 0 10px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 100;
+}
+.block .buttons {
+	text-align: center;
+}
+.what-is-queued-img {
+	padding-bottom: 85px;
+	text-align: center;
+}
+.what-is-queued-img img {
+	display: inline-block;
+}
+.queued-features .feature {
+	margin-bottom: 50px;
+}
+.queued-features .feature .feature-icon {
+	padding-bottom: 10px;
+	text-align: center;
+}
+.queued-features-2 .feature-2 {
+	padding: 0 30px 80px;
+	text-align: center;
+}
+.queued-features-2 .feature-2 img {
+	margin-bottom: 30px;
+}
+.queued-features-2 .feature-2 p {
+	font-size: 18px;
+	color: #636363;
+}
+.quote .logo {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.quote .logo img {
+	display: inline-block;
+}
+.quote .speech-bubble {
+	margin-bottom: 30px;
+	padding: 25px 30px;
+	border-radius: 4px;
+	border: 1px solid #e7e7e7;
+	font-size: 18px;
+	font-weight: 100;
+	font-style: italic;
+	color: #000000;
+}
+.quote .row img {
+	margin: 0 30px;
+	float: left;
+	border-radius: 500px;
+}
+.quote .row .quote-source {
+	margin-bottom: 5px;
+	font-size: 26px;
+	font-weight: 100;
+	color: #000000;
+}
+.quote .row .quote-occupation {
+	font-size: 20px;
+	font-weight: 100;
+	color: #000000;
+}
+
+#pricing {
+	border-bottom: none;
+}
+#pricing h1 {
+	font-size: 46px;
+	color: #777777;
+}
+#pricing h2 {
+	margin: 0 0 60px;
+	font-size: 22px;
+	color: #8a96a2;
+}
+#pricing .col-md-4 {
+	padding: 5px;
+}
+#pricing .pricing-module {
+	border-radius: 3px;
+}
+#pricing .pricing-module .header {
+	padding: 20px 15px 15px;
+	border: 1px solid #dddddd;
+	text-align: center;
+}
+#pricing .pricing-module .header h1 {
+	margin: 0 0 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	font-size: 18px;
+	color: #198ae1;
+	font-weight: 400;
+	border-bottom: 1px solid #198ae1;
+}
+#pricing .pricing-module .blue {
+	background: #198ae1 url('../img/pricing-star.png') top left no-repeat;
+	color: #ffffff;
+	border-bottom: 1px solid #198ae1;
+}
+#pricing .pricing-module .blue h1 {
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+#pricing .pricing-module .header .price {
+	color: #a8a8a8;
+	font-size: 24px;
+	font-weight: 100;
+}
+#pricing .pricing-module .header .price .price-pt {
+	font-size: 38px;
+	color: #666666;
+	font-weight: 400;
+}
+#pricing .pricing-module .header .price .price-pt sup {
+	font-size: 22px;
+	font-weight: 100;
+}
+#pricing .pricing-module .blue .price {
+	color: #54a9ef;
+}
+#pricing .pricing-module .blue .price .price-pt {
+	color: #ffffff;
+}
+#pricing .pricing-module .features {
+	margin: 0;
+	padding: 15px;
+	list-style-type: none;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+#pricing .pricing-module .features li {
+	margin: 30px 30px;
+	padding-left: 30px;
+	background: url('../img/pricing-bullet.png') left center no-repeat;
+	color: #777777;
+	font-size: 16px;
+	font-weight: 400;
+}
+#pricing .pricing-module .buttons {
+	padding: 0 15px 50px;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+#pricing .pricing-module .buttons a {
+	margin: 0;
+}
+#pricing .pricing-toggle {
+	margin-top: -40px;
+	text-align: center;
+}
+#pricing .pricing-toggle p {
+	margin-top: -15px;
+	display: inline-block;
+	color: #8a96a2;
+}
+#pricing .monthly-price {
+	display: none;
+}
+
+@media all and (max-width: 991px) {
+	.queued-features .feature .feature-details {
+		text-align: center;
+	}
+	.quote .row {
+		text-align: center;
+	}
+	.quote .row img {
+		float: none;
+	}

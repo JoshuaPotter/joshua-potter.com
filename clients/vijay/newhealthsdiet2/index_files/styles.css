@@ -1,0 +1,1785 @@
+* {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.clear {
+	margin: 0px 0px -1px; height: 1px; overflow: hidden; clear: both;
+}
+fieldset {
+	border: 0px currentColor; border-image: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+address {
+	font-style: normal; font-weight: normal;
+}
+caption {
+	font-style: normal; font-weight: normal;
+}
+cite {
+	font-style: normal; font-weight: normal;
+}
+code {
+	font-style: normal; font-weight: normal;
+}
+dfn {
+	font-style: normal; font-weight: normal;
+}
+em {
+	font-style: normal; font-weight: normal;
+}
+strong {
+	font-style: normal; font-weight: normal;
+}
+th {
+	font-style: normal; font-weight: normal;
+}
+var {
+	font-style: normal; font-weight: normal;
+}
+ol {
+	list-style-type: none; list-style-position: inside;
+}
+ul {
+	list-style-type: none; list-style-position: inside;
+}
+caption {
+	text-align: left;
+}
+th {
+	text-align: left;
+}
+h1 {
+	font-size: 100%;
+}
+h2 {
+	font-size: 100%;
+}
+h3 {
+	font-size: 100%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 100%;
+}
+h6 {
+	font-size: 100%;
+}
+q::before {
+	content: "";
+}
+q::after {
+	content: "";
+}
+abbr {
+	border: 0px currentColor; border-image: none;
+}
+acronym {
+	border: 0px currentColor; border-image: none;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+a img {
+	border: currentColor; border-image: none;
+}
+table {
+	font: inherit; font-size-adjust: inherit; font-stretch: inherit; -x-system-font: none;
+}
+th {
+	background: rgb(187, 204, 221); color: rgb(51, 51, 51);
+}
+th {
+	padding: 4px; line-height: 20px;
+}
+td {
+	padding: 4px; line-height: 20px;
+}
+tr:nth-child(2n) {
+	background: 0px 0px rgba(0, 0, 0, 0.1);
+}
+tr:nth-child(2n+1) {
+	
+}
+h1 {
+	padding: 0px 0px 5px; text-align: left; color: rgb(0, 0, 0); font-size: 32px;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+a {
+	color: rgb(0, 160, 198); text-decoration: none;
+}
+a:hover {
+	color: rgb(202, 0, 2);
+}
+a:active {
+	
+}
+.aligncenter {
+	margin-right: auto; margin-left: auto; display: block;
+}
+div.aligncenter {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.alignleft {
+	margin: 10px 15px 5px 0px; float: left;
+}
+.alignright {
+	margin: 10px 0px 8px 20px; float: right;
+}
+.clear {
+	clear: both;
+}
+.floatleft {
+	float: left;
+}
+.more_left {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+div.navigation {
+	width: 100%; float: left;
+}
+div.navigation p {
+	margin: 0px; text-align: center; font-size: 11px; font-weight: bold;
+}
+div.wp-pagenavi {
+	margin: 0px; text-align: center; font-size: 11px; font-weight: bold;
+}
+div.navigation a.current {
+	border-radius: 60px; border: currentColor; border-image: none; color: rgb(255, 255, 255); background-color: rgb(85, 204, 85); -webkit-border-radius: 60px; -moz-border-radius: 60px;
+}
+div.navigation a:hover {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(51, 51, 51);
+}
+div.navigation a {
+	padding: 6px 10px; border-radius: 60px; border: currentColor; border-image: none; color: rgb(126, 148, 174); line-height: 50px; font-size: 11px; font-weight: bold; margin-right: 10px; -webkit-border-radius: 60px; -moz-border-radius: 60px;
+}
+div.navigation span.current {
+	padding: 6px 10px; border-radius: 100px; border: currentColor; border-image: none; color: rgb(255, 255, 255); margin-right: 10px; background-color: rgb(126, 148, 174); -webkit-border-radius: 100px; -moz-border-radius: 100px;
+}
+div.navigation a:hover {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(232, 90, 90);
+}
+div.navigation span.pages {
+	margin-right: 10px; display: none;
+}
+div.navigation .nextpostslink:hover {
+	background: rgb(232, 90, 90);
+}
+div.navigation .previouspostslink:hover {
+	background: rgb(232, 90, 90);
+}
+div.navigation .extend {
+	border: currentColor; border-image: none;
+}
+div.navigation .alignleft {
+	margin: 0px;
+}
+div.navigation .alignright {
+	margin: 0px;
+}
+html {
+	-ms-overflow-y: scroll;
+}
+p {
+	line-height: 1.6; margin-bottom: 30px;
+}
+input {
+	padding: 5px;
+}
+input[type='text'] {
+	background: rgb(253, 254, 254); border-radius: 2px; border: 1px solid rgb(199, 199, 199); border-image: none; height: 16px; color: rgb(116, 116, 116); font-size: 12px; vertical-align: middle; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+input[type='password'] {
+	background: rgb(253, 254, 254); border-radius: 2px; border: 1px solid rgb(199, 199, 199); border-image: none; height: 16px; color: rgb(116, 116, 116); font-size: 12px; vertical-align: middle; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+input[type='submit'] {
+	background: rgb(253, 254, 254); padding: 4px 0px; border-radius: 2px; border: 1px solid rgb(174, 178, 186); border-image: none; width: 70px; height: 28px; color: rgb(106, 106, 106); font-size: 12px; font-weight: bold; vertical-align: middle; cursor: pointer; box-shadow: 0px 0px 1px #e1e2e1; -webkit-border-radius: 2px; -moz-border-radius: 2px; -webkit-box-shadow: 0 0 1px #d1d2d1; -moz-box-shadow: 0 0 1px #e1e2e1;
+}
+input[type='reset'] {
+	background: rgb(253, 254, 254); padding: 4px 0px; border-radius: 2px; border: 1px solid rgb(174, 178, 186); border-image: none; width: 70px; height: 28px; color: rgb(106, 106, 106); font-size: 12px; font-weight: bold; vertical-align: middle; cursor: pointer; box-shadow: 0px 0px 1px #e1e2e1; -webkit-border-radius: 2px; -moz-border-radius: 2px; -webkit-box-shadow: 0 0 1px #d1d2d1; -moz-box-shadow: 0 0 1px #e1e2e1;
+}
+textarea {
+	background: rgb(253, 254, 254); padding: 5px; border-radius: 2px; border: 1px solid rgb(199, 199, 199); border-image: none; color: rgb(116, 116, 116); font-size: 12px; vertical-align: top; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.search-text i {
+	width: 16px; height: 16px; overflow: hidden; margin-top: -0.1em; margin-left: -20px; position: absolute;
+}
+.subscribe-text i {
+	width: 16px; height: 16px; overflow: hidden; margin-top: -0.1em; margin-left: -20px; position: absolute;
+}
+.search-text i {
+	background: url("http://newhealthsdiet.com/teeth/2/images/search.png") no-repeat 0px 2px;
+}
+.subscribe-text i {
+	background: url("http://newhealthsdiet.com/teeth/2/images/mail.png") no-repeat 0px 2px;
+}
+html span.comm_bubble a {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bubble.png") no-repeat; color: rgb(169, 169, 169); padding-left: 14px; font-size: 9px; font-weight: normal; margin-left: 7px; vertical-align: baseline; display: inline-block; position: relative;
+}
+#featured span.comm_bubble a {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bubble.png") no-repeat; color: rgb(169, 169, 169); padding-left: 14px; font-size: 9px; font-weight: normal; margin-left: 7px; vertical-align: baseline; display: inline-block; position: relative;
+}
+body {
+	background: rgb(235, 237, 240); text-align: left; color: rgb(71, 71, 71); font-family: Arial,Helvetica,sans-serif; font-size: 12px;
+}
+#page-wrap {
+	background-position: top; margin: 0px auto; width: 980px; text-align: left; background-image: url("http://newhealthsdiet.com/teeth/2/images/xtopbg.png.pagespeed.ic.j_WqX7_vNU.png"); background-attachment: scroll; background-repeat: no-repeat;
+}
+#content {
+	width: 650px; clear: both; float: left;
+}
+#header {
+	width: 100%; clear: both; float: left; position: relative;
+}
+#topbar {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_shadow.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 2px; width: 100%; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; float: left; z-index: 100; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px;
+}
+.rounded {
+	padding: 4px 9px 4px 5px; clear: both; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; display: block; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px;
+}
+#menu .rounded {
+	padding: 0px 9px 3px;
+}
+#topbar .topmenu {
+	width: 800px; float: left;
+}
+#topbar a {
+	color: rgb(235, 237, 240); font-weight: bold; text-decoration: none;
+}
+#topbar .user-bar {
+	color: rgb(184, 185, 184); line-height: 24px; font-size: 12px; float: right;
+}
+label.overlabel-apply {
+	color: rgb(106, 106, 106); font-size: 12px; margin-top: 7px; margin-left: 5px; position: absolute; z-index: 1;
+}
+#topbar .user-bar a {
+	margin: 0px 4px; color: rgb(71, 71, 71); font-weight: bold; text-decoration: none;
+}
+#topbar .user-bar a:hover {
+	text-decoration: underline;
+}
+.login-form {
+	top: 0px; width: 220px; right: 0px; position: absolute; z-index: 100;
+}
+.login-form .close {
+	background: rgb(118, 118, 118); margin: 0px auto; width: 60px; height: 36px; text-align: center; line-height: 34px; border-top-color: rgb(63, 63, 63); border-top-width: 1px; border-top-style: solid;
+}
+#topbar .login-form .close a {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+.login-form form {
+	background: rgb(118, 118, 118); margin: 0px; width: 220px; border-right-color: currentColor; border-right-width: 5px; border-right-style: none; box-shadow: 0px 3px 5px #e1e2e1; -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-box-shadow: 0 3px 5px #d1d2d1; -moz-box-shadow: 0 3px 5px #e1e2e1;
+}
+.login-form fieldset {
+	margin: 0px; padding: 10px;
+}
+.login-form .inputs {
+	width: 130px; float: left;
+}
+.login-form .input {
+	margin-bottom: 5px;
+}
+.login-form .input label {
+	color: rgb(255, 255, 255);
+}
+.login-form label.overlabel-apply {
+	color: rgb(255, 255, 255); margin-top: 6px;
+}
+.login-form .input input {
+	background: rgb(92, 92, 91); border-width: medium 1px 1px medium; border-style: none solid solid none; border-color: currentColor rgb(132, 132, 131) rgb(132, 132, 131) currentColor; padding: 6px 5px; border-radius: 2px; border-image: none; width: 118px; height: 16px; color: rgb(255, 255, 255); font-size: 12px; vertical-align: middle; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.login-form .button {
+	width: 64px; float: right;
+}
+.login-form .button input {
+	background: url("http://newhealthsdiet.com/teeth/2/images/nav.png") no-repeat 0px -259px; padding: 0px; border-radius: 0px; border: currentColor; border-image: none; width: 64px; height: 64px; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; box-shadow: 0px 0px 0px; text-shadow: 0px -1px 0px #87b00d; -webkit-border-radius: 0px; -moz-border-radius: 0px; -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0;
+}
+.login-form .remember {
+	clear: both; margin-bottom: 4px;
+}
+.login-form .remember label {
+	color: rgb(228, 228, 228); font-size: 11px; vertical-align: middle;
+}
+.login-form .remember input {
+	vertical-align: middle;
+}
+.login-form .lost {
+	font-size: 11px;
+}
+#topbar .login-form .lost a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#topbar .login-form .lost a:hover {
+	text-decoration: underline;
+}
+#header .logo {
+	margin: 0px; float: left; position: relative;
+}
+#header .logo img {
+	margin: 0px;
+}
+#header .logo span {
+	left: 90px; top: 56px; font-size: 11px; position: absolute;
+}
+#header .adv {
+	top: 42px; right: 0px; position: absolute;
+}
+#menu {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_shadow.png") repeat-x bottom rgb(255, 255, 255); margin: 3px 0px 20px; border-radius: 5px; width: 100%; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; z-index: 100; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#menu .mainmenu {
+	margin: 5px 0px 0px; width: 100%; float: left;
+}
+#topbar .rss {
+	padding: 5px 0px 4px; color: rgb(60, 60, 60); font-size: 11px; float: right; position: relative; z-index: 1000;
+}
+#topbar .rss a {
+	padding: 0px 0px 3px 20px; color: rgb(255, 139, 0); font-weight: bold; text-decoration: none; margin-left: 4px;
+}
+#topbar .rss a:hover {
+	text-decoration: underline;
+}
+#menu .search {
+	padding: 7px 4px 5px 0px; float: right;
+}
+#menu .clear {
+	margin: 6px 0px 0px; width: 100%; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+#menu .tagsmenu {
+	margin: 9px 0px; width: 660px; float: left;
+}
+#menu .tagsmenu li {
+	background: none; margin: 0px; padding: 0px; text-transform: none;
+}
+#menu .tagsmenu li:hover {
+	background: none;
+}
+#menu .tagsmenu a {
+	margin: 0px 4px 0px 0px; padding: 3px 7px; border-radius: 3px; color: rgb(0, 160, 198); font-weight: normal; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+#menu .tagsmenu a:hover {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x; color: rgb(255, 255, 255);
+}
+#menu .search form {
+	margin: 0px;
+}
+#menu .search fieldset {
+	margin: 0px;
+}
+.search-text {
+	text-align: left; display: inline-block;
+}
+.subscribe-text {
+	text-align: left; display: inline-block;
+}
+.search-text input {
+	width: 185px; padding-left: 26px !important;
+}
+.subscribe-text input {
+	width: 185px; padding-left: 26px !important;
+}
+.search-text i {
+	margin-top: 7px; margin-left: 8px; z-index: 1000;
+}
+.subscribe-text i {
+	margin-top: 7px; margin-left: 8px; z-index: 1000;
+}
+.subscribe-text i {
+	margin-top: 6px;
+}
+.search-text label.overlabel-apply {
+	margin-left: 28px;
+}
+.subscribe-text label.overlabel-apply {
+	margin-left: 28px;
+}
+#featured {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; border-radius: 5px; width: 650px; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.archive {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; border-radius: 5px; width: 650px; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#featured h3 {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); padding: 7px 15px; width: 620px; color: rgb(85, 85, 85); font-size: 16px; font-weight: normal; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+.archive h3 {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); padding: 7px 15px; width: 620px; color: rgb(85, 85, 85); font-size: 16px; font-weight: normal; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+.archives h1 {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); padding: 7px 15px; width: 620px; color: rgb(85, 85, 85); font-size: 16px; font-weight: normal; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+div.archives h1 a {
+	font-size: 20px; margin-bottom: 0px;
+}
+.archives .arch_tags {
+	padding: 15px; border-radius: 3px; border: 1px solid rgb(231, 233, 235); border-image: none; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.archives .arch_tags span {
+	color: rgb(96, 96, 96); font-size: 20px;
+}
+.archives .arch_tags ul {
+	margin: 8px 0px; text-align: center;
+}
+.arch_cat {
+	margin: 10px 10px 25px 25px; width: 250px; float: left;
+}
+.arch_cat span {
+	margin: 5px 0px 5px 5px; color: rgb(96, 96, 96); font-size: 17px; display: block;
+}
+.arch_cat ul li {
+	padding: 6px; border-radius: 2px; text-align: right; color: rgb(0, 160, 198); border-bottom-color: rgb(231, 233, 235); border-bottom-width: 1px; border-bottom-style: solid; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+}
+.arch_cat ul li a {
+	text-align: left; font-weight: bold; float: left;
+}
+.arch_cat ul li:hover {
+	background: rgb(162, 209, 16); color: rgb(255, 255, 255);
+}
+.arch_cat ul li:hover a {
+	color: rgb(255, 255, 255);
+}
+.dates.arch_cat {
+	margin-right: 20px; float: right;
+}
+#featured .rounded {
+	padding: 10px 15px 0px;
+}
+.archive .rounded {
+	padding: 10px 15px 0px;
+}
+#featured span.category {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_categ.png") no-repeat right top; margin: 0px 0px 7px; padding: 9px 8px 8px 0px; clear: both; float: left;
+}
+#featured .category a {
+	background: rgb(240, 244, 245); padding: 6px 11px 5px 4px; color: rgb(96, 96, 96); line-height: 9px; font-size: 11px;
+}
+#featured .category a:hover {
+	color: rgb(31, 138, 157); text-decoration: none;
+}
+.slide {
+	width: 300px; overflow: hidden; float: left;
+}
+#featured a {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+#featured a:hover {
+	text-decoration: underline;
+}
+#featured h2 {
+	margin: 5px 0px 0px; color: rgb(78, 78, 78); line-height: 1.2; font-size: 18px; display: inline;
+}
+#featured h2 a {
+	color: rgb(78, 78, 78);
+}
+#featured .meta {
+	margin: 2px 0px 4px; width: 100%; color: rgb(169, 169, 169); clear: both; font-size: 10px; float: left;
+}
+.archive .meta {
+	margin: 2px 0px 4px; width: 100%; color: rgb(169, 169, 169); clear: both; font-size: 10px; float: left;
+}
+#featured .meta a {
+	color: rgb(0, 160, 198); text-decoration: underline;
+}
+.archive .meta a {
+	color: rgb(0, 160, 198); text-decoration: underline;
+}
+#featured .meta a:hover {
+	text-decoration: none;
+}
+.archive .meta a:hover {
+	text-decoration: none;
+}
+#featured p {
+	line-height: 1.3; font-size: 11px;
+}
+.headings {
+	width: 300px; float: right;
+}
+#featured .headings h2 {
+	font-size: 16px;
+}
+#featured .headings h2 a {
+	color: rgb(78, 78, 78);
+}
+.headings img {
+	margin: 2px 8px 8px 0px; float: left;
+}
+.headings li {
+	padding: 7px 0px 0px; width: 100%; clear: both; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.headings li:last-child {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#carousel {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; padding: 10px 0px 0px; border-radius: 5px; width: 650px; line-height: 1.1; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#carousel img {
+	margin: 0px 5px 5px 0px; float: left;
+}
+#carousel .meta {
+	color: rgb(169, 169, 169); line-height: 1.2; font-size: 10px; margin-top: 4px; display: block;
+}
+#carousel .meta a {
+	color: rgb(119, 119, 119); font-size: 11px; font-weight: normal;
+}
+#carousel li a {
+	color: rgb(0, 96, 182); font-size: 14px; font-weight: bold;
+}
+#carousel a:hover {
+	text-decoration: underline;
+}
+.jcarousel-clip {
+	width: 565px; margin-left: 40px;
+}
+.jcarousel-item {
+	width: 180px; overflow: hidden;
+}
+.jcarousel-prev {
+	background: url("http://newhealthsdiet.com/teeth/2/images/arrows.png") no-repeat 0px 0px; left: 7px; top: 35px; width: 27px; height: 27px; position: absolute; cursor: pointer;
+}
+.jcarousel-prev:hover {
+	background-position: 0px -30px;
+}
+.jcarousel-next {
+	background: url("http://newhealthsdiet.com/teeth/2/images/arrows.png") no-repeat -28px 0px; top: 35px; width: 27px; height: 27px; right: 7px; position: absolute; cursor: pointer;
+}
+.jcarousel-next:hover {
+	background-position: -28px -30px;
+}
+.tabbed {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; border-radius: 5px; width: 650px; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.tabbed .rounded {
+	padding: 0px;
+}
+ul.tabs {
+	background: rgb(235, 237, 240); list-style: none; margin: 0px; padding: 0px; width: 100%; height: 32px; float: left;
+}
+ul.tabs li {
+	margin: 0px 7px 0px 0px; padding: 0px; height: 32px; line-height: 32px; overflow: hidden; float: left; position: relative;
+}
+ul.tabs li a {
+	padding: 0px 15px; color: rgb(85, 85, 85); font-size: 16px; text-decoration: none; display: block;
+}
+ul.tabs li a:hover {
+	background: rgb(255, 255, 255); border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+html ul.tabs li.active {
+	background: rgb(255, 255, 255); font-size: 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+html ul.tabs li.active a:hover {
+	background: rgb(255, 255, 255); font-size: 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+ul.tabs li.active a {
+	font-size: 20px;
+}
+.tab_container {
+	width: 100%; overflow: hidden; clear: both; float: left; border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+.tab_content {
+	padding: 15px; font-size: 1.2em; border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+.tab_content ul li {
+	margin: 0px 8px 10px 0px; width: 49%; color: rgb(60, 60, 60); line-height: 1.2; font-size: 11px; vertical-align: top; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block; -ms-zoom: 1;
+}
+.tab_content ul li.right_col {
+	margin-right: 0px;
+}
+.tab_content li img {
+	margin: 0px 7px 7px 0px; float: left;
+}
+.tab_content li a {
+	font-size: 13px; font-weight: bold;
+}
+.tab_content li .meta {
+	margin: 3px 0px; color: rgb(169, 169, 169); font-size: 9px; display: block;
+}
+.tab_content li .meta a {
+	font-size: 9px; font-weight: normal;
+}
+.tab_content li p {
+	overflow: auto; margin-bottom: 7px;
+}
+.video {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; padding: 0px 0px 15px; border-radius: 5px; width: 650px; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.video .rounded {
+	padding: 10px 15px; position: relative;
+}
+.video h3 {
+	background: url("http://newhealthsdiet.com/teeth/2/images/video.png") no-repeat left; padding: 0px 0px 0px 29px; font-size: 21px; font-weight: bold;
+}
+#panes p {
+	line-height: 1.3;
+}
+.video #panes h4 a {
+	color: rgb(51, 51, 51); font-size: 20px; font-weight: bold;
+}
+#panes a:hover {
+	text-decoration: underline;
+}
+#panes .meta {
+	margin: 5px 0px; color: rgb(169, 169, 169); font-size: 9px; display: block;
+}
+.latest_videos {
+	margin: -34px 0px 0px; width: 130px; float: right;
+}
+.scrollable a {
+	line-height: 1; font-size: 11px; font-weight: bold;
+}
+#panes {
+	width: 471px; overflow: hidden; margin-top: 10px; float: left; position: relative;
+}
+#panes div {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_video.png"); padding: 10px; border-radius: 4px; color: rgb(60, 60, 60); line-height: 1.3; overflow: hidden; font-size: 11px; display: none; z-index: 100; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+#panes .active {
+	display: block;
+}
+div.scrollable {
+	height: 365px; overflow: hidden; position: relative; z-index: 999;
+}
+a.browse {
+	background: url("http://newhealthsdiet.com/teeth/2/images/arrows.png") no-repeat 0px 0px; margin: 7px 0px 9px 46px; width: 27px; height: 27px; text-indent: -2000px; font-size: 1px; display: block; z-index: 103; cursor: pointer;
+}
+a.right {
+	background-position: -84px 0px;
+}
+a.right:hover {
+	background-position: -84px -30px;
+}
+a.left {
+	background-position: -56px 0px;
+}
+a.left:hover {
+	background-position: -56px -30px;
+}
+a.disabled {
+	visibility: hidden !important;
+}
+div.scrollable ul.items {
+	left: 0px; height: 20000em; position: absolute;
+}
+.scrollable li {
+	margin: 0px 0px 13px 4px; float: left; display: inline; list-style-type: none; position: relative; opacity: 0.7;
+}
+.scrollable li.active {
+	opacity: 1;
+}
+.scrollable li:hover {
+	opacity: 1;
+}
+.scrollable li.active span.fade {
+	opacity: 1;
+}
+.scrollable li.active a {
+	color: rgb(202, 0, 2);
+}
+.scrollable img {
+	margin: 0px 0px 2px; display: block; cursor: pointer;
+}
+.scrollable li i {
+	background: url("http://newhealthsdiet.com/teeth/2/images/round.png") no-repeat; left: 0px; top: 0px; width: 125px; height: 80px; position: absolute; cursor: pointer;
+}
+.scrollable li:hover span {
+	background: url("http://newhealthsdiet.com/teeth/2/images/play.png") no-repeat; left: 0px; top: 0px; width: 125px; height: 80px; position: absolute; cursor: pointer;
+}
+.scrollable li.active span {
+	background: url("http://newhealthsdiet.com/teeth/2/images/play.png") no-repeat; left: 0px; top: 0px; width: 125px; height: 80px; position: absolute; cursor: pointer;
+}
+.scrollable li span:active {
+	top: 1px;
+}
+.wpzoom_media .open .description {
+	margin: 10px 0px 5px; line-height: 16px; font-size: 12px;
+}
+.wpzoom_media .hidden {
+	display: none;
+}
+.wpzoom_media li {
+	padding: 8px 0px 8px 20px; line-height: 20px; font-size: 14px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dotted; list-style-type: none;
+}
+.wpzoom_media li a.active {
+	font-weight: bold;
+}
+.single {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; border-radius: 5px; border: 1px solid rgb(215, 215, 215); border-image: none; width: 650px; text-align: left; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+.fullwidth.single {
+	width: 980px;
+}
+.single .meta {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); padding: 10px 15px; width: 620px; text-align: left; color: rgb(85, 85, 85); font-size: 12px; font-weight: normal; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+.fullwidth .meta {
+	width: 950px;
+}
+.single .meta a {
+	font-weight: bold;
+}
+html .single span.spr {
+	margin: 0px 5px; color: rgb(204, 204, 204); font-size: 12px; float: none;
+}
+.single .meta span {
+	font-size: 11px; float: right;
+}
+.single .meta span a {
+	font-weight: normal;
+}
+.single .rounded {
+	padding: 10px 15px 0px;
+}
+.single h1 a {
+	width: 100%; color: rgb(71, 71, 71); clear: both; font-size: 34px; font-weight: normal; margin-bottom: 10px; float: left;
+}
+.single h1 a:hover {
+	text-decoration: underline;
+}
+.single .entry {
+	width: 100%; text-align: left; overflow: hidden; clear: both; float: left;
+}
+.single .entry h2 {
+	color: rgb(0, 0, 0); font-size: 15px;
+}
+.single .after-meta {
+	margin: 10px 0px; padding: 7px 0px; width: 100%; border-top-color: rgb(232, 232, 232); border-bottom-color: rgb(232, 232, 232); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; float: left;
+}
+.after-meta ul {
+	font-size: 11px; font-weight: bold; float: right; display: inline;
+}
+.after-meta ul li {
+	margin-right: 4px; float: left;
+}
+.after-meta ul li a {
+	display: block;
+}
+.single .post_author {
+	background: rgb(255, 253, 234); margin: 10px 0px; padding: 10px 10px 5px; border-radius: 3px; border: 1px solid rgb(238, 231, 171); border-image: none; width: 600px; line-height: 1.6em; clear: both; font-size: 11px; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.fullwidth .post_author {
+	width: 930px;
+}
+.single .post_author img {
+	margin: 0px 7px 7px 0px; float: left;
+}
+.single .post_author span {
+	font-size: 13px; font-weight: bold; margin-bottom: 5px; display: block;
+}
+.single .entry {
+	line-height: 1.7; clear: left; font-size: 14px;
+}
+.single .entry a {
+	color: rgb(0, 78, 165);
+}
+.single .entry a img {
+	border: 0px currentColor; border-image: none; text-decoration: none;
+}
+.single .entry ul {
+	margin: 0px 0px 20px; padding: 0px 0px 0px 30px;
+}
+.single .entry ul li {
+	list-style-type: square;
+}
+.single .entry ol {
+	margin: 0px 0px 20px; padding: 0px 0px 0px 30px;
+}
+.single .entry ol li {
+	list-style-type: decimal;
+}
+.single blockquote {
+	margin: 10px 20px 10px 30px; color: rgb(119, 119, 119); line-height: 1.8em; padding-left: 10px; font-size: 14px; font-style: italic; border-left-color: rgb(204, 204, 204); border-left-width: 3px; border-left-style: solid;
+}
+blockquote {
+	quotes: none;
+}
+q {
+	quotes: none;
+}
+.single .alignleft {
+	margin: 10px 15px 10px 0px; float: left;
+}
+.single .alignright {
+	margin: 10px 0px 10px 15px; float: right;
+}
+.single .entry h2 {
+	width: auto; float: none;
+}
+.single .entry img {
+	max-width: 960px;
+}
+.gallery .gallery-item {
+	margin: 10px; vertical-align: top; display: inline-block; -ms-zoom: 1;
+}
+.gallery {
+	margin: auto; text-align: center; clear: both;
+}
+.gallery img {
+	border: 2px solid rgb(207, 207, 207); border-image: none;
+}
+.gallery-caption {
+	margin-left: 0px;
+}
+.attachment {
+	margin: 1em 0px;
+}
+.wp-caption-text {
+	text-align: center; color: rgb(153, 153, 153); font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 11px;
+}
+.gallery-caption {
+	text-align: center; color: rgb(153, 153, 153); font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 11px;
+}
+.archive .post {
+	margin: 7px 0px; padding: 0px 0px 9px; width: 100%; clear: both; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.archive img {
+	margin: 0px 7px 7px 0px; float: left;
+}
+.archive .post h2 {
+	font-size: 20px; display: inline;
+}
+.archive .post h2 a {
+	color: rgb(51, 51, 51);
+}
+.archive .post h2 a:hover {
+	text-decoration: underline;
+}
+.archive .post .meta {
+	clear: none; float: none; display: block;
+}
+.archive h3 {
+	padding: 14px 15px; font-size: 33px;
+}
+#comments {
+	margin: 10px 0px 15px; width: 100%; text-align: left; float: left;
+}
+#comments h3 {
+	padding: 8px 0px; color: rgb(71, 71, 71); font-size: 20px; font-weight: bold; border-top-color: rgb(210, 210, 210); border-top-width: 4px; border-top-style: solid;
+}
+.comment-input-text textarea {
+	width: 80%;
+}
+.comment-list {
+	margin: 0px; padding: 0px;
+}
+.comment-list li {
+	list-style: none;
+}
+.comment-list li .commbody {
+	padding: 16px 0px; border-bottom-color: rgb(227, 223, 223); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.comment-list ul {
+	margin-bottom: 0px;
+}
+.comment-list ul.children .commbody {
+	padding: 15px 0px 10px 15px;
+}
+.comment-author {
+	float: left;
+}
+.comment-author img {
+	margin: 0px 12px 12px 0px; float: left;
+}
+cite.fn {
+	color: rgb(0, 160, 198); font-size: 14px; font-style: normal; font-weight: bold;
+}
+cite.fn a {
+	color: rgb(0, 160, 198); font-size: 14px; font-style: normal; font-weight: bold;
+}
+cite.fn a:hover {
+	color: rgb(0, 0, 0);
+}
+.comment-profile-wrapper {
+	width: 105px; text-align: center;
+}
+span.says {
+	display: none;
+}
+.comment-meta {
+	margin: 4px 0px;
+}
+.commentmetadata a {
+	color: rgb(139, 139, 139); font-size: 11px; font-style: italic;
+}
+.commentmetadata a:hover {
+	color: rgb(72, 64, 64); text-decoration: none;
+}
+.comment-gravatar {
+	margin-bottom: 3px;
+}
+.comment-content-wrapper {
+	width: 538px; float: right;
+}
+.comment-parent {
+	margin-top: 15px;
+}
+.comment-single {
+	margin-top: 15px;
+}
+.comment-list ul.children {
+	margin: 0px 0px 10px 47px; border-left-color: rgb(227, 223, 223); border-left-width: 1px; border-left-style: dotted;
+}
+#comments #respond ul {
+	margin: 0px 0px 10px 47px; border-left-color: rgb(227, 223, 223); border-left-width: 1px; border-left-style: dotted;
+}
+.comment-list ul.children ul.children {
+	margin-left: 40px;
+}
+.comment-list ul.children li {
+	margin: 0px;
+}
+.comment-body {
+	margin: 0px; padding: 8px 12px 0px; position: relative;
+}
+.comment-list li div p {
+	color: rgb(79, 80, 81); overflow: hidden; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; margin-bottom: 0.8em;
+}
+.comment .post-date {
+	margin-top: 0px;
+}
+.comment .post-date .right a {
+	color: rgb(187, 187, 187);
+}
+.comment .post-date .right a:hover {
+	color: rgb(34, 51, 68);
+}
+.reply {
+	clear: both; margin-right: 15px; float: right;
+}
+.cancel-comment-reply {
+	margin: 7px 0px 0px 16px;
+}
+.reply a {
+	background: rgb(126, 148, 174); padding: 2px 6px; border-radius: 4px; border: currentColor; border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 10px; margin-right: 3px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cancel-comment-reply a {
+	background: rgb(126, 148, 174); padding: 2px 6px; border-radius: 4px; border: currentColor; border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 10px; margin-right: 3px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.reply a:hover {
+	background: rgb(232, 90, 90); color: rgb(255, 255, 255); text-decoration: none;
+}
+.cancel-comment-reply a:hover {
+	background: rgb(232, 90, 90); color: rgb(255, 255, 255); text-decoration: none;
+}
+#respond li {
+	list-style: none;
+}
+#respond ul {
+	margin: 0px;
+}
+#respond .legend {
+	margin-bottom: 10px;
+}
+#respond h3 {
+	padding: 8px 0px 0px 15px; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+#respond #commentform {
+	padding: 0px 15px 15px;
+}
+#comments #respond {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_video.png"); margin: 5px 0px 9px; padding: 0px; border-radius: 5px; width: 100%; clear: both; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#comments #respond .legend {
+	margin-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+#comments #respond ul {
+	padding: 10px 0px 0px 15px;
+}
+#comments ul.children #respond ul {
+	padding: 0px; margin-left: 30px;
+}
+#comments #respond .comment-profile-wrapper {
+	display: none;
+}
+#comments #respond .comment-arrow {
+	display: none;
+}
+#comments #respond .comment-body {
+	background: rgb(255, 255, 255);
+}
+#comments #respond .comment-content-wrapper {
+	width: 100%; float: none;
+}
+#formLabels {
+	width: 100%; float: left;
+}
+#formLabels p {
+	width: 31%; margin-right: 20px; float: left; display: inline;
+}
+#formLabels p.last {
+	margin-right: 0px;
+}
+#respond input {
+	width: 93%; margin-right: 0px;
+}
+#respond #formContent {
+	margin: 7px 0px; float: right;
+}
+#respond textarea {
+	margin: 0px 0px 8px; width: 98%;
+}
+.comment-list li #respond p {
+	margin-left: 0px;
+}
+#trackbacks {
+	width: 100%; float: left;
+}
+#trackbacks ol {
+	padding: 10px 0px;
+}
+#trackbacks li {
+	padding: 5px 0px 5px 15px; list-style-type: decimal;
+}
+#respond .comm-submit {
+	background: url("http://newhealthsdiet.com/teeth/2/images/nav.png") no-repeat 0px -227px; border: currentColor; border-image: none; width: 154px; height: 32px; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; text-shadow: 0px -1px 0px #87b00d; -moz-border-radius: 0 0 0 0; -moz-box-shadow: 0 0 0;
+}
+#sidebar {
+	width: 320px; float: right;
+}
+#sidebar hr {
+	margin: 7px 0px 3px; border: 0px currentColor; border-image: none; width: 100%; height: 1px; text-align: left; color: rgb(158, 158, 158); background-color: rgb(205, 205, 205);
+}
+#sidebar .widget {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); margin: 0px 0px 20px; border-radius: 5px; width: 320px; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#sidebar .widget h3 {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topbar.png") repeat-x bottom rgb(255, 255, 255); padding: 3px 10px; width: 300px; color: rgb(28, 28, 28); font-size: 18px; font-weight: bold; border-bottom-color: rgb(215, 215, 215); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+.widget .padder {
+	padding: 10px; width: 300px; clear: both; float: left;
+}
+.subscribe {
+	color: rgb(130, 130, 130); font-size: 11px;
+}
+.rss i {
+	padding-left: 20px;
+}
+.widget {
+	width: 100%; line-height: 1.5; margin-bottom: 10px; float: left;
+}
+.widget ul {
+	margin: 5px 0px; line-height: 1.7; clear: both;
+}
+.widget ul li {
+	list-style-type: none;
+}
+.widget ul ul {
+	margin: 0px; padding: 0px; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.widget ul ul li {
+	border: currentColor; border-image: none;
+}
+.widget #cat {
+	background: rgb(247, 247, 247); padding: 5px; border: 1px solid rgb(205, 207, 212); border-image: none; width: 100%; color: rgb(51, 51, 51); line-height: 1.5; clear: both; font-family: Georgia,serif; float: left; display: inline;
+}
+.widget select {
+	background: rgb(247, 247, 247); padding: 5px; border: 1px solid rgb(205, 207, 212); border-image: none; width: 100%; color: rgb(51, 51, 51); line-height: 1.5; clear: both; font-family: Georgia,serif; float: left; display: inline;
+}
+ul.gallery img {
+	padding: 4px; border-radius: 3px; border: 1px solid rgb(241, 241, 241); border-image: none; width: 75px; height: 75px; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+ul.gallery img:hover {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+ul.gallery a {
+	border: currentColor; border-image: none;
+}
+ul.gallery a:hover {
+	border: currentColor; border-image: none;
+}
+ul.gallery li:hover {
+	border: currentColor; border-image: none;
+}
+ul.gallery li a:hover {
+	border: currentColor; border-image: none;
+}
+#ads li:hover {
+	border: currentColor; border-image: none;
+}
+ul.gallery {
+	margin: 5px 0px 0px 10px; float: left; display: block; list-style-type: none;
+}
+.widget ul.gallery li {
+	padding: 0px 11px 11px 0px; border: currentColor; border-image: none; float: left; list-style-type: none; list-style-position: outside;
+}
+.ads {
+	text-align: center;
+}
+#footer ul.gallery img {
+	border-color: rgb(119, 119, 119); padding: 0px; width: 62px; height: 62px;
+}
+#footer ul.gallery img:hover {
+	border: 1px solid rgb(154, 154, 154); border-image: none;
+}
+#footer ul.gallery {
+	margin: 0px;
+}
+.subscribe form {
+	margin: 0px 0px 8px; padding: 10px 0px; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.subscribe p {
+	margin-bottom: 0px;
+}
+.widget .social li {
+	padding: 4px 0px; line-height: 1.2; margin-right: 8px; float: left; display: inline;
+}
+.widget .social li a {
+	font-size: 12px; font-weight: bold;
+}
+.widget .social img {
+	margin-right: 7px; float: left;
+}
+.recent_comments li {
+	padding: 6px 0px; line-height: 18px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#twitter li {
+	padding: 6px 0px; line-height: 18px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.recent_comments li a {
+	padding: 0px; line-height: 18px !important; display: inline;
+}
+#twitter a {
+	padding: 0px; line-height: 18px !important; display: inline;
+}
+.widget_tag_cloud div {
+	text-align: center;
+}
+#footer .widget_tag_cloud div {
+	text-align: left;
+}
+#footer .widget_tag_cloud div a {
+	
+}
+#footer .widget_tag_cloud div a:hover {
+	background: rgb(255, 143, 0);
+}
+.widget_tag_cloud div a {
+	padding: 0px 3px; font-family: Georgia,serif; font-style: italic;
+}
+.widget_tag_cloud div a:hover {
+	background: rgb(162, 210, 16); border-radius: 4px; color: rgb(255, 255, 255); -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.tabberlive .tabbertabhide {
+	display: none;
+}
+.tabberlive h3 {
+	display: none;
+}
+ul.tabbernav li {
+	background: rgb(246, 247, 247); border-width: 1px 1px 1px medium; border-style: solid solid solid none; border-color: transparent transparent rgb(231, 233, 235) currentColor; margin: 0px 0px -1px; padding: 0px; border-image: none; height: 35px; line-height: 35px; overflow: hidden; float: left; list-style-type: none; position: relative;
+}
+html .tabbertabs .rounded {
+	padding: 0px; width: 100%; float: left;
+}
+ul.tabbernav {
+	margin: 0px; padding: 1px 0px;
+}
+* + html ul.tabbernav {
+	padding: 2px 0px;
+}
+ul.tabbernav li {
+	list-style: none; margin: 0px; display: inline;
+}
+ul.tabbernav li a {
+	padding: 0px 10px; color: rgb(102, 102, 102); font-size: 15px; text-decoration: none; display: block;
+}
+ul.tabbernav li.tabberactive {
+	background: rgb(255, 255, 255); border-right-color: rgb(231, 233, 235); border-bottom-color: rgb(255, 255, 255); border-left-color: rgb(231, 233, 235); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+ul.tabbernav li:first-child.tabberactive {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none; border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px;
+}
+.tabbertabs .recent_comments li img {
+	margin: 0px 7px 7px 0px; float: left;
+}
+.tabbertabs .recent_news li img {
+	margin: 0px 7px 7px 0px; float: left;
+}
+.tabbertab li {
+	padding: 7px 5px 0px; width: 100%; clear: both; border-bottom-color: rgb(239, 239, 239); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.tabbertab li .meta {
+	margin: 3px 0px 0px; color: rgb(169, 169, 169); font-size: 9px; display: block;
+}
+.tabbertab li .meta a {
+	font-size: 9px; font-weight: normal;
+}
+.tabbertab li a {
+	font-size: 12px; font-weight: bold;
+}
+ul.tabbernav a:hover {
+	text-decoration: underline;
+}
+ul.tabbernav {
+	list-style: none; margin: 0px; padding: 0px; width: 100%; height: 36px; border-bottom-color: rgb(231, 233, 235); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+html .tabbertab ul {
+	margin: 0px;
+}
+.tabberlive .tabbertab {
+	padding: 5px; width: 300px; float: left;
+}
+.tabbertab h2.widgettitle {
+	display: none;
+}
+.pre_footer {
+	background: rgb(255, 255, 255); padding: 8px; width: 964px; clear: both; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; float: left; border-top-left-radius: 5px; border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+}
+.pre_footer img {
+	float: left;
+}
+.pre_footer span {
+	margin: 7px 3px 0px 0px; float: right;
+}
+.pre_footer span a {
+	background: url("http://newhealthsdiet.com/teeth/2/images/arrows.png") no-repeat -56px 0px; width: 27px; height: 27px; display: block;
+}
+.pre_footer span a:hover {
+	background-position: -56px -30px;
+}
+#footer_wrap {
+	background: rgb(106, 106, 106); width: 100%; color: rgb(228, 228, 228); line-height: 1.1; clear: both; font-size: 11px; float: left;
+}
+#footer {
+	background: rgb(99, 99, 99); margin: 0px auto; padding: 15px 20px; width: 940px; text-align: left; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px;
+}
+#footer .widget {
+	margin: 5px; width: 100%; vertical-align: top; float: none; display: inline-block; -ms-zoom: 1;
+}
+#footer .widget p {
+	line-height: 1.3;
+}
+#footer a {
+	color: rgb(255, 255, 255);
+}
+#footer .widget h3 {
+	margin: 0px 0px 6px; padding: 0px 0px 6px; font-size: 13px; font-weight: bold; border-bottom-color: rgb(120, 120, 120); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#footer_wrap #copyright {
+	margin: 0px auto; width: 940px; height: 50px; text-align: left; padding-top: 10px;
+}
+#footer_wrap #copyright span {
+	width: 25%; text-align: right; float: right;
+}
+#footer_wrap a {
+	color: rgb(255, 255, 255);
+}
+#footer_wrap #copyright a:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+#footer_wrap #copyright span img {
+	padding: 2px 0px 5px 2px; vertical-align: middle;
+}
+#copyright span a {
+	text-indent: -2999px; font-size: 1px;
+}
+.featured_sidebar {
+	width: 100%;
+}
+.featured_sidebar1 {
+	margin: 3px 0px; padding: 2px; border: 1px dotted rgb(205, 205, 205); border-image: none; width: 98%; height: 65px;
+}
+.featured_sidebar1:hover {
+	background: rgb(255, 248, 171);
+}
+.outlined1 {
+	background: rgb(213, 240, 255); margin: 4px; padding: 4px; border: 1px dotted rgb(205, 211, 215); border-image: none;
+}
+.cta_button_red {
+	height: 30px;
+}
+.cta_button_red a {
+	background: url("http://newhealthsdiet.com/teeth/2/images/red01.gif") repeat-x red; padding: 10px; border-radius: 4px; color: rgb(255, 255, 255); text-shadow: 1px 1px 1px #000; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cta_button_red a:hover {
+	background: url("http://newhealthsdiet.com/teeth/2/images/red02.gif") repeat-x red; padding: 10px; border-radius: 4px; color: rgb(255, 255, 255); text-shadow: 1px 1px 1px #000; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cta_sidebar {
+	background: rgb(234, 243, 250); padding: 3px; border-radius: 4px; border: 1px dotted rgb(205, 205, 205); border-image: none; color: rgb(0, 0, 0); font-size: 14px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cta_sidebar p {
+	margin: 10px 0px;
+}
+.poststeps {
+	background: rgb(235, 237, 240); padding: 4px; border: 1px solid rgb(206, 206, 206); border-image: none; width: 215px; margin-right: 5px; float: left;
+}
+.sidebartitle {
+	padding: 10px; width: 290px; color: rgb(0, 78, 165); font-size: 14px; font-weight: bold;
+}
+.share {
+	width: 618px; height: 30px; text-align: left; overflow: hidden;
+}
+.socfloat {
+	float: left;
+}
+.bottom_cta {
+	width: 100%; color: rgb(0, 0, 0); margin-top: 10px;
+}
+.steps_cta {
+	color: rgb(0, 0, 0); line-height: 18px; font-size: 15px; font-weight: bold;
+}
+.bottom_cta h5 a:link {
+	color: rgb(0, 92, 218); line-height: 28px; font-size: 26px; text-decoration: underline;
+}
+.bottom_cta h5 {
+	color: rgb(125, 125, 125); line-height: 28px; font-size: 26px;
+}
+.bottom_cta h4 a:link {
+	color: rgb(0, 92, 218); line-height: 24px; font-size: 20px; text-decoration: underline;
+}
+.bottom_cta h4 {
+	color: rgb(125, 125, 125); line-height: 24px; font-size: 20px;
+}
+.bottom_cta br {
+	margin: 1px; padding: 1px;
+}
+p.strong {
+	color: rgb(0, 0, 0); font-style: italic;
+}
+.autoinsurance {
+	background: rgb(244, 241, 209); padding: 10px; margin-left: 5px; border-left-color: rgb(191, 187, 187); border-left-width: 4px; border-left-style: solid;
+}
+.autoside {
+	margin: 10px auto; padding: 2px; width: 260px; text-align: left; color: rgb(0, 0, 0); font-size: 14px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; min-height: 64px;
+}
+.autoside img {
+	padding: 4px; border: 1px solid rgb(205, 205, 205); border-image: none; width: 90px; height: 80px; text-align: center;
+}
+.recentarticle {
+	margin: 5px 0px; border: 1px solid rgb(0, 78, 165); border-image: none; width: 100%; min-height: 184px; border-top-left-radius: 3px; -webkit-border-top-left-radius: 3px; -moz-border-radius-topleft: 3px;
+}
+.recentarticle img {
+	margin: 3px; padding: 1px; border: 1px solid rgb(205, 205, 205); border-image: none;
+}
+.recentarticle .recenttitle {
+	background: rgb(0, 78, 165); text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; display: block; border-top-left-radius: 1px; -webkit-border-top-left-radius: 1px; -moz-border-radius-topleft: 1px;
+}
+.rightquote {
+	text-align: right; color: rgb(0, 0, 0); line-height: 24px; font-size: 24px;
+}
+.downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/down.png") no-repeat center; padding: 6px 11px;
+}
+.rightarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/right.png") no-repeat right; padding: 10px; right: 10px; position: absolute;
+}
+.dropdown ul {
+	margin: 0px; list-style-type: none;
+}
+.dropdown ul li ul li {
+	margin: 0px;
+}
+.dropdown li {
+	margin: 0px 5px; padding: 0px; float: left; display: inline;
+}
+.dropdown a {
+	color: rgb(0, 160, 198); font-weight: bold; text-decoration: none;
+}
+.dropdown li a:hover .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+.dropdown li:hover .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+.dropdown ul li.current_page_item a .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+.dropdown ul li.current-cat a .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+li.current-menu-item {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png") repeat-x; color: rgb(255, 255, 255);
+}
+li.current_page_item {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png") repeat-x; color: rgb(255, 255, 255);
+}
+li.current-menu-ancestor {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png") repeat-x; color: rgb(255, 255, 255);
+}
+li.current-menu-parent {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png") repeat-x; color: rgb(255, 255, 255);
+}
+li.current_page_parent {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png") repeat-x; color: rgb(255, 255, 255);
+}
+li.current-menu-item a {
+	color: rgb(255, 255, 255);
+}
+li.current_page_item a {
+	color: rgb(255, 255, 255);
+}
+li.current-menu-ancestor a {
+	color: rgb(255, 255, 255);
+}
+li.current-menu-parent a {
+	color: rgb(255, 255, 255);
+}
+li.current_page_parent a {
+	color: rgb(255, 255, 255);
+}
+#topbar li.current-menu-item {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar li.current_page_item {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar li.current-menu-ancestor {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar li.current-menu-parent {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar li.current_page_parent {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar li.current-menu-item a {
+	color: rgb(255, 255, 255);
+}
+#topbar li.current_page_item a {
+	color: rgb(255, 255, 255);
+}
+#topbar li.current-menu-ancestor a {
+	color: rgb(255, 255, 255);
+}
+#topbar li.current-menu-parent a {
+	color: rgb(255, 255, 255);
+}
+#topbar li.current_page_parent a {
+	color: rgb(255, 255, 255);
+}
+.dropdown .mainmenu li {
+	margin-right: 0px; display: inline; position: relative; z-index: 100;
+}
+.dropdown .topmenu li {
+	margin-right: 0px; display: inline; position: relative; z-index: 100;
+}
+.dropdown ul li a {
+	text-decoration: none;
+}
+* html .dropdown ul li a {
+	display: inline-block;
+}
+.dropdown ul li ul {
+	background: rgb(255, 138, 0); margin: -2px 0px 0px; padding: 5px 0px; left: 0px; text-align: left; display: block; visibility: hidden; position: absolute; z-index: 100; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topright: 3px;
+}
+.dropdown ul li ul li {
+	margin: 0px; padding: 0px 10px;
+}
+#menu ul li ul li {
+	margin: 0px; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+}
+#topbar ul li ul li {
+	margin: 0px; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+}
+.dropdown ul li ul li ul {
+	top: 0px;
+}
+.dropdown ul li ul li a {
+	margin: 0px; padding: 0px; border-radius: 0px; width: 140px; text-transform: none; line-height: 1.9; border-top-width: 0px; display: block; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+}
+.dropdown ul li:hover ul li a {
+	border-radius: 0px; color: rgb(68, 68, 68); -webkit-border-radius: 0px; -moz-border-radius: 0px;
+}
+.dropdown ul li:hover ul li:hover a:hover {
+	background: rgb(47, 47, 47); border-radius: 0px; color: rgb(255, 255, 255); -webkit-border-radius: 0px; -moz-border-radius: 0px;
+}
+.dropdown ul li ul li:last-child a {
+	border: currentColor; border-image: none;
+}
+.dropdown ul li ul li:last-child a:hover {
+	border: currentColor; border-image: none;
+}
+.dropdown ul li ul li a:hover {
+	color: rgb(0, 0, 0);
+}
+#topbar ul li:hover .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+#menu ul li:hover .downarrowclass {
+	background: url("http://newhealthsdiet.com/teeth/2/images/downh.png") no-repeat center;
+}
+#topbar ul li {
+	margin: 0px 5px 0px 0px; padding: 0px 7px; border-radius: 3px; text-transform: none; font-weight: bold; text-decoration: none; display: block; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+#topbar ul li ul {
+	background: rgb(157, 157, 157);
+}
+#topbar ul li a {
+	padding: 5px 0px; color: rgb(71, 71, 71); float: left;
+}
+#topbar ul li:hover {
+	background: url("http://newhealthsdiet.com/teeth/2/images/bg_topmenu.png") repeat-x;
+}
+#topbar ul li:hover a {
+	color: rgb(255, 255, 255);
+}
+#topbar ul li a:hover {
+	color: rgb(255, 255, 255);
+}
+#topbar ul li ul li a {
+	background: none; margin: 0px; padding: 5px 0px; color: rgb(255, 255, 255); line-height: 1.3; border-bottom-color: rgb(173, 173, 173); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#topbar ul li ul li:hover {
+	background: rgb(173, 173, 173);
+}
+#menu ul li {
+	margin: 0px 5px 0px 0px; padding: 0px 8px; border-radius: 3px; text-transform: uppercase; font-weight: bold; text-decoration: none; display: block; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+#menu ul li a {
+	padding: 8px 1px; float: left;
+}
+#menu ul li:hover {
+	background-image: url("http://newhealthsdiet.com/teeth/2/images/bg_menu.png.pagespeed.ce.5S204oO7Uc.png"); background-repeat: repeat-x;
+}
+#menu ul li:hover a {
+	color: rgb(255, 255, 255);
+}
+#menu ul li a:hover {
+	color: rgb(255, 255, 255);
+}
+#menu ul li ul li a {
+	background: none; margin: 0px; padding: 3px 1px; color: rgb(255, 255, 255); border-bottom-color: rgb(250, 161, 57); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#menu ul li ul li:hover {
+	background: rgb(255, 160, 47);
+}
+.togglebar {
+	display: none;
+}
+@media only screen and (max-width:980px)
+{
+ul#navmenu {
+	display: none;
+}
+ul#navmenu ul {
+	top: 0px; width: 100%; position: relative;
+}
+.togglebar {
+	width: 100%; clear: both; display: block; min-height: 0px;
+}
+.toggleMenu {
+	background: url("http://newhealthsdiet.com/teeth/2/images/menuicon.png") no-repeat 7px 7px; padding: 6px 10px; border: currentColor; border-image: none; left: 2%; top: 6px; width: 74px; height: 23px; text-align: right; color: rgb(0, 160, 198) !important; line-height: 22px; font-size: 18px; font-weight: 700; text-decoration: none; position: absolute;
+}
+.topnav {
+	left: 0%; top: 35px; margin-top: 35px; display: none; position: absolute; z-index: 10;
+}
+.topnav ul {
+	margin: 0px; width: 100%; float: inherit;
+}
+.topnav ul li {
+	border: currentColor; border-image: none;
+}
+.active {
+	display: block;
+}
+.topnav > li > .parent {
+	background-position: 95% 50%;
+}
+.topnav ul {
+	width: 100%; display: block;
+}
+.topnav > li.hover > ul {
+	position: static;
+}
+.topnav li li.hover ul {
+	position: static;
+}
+.topnav li {
+	background: none !important; height: auto !important; line-height: 20px; float: none; display: block;
+}
+.topnavpipe {
+	display: none !important;
+}
+.sf-menu a:focus span {
+	color: rgb(0, 140, 211) !important;
+}
+.sf-menu a:hover span {
+	color: rgb(0, 140, 211) !important;
+}
+.sf-menu a:active span {
+	color: rgb(0, 140, 211) !important;
+}
+.sf-menu li.sfHover a span {
+	color: rgb(0, 140, 211) !important;
+}
+.topnav li a {
+	background: 0px 0px rgb(0, 177, 217) !important; margin: 0px !important; padding: 0px 0px 0px 18px !important; width: 190px !important; height: 40px !important; text-align: left !important; color: rgb(255, 255, 255) !important; line-height: 40px; font-size: 17px; border-bottom-color: rgb(234, 234, 234); border-left-color: currentColor !important; border-bottom-width: 1px; border-left-width: medium !important; border-bottom-style: solid; border-left-style: none !important; display: block;
+}
+.sf-menu li a span {
+	color: rgb(193, 125, 19); line-height: 33px; padding-right: 27px; padding-bottom: 0px; padding-left: 1px; text-decoration: none; margin-left: 21px; display: block; background-color: transparent;
+}
+.topnav a {
+	float: none;
+}
+.topnav li li a {
+	height: auto !important; color: rgb(255, 255, 255) !important; padding-left: 1.5em; border-top-color: currentColor; border-bottom-color: rgb(255, 255, 255); border-top-width: medium; border-bottom-width: 1px; border-top-style: none; border-bottom-style: solid;
+}
+#topnav .home a {
+	text-indent: inherit;
+}
+.topnav li a {
+	padding: 0px;
+}
+#nav ul li {
+	margin: 0px;
+}
+#page-wrap {
+	width: 100%; overflow: hidden;
+}
+#menu {
+	border-radius: 0px; height: 40px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; position: relative;
+}
+.single {
+	width: 64%; margin-right: 2%;
+}
+.single .meta {
+	padding: 2% 3%; width: 94%;
+}
+.redbox {
+	width: 100%;
+}
+#footer_wrap #copyright {
+	width: 100%;
+}
+#footer {
+	width: auto;
+}
+.pre_footer {
+	padding: 1%; width: 98%;
+}
+#menu ul li a {
+	float: none;
+}
+.bluebox {
+	width: 100% !important; height: auto;
+}
+#footer_wrap #copyright {
+	text-align: center;
+}
+}
+@media only screen and (max-width:950px)
+{
+.single {
+	width: 63%; margin-right: 0%;
+}
+.single {
+	width: 63%; margin-right: 0%;
+}
+}
+@media only screen and (max-width:864px)
+{
+.single {
+	margin: 0px auto; width: 98%; clear: both; float: none; display: block;
+}
+.topadd {
+	display: none;
+}
+#sidebar {
+	margin: 0px auto; width: 320px; padding-top: 20px; float: none; display: block;
+}
+#respond #formContent {
+	margin: 7px 0px; float: left;
+}
+.woman-man-img {
+	padding: 0px !important; width: 100%; height: auto; max-width: 400px !important;
+}
+.share {
+	width: 100%;
+}
+.share iframe {
+	width: 100% !important;
+}
+}

@@ -1,0 +1,360 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+}
+
+.no-top-border {
+	border-top: none !important;
+}
+.divider {
+	border-bottom: solid 2px #eee;
+}
+
+.header {
+	position: relative;
+	padding: 10px 15px 0;
+}
+.disclaimer {
+	position: absolute;
+	top: 8px;
+	right: 6%;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	color: #555555;
+	line-height: 1.6;
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+}
+.non-ad .header .disclaimer {
+	display: none;
+}
+.header .wrap {
+	margin-top: 30px;
+}
+.header .logo {
+	float: left;
+	height: 50px;
+}
+.header .logo img {
+}
+.header .navigation {
+	float: right;
+	display: block;
+}
+.header .navigation ul {
+	magin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.header .navigation ul li {
+	float: left;
+	display: inline-block;
+	color: #555555;
+	line-height: 1.6;
+	font-size: 14px;
+}
+.header .navigation ul li a {
+	color: #687074;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: solid 2px transparent;
+}
+.header .navigation ul li .active,
+.header .navigation ul li a:hover {
+	color: #5099BA;
+	border-bottom: solid 2px #5099BA;
+}
+.header .navigation .nav-button {
+	display: none;
+}
+
+.content {
+	padding: 30px 15px;
+}
+.content .owl-buttons {
+	display: none;
+}
+.content .owl-pagination {
+	margin-top: -10px;
+}
+.content .owl-page span {
+	margin: 5px !important;
+}
+.content .owl-page span,
+.content .owl-prev,
+.content .owl-next {
+	background: #5099BA !important;
+}
+.content .owl-item div {
+	position: relative;
+	height: 298px;
+	overflow: hidden;
+}
+.content .owl-item div .bottom {
+	position: absolute;
+	background: rgba(0,0,0,.65);
+	padding: 10px;
+	max-height: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+}
+.content .owl-item img {
+	width: 100%;
+	height: auto;
+}
+.content .magazine-news {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #eeeeee;
+}
+.content .advice {
+	color: #5099BA;
+	font-size: 36px;
+}
+.content .magazine-news h2,
+.content .magazine-news h3 {
+	padding: 10px 0 0;
+}
+.content .magazine-news h2 a,
+.content .magazine-news h3 a {
+	color: #555555;
+	font-size: 20px;
+	line-height: 24px;
+}
+.content .magazine-news h2 a:hover,
+.content .magazine-news h3 a:hover {
+	color: #5099BA;
+	text-decoration: none;
+}
+.content .magazine-news p {
+	color: #555;
+	line-height: 1.6;
+	font-size: 14px;
+}
+.content .magazine-news-img {
+	height: 150px;
+	overflow: hidden;
+}
+.content .post {
+	margin-bottom: 30px;
+}
+.content .post h1 {
+	color: #5099BA;
+	font-weight: 400;
+}
+.content .post .post-tags {
+	padding: 5px 0 8px;
+	margin-bottom: 10px;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	font-size: 12px;
+}
+.content .post .post-tags i {
+	color: #777777;
+	margin-right: 5px;
+}
+.content .post .post-content ul,
+.content .post .post-content ol {
+	margin-left: 40px;
+	color: #555555;
+}
+.content .post .post-content p {
+	margin-bottom: 10px;
+	color: #555555;
+	line-height: 1.6;
+	font-size: 14px;
+}
+.content .post .post-content .featured-img {
+	float: right;
+	margin-top: 0;
+	padding-left: 10px;
+}
+.content .post .post-content .tag-box {
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #f6f6f6;
+	border: solid 1px #eee;
+	border-left: solid 2px #5099BA;
+}
+.panel-yellow {
+	border-color: #f1c40f;
+}
+.content .post .post-content h2 {
+	color: #555;
+	font-size: 21px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+.content .post .post-content h3 {
+	color: #e67e22;
+}
+
+.sidebar .home {
+	margin-bottom: 20px;
+}
+.sidebar .home h3 a {
+	color: #555;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 28px;
+	margin-bottom: 1px;
+	text-decoration: none;
+}
+.sidebar .home h3 a:hover {
+	color: #5099BA;
+	text-decoration: none;
+}
+.sidebar .home span {
+	color: #555;
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 12px;
+}
+.sidebar .magazine-posts-img {
+	overflow: hidden;
+	max-height: 112px;
+	position: relative;
+}
+.sidebar .magazine-posts-img span {
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 2px 8px;
+	position: absolute;
+	font-style: inherit;
+}
+.red {
+	background: #e74c3c;
+}
+.green {
+	background: #2ECC71;
+}
+.sidebar .headline {
+	display: block;
+	margin: 10px 0 15px;
+	border-bottom: 1px dotted #e4e9f0;
+}
+.sidebar .headline h2 {
+	margin-bottom: -2px;
+	padding-bottom: 5px;
+	font-size: 22px;
+	border-bottom: 2px solid #5099BA;
+	display: inline-block;
+	color: #585f69;
+}
+.sidebar .dl-horizontal {
+	display: block;
+}
+.sidebar .dl-horizontal dt {
+	width: auto;
+	float: left;
+}
+.sidebar .dl-horizontal dt img {
+	padding: 2px;
+	width: 60px;
+	height: 62px;
+	border: 1px solid #dddddd;
+}
+.sidebar .dl-horizontal dd {
+	margin-left: 10px;
+	float: left;
+	width: 60%;
+	font-size: 14px;
+}
+
+.non-ad .footer .ad-disclaimer {
+	display: none;
+}
+.footer {
+	color: #dadada;
+	margin-top: 40px;
+	padding: 20px 15px 30px;
+	background: #585f69;
+}
+.footer a {
+	color: #dadada;
+	text-decoration: underline;
+}
+.footer .headline {
+	display: block;
+	margin: 10px 0 25px 0;
+	border-bottom: 1px dotted #e4e9f0;
+}
+.footer .headline h2 {
+	padding-bottom: 15px;
+	font-size: 22px;
+	border-bottom: 2px solid #5099BA;
+	display: inline-block;
+	margin-bottom: -2px;
+}
+
+.copyright {
+	font-size: 14px;
+	padding: 20px 0;
+	background: #3e4753;
+	border-top: solid 1px #777;
+	color: #dadada;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 5px;
+	text-shadow: none;
+	font-weight: normal !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media all and (max-width: 991px) {
+	.header {
+		padding: 10px 15px;
+	}
+	.header .wrap {
+		margin-top: 0;
+	}
+	.header .logo {
+		padding: 0;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.header .navigation {
+		float: none;
+		display: block;
+	}
+	.header .navigation .nav-button {
+		display: block;
+		text-align: center;
+		cursor: pointer;
+	}
+	.header .navigation ul {
+		width: 100%;
+		display: none;
+	}
+	.header .navigation ul li {
+		width: 100%;
+	}
+	.header .navigation ul li a {
+		padding: 9px 0;
+		display: block;
+		width: 100%;
+	}
+	.disclaimer {
+		top: 58px;
+		right: 1%;
+	}
+}

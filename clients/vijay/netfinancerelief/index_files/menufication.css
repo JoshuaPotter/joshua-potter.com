@@ -1,0 +1,33 @@
+@media screen and (max-width: 1002px) {
+
+	#nav-wrap {
+		display: none;
+		}
+		
+	#head-wrap {
+		margin-top: 52px;
+		padding-bottom: 0;
+		}
+
+	.menufication-add-padding,
+	.menufication-non-css3-add-padding {
+		padding-top: 0 !important;
+		}
+
+}
+
+@media screen and (max-width: 1002px) and (min-width: 480px) {
+
+	#sidebar-contain {
+		top: 52px !important;
+		}
+
+	.side-fixed {
+		top: 52px !important;
+		}
+		
+	#post-social-wrap.social-fixed {
+		top: 52px !important;
+		}
+
+}

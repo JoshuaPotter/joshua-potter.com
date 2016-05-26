@@ -1,0 +1,46 @@
+#footer {
+	padding: 100px 0;
+	background: url('../img/bg.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#footer .slogan {
+	margin-bottom: 25px;
+	color: #ffffff;
+}
+#footer .slogan h1 {
+	line-height: 48px;
+	font-weight: 700;
+}
+#footer .button {
+	display: inline-block;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: normal;
+	padding: 15px 40px;
+	text-decoration: none;
+	text-align: center;
+	margin: 1.4rem 15px 0;
+	letter-spacing: -0.03rem;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-left-radius: 7px;
+}
+#footer .blue {
+	background: #0289F1;
+}
+#footer .orange {
+	background: #FF5400;
+}

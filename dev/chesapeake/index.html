@@ -1,0 +1,1115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>{Title}</title>
+		{block:Description}
+		<meta name="description" content="{MetaDescription}" />
+		{/block:Description}
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="{Favicon}">
+		<link rel="alternate" type="application/rss+xml" href="{RSS}">
+		<link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="//static.tumblr.com/xxlkr4u/eNxnnoiwk/apollo.css" rel="stylesheet" type="text/css">
+		<link href="//static.tumblr.com/xxlkr4u/w1Rnn677t/jquery.mcustomscrollbar.css" rel="stylesheet" type="text/css">
+		<link href="//static.tumblr.com/xxlkr4u/oc4no7a3c/style.css" rel="stylesheet" type="text/css">
+		<script src="//static.tumblr.com/xxlkr4u/JYAn2akth/jquery-1.11.0.min.js"></script>
+		<!-- custom tumblr options -->
+		<meta name="color:Body Background" content="#FBFBF8"/>
+		<meta name="color:Title" content="#424242"/>
+		<meta name="color:Sub Title" content="#777777"/>
+		<meta name="color:Accent" content="#777777"/>
+		<meta name="color:Filter" content="#ffffff"/>
+		<meta name="color:Link Underline" content="#d1d1d1"/>
+		<meta name="color:Main Footer Background" content="#2d2d2d"/>
+		<meta name="color:Main Footer Text" content="#777777"/>
+		<meta name="color:Sub Footer Background" content="#1d1d1d"/>
+		<meta name="color:Sub Footer Text" content="#777777"/>
+		<meta name="text:Facebook URL" content="" />
+		<meta name="text:Twitter URL" content="" />
+		<meta name="text:Instagram URL" content="" />
+		<meta name="text:Google Plus URL" content="" />
+		<meta name="text:Pinterest URL" content="" />
+		<meta name="text:Dribbble URL" content="" />
+		<meta name="text:Instagram ClientID" content=""/>
+		<meta name="text:Instagram oAuth Token" content=""/>
+		<meta name="text:Flickr UserID" content=""/>
+		<meta name="text:Dribbble Username" content=""/>
+		<meta name="text:Disqus Shortname" content="" />
+		<meta name="text:Custom Link Title 1" content="">
+		<meta name="text:Custom Link URL 1" content="http://">
+		<meta name="text:Custom Link Title 2" content="">
+		<meta name="text:Custom Link URL 2" content="http://">
+		<meta name="text:Custom Link Title 3" content="">
+		<meta name="text:Custom Link URL 3" content="http://">
+		<meta name="text:Custom Link Title 4" content="">
+		<meta name="text:Custom Link URL 4" content="http://">
+		<meta name="text:Custom Link Title 5" content="">
+		<meta name="text:Custom Link URL 5" content="http://">
+		<meta name="text:Custom Link Title 6" content="">
+		<meta name="text:Custom Link URL 6" content="http://">
+		<meta name="if:Infinite Scroll" content="0"/>
+		<meta name="if:Sidebar Social Media Links" content="0"/>
+		<!-- fitvid css -->
+		<style type="text/css" id="fit-vid-styles">
+			.fluid-width-video-wrapper {
+				width: 100%;
+				position: relative;
+				padding: 0;
+			}
+			.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<!-- custom tumblr color styles -->
+		<style type="text/css">
+			body {
+				background: {color:BodyBackground};
+			}
+			#side-nav {
+				background: {color:Main Footer Background};
+			}
+			#side-nav .section .title,
+			#side-nav ul li a {
+				color: {color:Filter};
+			}
+			#side-nav #close-side-nav:hover,
+			#side-nav ul li .active,
+			#side-nav ul li a:hover {
+				color: {color:Filter};
+				background: {color:Sub Footer Background};
+			}
+			#side-nav ul li a .circle {
+				border-color: {color:Filter};
+			}
+			.logo .title {
+				font-weight: {TitleFontWeight};
+				color: {color:Title};
+			}
+			.logo .slogan {
+				color: {color:Sub Title};
+			}
+			.bars i {
+				color: {color:Title};
+			}
+			.filter ul li {
+				color: {color:Title};
+			}
+			.filter ul li a {
+				background: {color:Title};
+				color: {color:Filter};
+			}
+			.filter ul li .active,
+			.filter ul li a:hover {
+				color: {color:Title};
+				border-color: {color:Title};
+			}
+			.post .title,
+			.post .title a {
+				color: {color:Title};
+			}
+			.post .source,
+			.post .date {
+				color: {color:Accent};
+			}
+			.post .body a {
+				color: {color:Title};
+				border-color: {color:Link Underline};
+			}
+			.post .footer a:active,
+			.post .body a:active {
+				border-color: {color:Title};
+			}
+			.post .footer {
+				color: {color:Accent};
+			}
+			.post .footer a {
+				color: {color:Accent};
+				border-color: {color:Link Underline};
+			}
+			.post .body p {
+				color: {color:Title};
+			}
+			.post .body blockquote {
+				margin: 0 40px 40px;
+				padding: 20px 50px;
+				border-left: 1px solid {color:Link Underline};
+			}
+			.post .footer {
+				color: {color:Accent};
+			}
+			.chat .chat-box {
+				color: {color:Title};
+			}
+			.chat .chat-box-even {
+				background: #d8d8d8;
+			}
+			.post .notes .note blockquote,
+			.chat .chat-box-odd {
+				background: #e8e8e8;
+			}
+			#main-footer {
+				color: {color:Main Footer Text};
+				background: {color:Main Footer Background};
+			}
+			#main-footer .logo .title {
+				color: {color:Filter};
+			}
+			.social-media {
+				background {color:Filter};
+				border-color: {color:Filter};
+				color: {color:Main Footer Background};
+			}
+			.social-media:hover {
+				border-color: {color:Filter};
+				color: {color:Filter};
+			}
+			.pagination a {
+				background: {color:Main Footer Background};
+				border-color: {color:Main Footer Background};
+			}
+			.pagination a:hover {
+				color: {color:Main Footer Background};
+			}
+			#sub-footer {
+				color: {color:Sub Footer Text};
+				background: {color:Sub Footer Background};
+			}
+			#sub-footer a {
+				color: {color:Sub Footer Text};
+			}
+			{CustomCSS}
+		</style>
+	</head>
+
+	<body>
+		<!-- sidebar navigation -->
+		<div id="side-nav-overlay"></div>
+		<nav id="side-nav" class="mCustomScrollbar right-nav" data-mcs-theme="light-thin">
+			<div class="side-nav-wrapper">
+				<!-- close button -->
+				<div class="section">
+					<div class="title" id="close-side-nav">
+						<i class="fa fa-times"></i> Close
+					</div>
+				</div>
+				<!-- social media icons -->
+				<div class="section" id="socialmedia">
+					{block:IfFacebookURL}
+					<a href="{text:Facebook URL}" title="Facebook" class="social-media"><i class="fa fa-facebook"></i></a>
+					{/block:IfFacebookURL} {block:IfTwitterURL}
+					<a href="{text:Twitter URL}" title="Twitter" class="social-media"><i class="fa fa-twitter"></i></a>
+					{/block:IfTwitterURL} {block:IfInstagramURL}
+					<a href="{text:Instagram URL}" title="Instagram" class="social-media"><i class="fa fa-instagram"></i></a>
+					{/block:IfInstagramURL} {block:IfGooglePlusURL}
+					<a href="{text:Google Plus URL}" title="Google +" class="social-media"><i class="fa fa-google-plus"></i></a>
+					{/block:IfGooglePlusURL} {block:IfPinterestURL}
+					<a href="{text:Pinterest URL}" title="Pinterest" class="social-media"><i class="fa fa-pinterest"></i></a>
+					{/block:IfPinterestURL} {block:IfDribbbleURL}
+					<a href="{text:Dribbble URL}" title="Dribbble" class="social-media"><i class="fa fa-dribbble"></i></a>
+					{/block:IfDribbbleURL}
+				</div>
+				<!-- navigation menu -->
+				<div class="section">
+					<div class="title">
+						Menu
+					</div>
+					<ul>
+						<li><a href="{BlogURL}"><span class="circle"></span>Feed</a>
+						</li>
+						{block:HasPages}
+						{block:Pages}
+						<li><a href="{URL}"><span class="circle"></span>{Label}</a>
+						</li>
+						{/block:Pages}
+						{/block:HasPages}
+						{block:AskEnabled}
+						<li><a href="/ask"><span class="circle"></span>{AskLabel}</a>
+						</li>
+						{/block:AskEnabled}
+						{block:SubmissionsEnabled}
+						<li><a href="/submit"><span class="circle"></span>{SubmitLabel}</a>
+						</li>
+						{/block:SubmissionsEnabled}
+						{block:IfCustomLinkTitle1}
+						<li><a href="{text:Custom Link URL 1}"><span class="circle"></span>{text:Custom Link Title 1}</a>
+						</li>
+						{/block:IfCustomLinkTitle1}
+						{block:IfCustomLinkTitle2}
+						<li><a href="{text:Custom Link URL 2}"><span class="circle"></span>{text:Custom Link Title 2}</a>
+						</li>
+						{/block:IfCustomLinkTitle2}
+						{block:IfCustomLinkTitle3}
+						<li><a href="{text:Custom Link URL 3}"><span class="circle"></span>{text:Custom Link Title 3}</a>
+						</li>
+						{/block:IfCustomLinkTitle3}
+						{block:IfCustomLinkTitle4}
+						<li><a href="{text:Custom Link URL 4}"><span class="circle"></span>{text:Custom Link Title 4}</a>
+						</li>
+						{/block:IfCustomLinkTitle4}
+						{block:IfCustomLinkTitle5}
+						<li><a href="{text:Custom Link URL 5}"><span class="circle"></span>{text:Custom Link Title 5}</a>
+						</li>
+						{/block:IfCustomLinkTitle5}
+						{block:IfCustomLinkTitle6}
+						<li><a href="{text:Custom Link URL 6}"><span class="circle"></span>{text:Custom Link Title 6}</a>
+						</li>
+						{/block:IfCustomLinkTitle6}
+					</ul>
+				</div>
+				<!-- Instagram feed -->
+				{block:IfInstagramoAuthToken}
+				<div class="section text-dm-center">
+					<div class="title">
+						Instagram
+					</div>
+					<div class="row gallery" id="instafeed">
+
+					</div>
+				</div>
+				{/block:IfInstagramoAuthToken}
+				<!-- Flickr feed -->
+				{block:IfFlickrUserID}
+				<div class="section text-dm-center">
+					<div class="title">
+						Flickr
+					</div>
+					<div class="row gallery">
+						<div id="jrflickr">
+
+						</div>
+					</div>
+				</div>
+				{/block:IfFlickrUserID}
+				<!-- Dribbble feed -->
+				{block:IfDribbbleUsername}
+				<div class="section text-dm-center">
+					<div class="title">
+						Dribbble
+					</div>
+					<div class="row gallery">
+						<div id="jribbble">
+
+						</div>
+					</div>
+				</div>
+				{/block:IfDribbbleUsername}
+			</div>
+		</nav>
+
+		<section id="main-wrapper">
+			<!-- header -->
+			<nav id="main-nav">
+				<div class="container">
+					<div class="row">
+						<div class="row-valign">
+							<div class="col-r-8 logo">
+								{block:ShowAvatar} 
+								<a href="{BlogURL}" class="avatar {AvatarShape}" style="background-image: url('{PortraitURL-64}');">
+
+								</a>
+								{/block:ShowAvatar} 
+								{block:ShowTitle} 
+								<a href="{BlogURL}"><h1 class="title">{Title}</h1></a>
+								{/block:ShowTitle} 
+								{block:ShowDescription} 
+								<span class="subtitle">{Description}</span>
+								{/block:ShowDescription}
+							</div>
+							<div class="col-r-4 text-dm-right bars">
+								<i class="fa fa-bars"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<section id="content">
+				<div class="container">
+					{block:IndexPage}
+					<!-- filter posts -->
+					<div class="filter">
+						<div class="row">
+							<ul class="ul-h-nav">
+								<li class="filter-title">Filter:</li>
+								<li><a href="#" class="filter-tab active" id="filter-post">All</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-text">Text</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-photo">Photo</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-quote">Quote</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-link">Link</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-chat">Chat</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-audio">Audio</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-video">Video</a>
+								</li>
+								<li><a href="#" class="filter-tab" id="filter-ask">Asks</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					{/block:IndexPage}
+					<!-- posts -->
+					<div class="posts" id="post">
+						{block:Posts}
+						{block:Text}
+						<article class="post text">
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}
+							<div class="body">
+								{Body}
+							</div>
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-paragraph"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Text}
+						{block:Photo}
+						<article class="post photo">
+							<div class="media">
+								{LinkOpenTag}
+								<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+								{LinkCloseTag}
+								{block:Exif} 
+								<span class="caption">
+									{block:Camera}
+									{Camera}
+									{/block:Camera}
+									&ndash;
+									{block:Aperture}
+									{Aperture}
+									{/block:Aperture}
+								</span>
+								{/block:Exif}
+							</div>
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Caption}
+							<div class="body">
+								{Caption}
+							</div>
+							{/block:Caption}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-camera"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Photo}
+						{block:Panorama}
+						<article class="post photo panorama">
+							<div class="media">
+								{LinkOpenTag}
+								<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+								{LinkCloseTag}
+								{block:Exif} 
+								<span class="caption">
+									{block:Camera}
+									{Camera}
+									{/block:Camera}
+									&ndash;
+									{block:Aperture}
+									{Aperture}
+									{/block:Aperture}
+								</span>
+								{/block:Exif}
+							</div>
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Caption}
+							<div class="body">
+								{Caption}
+							</div>
+							{/block:Caption}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-camera"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Panorama}
+						{block:Photoset}
+						<article class="post photo photoset">
+							<div class="media">
+								{block:Photos}
+								{LinkOpenTag}
+								<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+								{LinkCloseTag}
+								{/block:Photos}
+								{block:Exif} 
+								<span class="caption">
+									{block:Camera}
+									{Camera}
+									{/block:Camera}
+									&ndash;
+									{block:Aperture}
+									{Aperture}
+									{/block:Aperture}
+								</span>
+								{/block:Exif}
+							</div>
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Caption}
+							<div class="body">
+								{Caption}
+							</div>
+							{/block:Caption}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-camera"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Photoset}
+						{block:Video}
+						<article class="post video">
+							<div class="media">
+								{VideoEmbed-700}
+							</div>
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Caption}
+							<div class="body">
+								{Caption}
+							</div>
+							{/block:Caption}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-play"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Video}
+						{block:Quote}
+						<article class="post quote">
+							<div class="title text-dm-left">
+								<a href="#">"{Quote}"</a>
+							</div>
+							{block:Source}
+							<div class="source">
+								- {Source}
+							</div>
+							{/block:Source}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-comment"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a class="tag" href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Quote}
+						{block:Audio}
+						<article class="post audio">
+							<div class="media">
+								{block:AlbumArt}
+								{AlbumArtURL}
+								{/block:AlbumArt}
+								{AudioEmbed}
+							</div>
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Caption}
+							<div class="body">
+								{Caption}
+							</div>
+							{/block:Caption}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-music"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Audio}
+						{block:Link}
+						<article class="post link">
+							<div class="title">
+								<i class="fa fa-sign-out"></i> <a href="{URL}" {Target}>{Name}</a>
+							</div>
+							{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}{block:Description}
+							<div class="body">
+								{Description}
+							</div>
+							{/block:Description}
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-sign-out"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Link}
+						{block:Chat}
+						<article class="post chat">
+							{block:Title}
+							<div class="title">
+								<a href="{Permalink}">{Title}</a>
+							</div>
+							{/block:Title}{block:Date}
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							{/block:Date}
+							<div class="body">
+								{block:Lines}
+								<div class="chat-box chat-box-{Alt} user_{UserNumber}">
+									{block:Label}<strong>{Label}</strong> {/block:Label}{Line}
+								</div>
+								{/block:Lines}
+							</div>
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-user"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Chat}
+						{block:Answer} 
+						<article class="post ask">
+							<div class="question">
+								<strong>{Asker}:</strong> {Question}
+							</div>
+							<div class="date">
+								{Month} {DayOfMonth}, {Year} - {12Hour}:{Minutes}{AmPm}
+							</div>
+							<div class="body">
+								{block:Answerer}{Answerer} said:{/block:Answerer}{Answer}
+							</div>
+							{block:IndexPage}
+							<div class="footer">
+								<a href="{Permalink}">#</a> {block:NoteCount}&ndash; <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount} <span class="dash">&ndash;</span> <i class="fa fa-comments"></i>
+								<div class="border">
+
+								</div>
+							</div>
+							{/block:IndexPage}
+							{block:PermalinkPage}
+							{block:HasTags}
+							<div class="footer">
+								{block:Tags}#<a href="{TagURL}">{Tag}</a>{/block:Tags} 
+							</div>
+							{/block:HasTags}
+							{block:PostNotes}
+							<div class="footer notes">
+								{PostNotes-16}
+							</div>
+							{/block:PostNotes}
+							<div class="footer">
+								{block:IfDisqusShortname}
+								<div class="comments">
+									<div id="disqus_thread"></div>
+									<script type="text/javascript">
+										/* disqus */
+										var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+										/* * * DON'T EDIT BELOW THIS LINE * * */
+										(function() { 
+											var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+											dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+										})();
+									</script>
+									<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+								</div>
+								{/block:IfDisqusShortname}
+							</div>
+							{/block:PermalinkPage}
+						</article>
+						{/block:Answer} 
+						{/block:Posts}
+					</div>
+					<!-- navigation -->
+					<div class="pagination">
+						{block:PreviousPage}
+						<a href="{PreviousPage}">Previous Page</a>
+						{/block:PreviousPage}
+						{block:NextPage}
+						<a href="{NextPage}">Next Page</a>
+						{/block:NextPage}
+					</div>
+				</div>
+			</section>
+		</section>
+		{/block:IndexPage} 
+
+		<!-- footer -->
+		<footer id="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="row-valign">
+						<!-- logo and slogan -->
+						<div class="col-r-6 logo">
+							<span class="title">{Title}</span>
+							<span class="Sub Title">{Description}</span>
+						</div>
+						<!-- social media links -->
+						<div class="col-r-6 text-dm-right social-media-icons">
+							{block:IfFacebookURL}
+							<a href="{text:Facebook URL}" title="Facebook" class="social-media"><i class="fa fa-facebook"></i></a>
+							{/block:IfFacebookURL} {block:IfTwitterURL}
+							<a href="{text:Twitter URL}" title="Twitter" class="social-media"><i class="fa fa-twitter"></i></a>
+							{/block:IfTwitterURL} {block:IfInstagramURL}
+							<a href="{text:Instagram URL}" title="Instagram" class="social-media"><i class="fa fa-instagram"></i></a>
+							{/block:IfInstagramURL} {block:IfGooglePlusURL}
+							<a href="{text:Google Plus URL}" title="Google +" class="social-media"><i class="fa fa-google-plus"></i></a>
+							{/block:IfGooglePlusURL} {block:IfPinterestURL}
+							<a href="{text:Pinterest URL}" title="Pinterest" class="social-media"><i class="fa fa-pinterest"></i></a>
+							{/block:IfPinterestURL} {block:IfDribbbleURL}
+							<a href="{text:Dribbble URL}" title="Dribbble" class="social-media"><i class="fa fa-dribbble"></i></a>
+							{/block:IfDribbbleURL}
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- copyright -->
+		<footer id="sub-footer">
+			<div class="container">
+				Made with <i class="fa fa-heart"></i> by <a href="http://appearlythemes.com">Appearly Themes</a>
+			</div>
+		</footer>
+
+		<!-- javascript/jquery calls -->
+		<script src="//static.tumblr.com/xxlkr4u/1m8nn678b/jquery.mcustomscrollbar.concat.min.js"></script>
+		<script src="//static.tumblr.com/xxlkr4u/C3unnnaqe/jquery.fitvids.js"></script>
+		<!-- if infinite scroll is enabled -->
+		{block:IfInfiniteScroll}
+		<script src="//static.tumblr.com/xxlkr4u/8CWnn8cwf/jquery.infinitescroll.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+				"use strict";
+				jQuery.noConflict();
+				jQuery('.posts').infinitescroll({
+					loading: { finishedMsg: "No more posts to load", img: "http://static.tumblr.com/xxlkr4u/MMJnn86do/loader.gif", msgText: "" },
+					navSelector: ".pagination",
+					nextSelector: ".pagination a:first",    
+					itemSelector: ".post",
+					gutter: "5px",
+					animate: false
+				}, function(arrayOfNewElems) {
+					/* applies post filter to returned elements */
+					var postType = jQuery('.posts').attr('id');
+					jQuery('.post').hide();
+					jQuery('.' + postType).show();
+					jQuery('.media').fitVids();
+				});
+			});
+		</script>
+		{/block:IfInfiniteScroll}
+		<!-- if instagram sidebar feed is enabled -->
+		{block:IfInstagramoAuthToken}
+		<script src="//static.tumblr.com/xxlkr4u/3Eonn8i1w/instafeed.js"></script>
+		<script type="text/javascript">
+			var feed = new Instafeed({
+				get: 'user',
+				userId: {text:Instagram ClientID},
+				accessToken: '{text:Instagram oAuth Token}',
+				limit: 6
+			});
+			feed.run();
+		</script>
+		{/block:IfInstagramoAuthToken}
+		<!-- if flickr sidebar feed is enabled -->
+		{block:IfFlickrUserID}
+		<script src="//static.tumblr.com/xxlkr4u/sWTnn8i2f/jquery.jflickrfeed.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+				"use strict";
+				jQuery.noConflict();
+				jQuery('#jrflickr').jflickrfeed({
+					limit: 6,
+					qstrings: {
+						id: '{text:Flickr UserID}'
+					},
+					itemTemplate: '<a href="{{image_b}}"><img alt="{{title}}" src="{{image_s}}" alt="Flickr" /></a>'
+				});
+			});
+		</script>
+		{/block:IfFlickrUserID}
+		<!-- if dribble sidebar feed is enabled -->
+		{block:IfDribbbleUsername}
+		<script src="//static.tumblr.com/xxlkr4u/LgXnn8j09/jquery.jribbble.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+				"use strict";
+				jQuery.noConflict();
+				jQuery.jribbble.getShotsByPlayerId('{text:Dribbble Username}', function (playerShots) {
+					var html = [];
+					jQuery.each(playerShots.shots, function (i, shot) {
+						html.push('<a href="' + shot.url + '">');
+						html.push('<img src="' + shot.image_teaser_url + '" ');
+						html.push('alt="' + shot.title + '"></a>');
+					});
+
+					jQuery('#jribbble').html(html.join(''));
+				}, {page: 1, per_page: 6});
+			});
+		</script>
+		{/block:IfDribbbleUsername}
+		<script src="http://static.tumblr.com/xxlkr4u/Lr0nnoluj/common.js"></script>
+	</body>
+
+</html>

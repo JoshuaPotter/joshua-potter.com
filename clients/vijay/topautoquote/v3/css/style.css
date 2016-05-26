@@ -1,0 +1,15 @@
+html,
+body {
+    font-family: "Ubuntu", sans-serif;
+	background: #fbfbfb;
+}
+.container {
+	width: 972px;
+}
+
+@media all and (max-width: 991px) {
+	.container {
+		width: auto;
+	}
+}
+

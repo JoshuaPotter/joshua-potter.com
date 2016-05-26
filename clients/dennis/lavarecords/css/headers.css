@@ -1,0 +1,35 @@
+#header {
+	position: relative;
+	padding: 100px 15px 110px;
+	background-position: center center;
+	background-size: cover;
+	font-weight: 800;
+	font-family: 'Open Sans';
+	color: #ffffff;
+	-webkit-transition: background-image 500ms ease-out;
+	-moz-transition: background-image 500ms ease-out;
+	-o-transition: background-image 500ms ease-out;
+	transition: background-image 500ms ease-out;
+}
+#header h1 {
+	margin: 0;
+	padding: 0 50px;
+	font-size: 80px;
+}
+.load {
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #ffffff url('../img/loaders/ajax-loader.gif') center center no-repeat;
+}
+
+@media all and (max-width: 991px) {
+	#header h1 {
+		padding: 0;
+		text-align: center;
+		font-size: 60px;
+	}
+}

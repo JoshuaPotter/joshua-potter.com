@@ -1,0 +1,81 @@
+
+<?php
+	$this->setTitle("admin");
+	$this->addCSSFile("/static/css/common.css");
+	$this->addCSSFile("/static/css/signup_steps_common.css");
+	$this->addCSSFile("/static/css/account_step1.css");
+	$this->addCSSFile("/static/css/common_form.css");
+	$this->addCSSFile("/static/css/account_auth.css");
+	$this->addJSFile("/static/js/account_auth.js");
+?>
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<div class="banner">
+	<div class="banner_main">
+		<div class="banner_title">
+			<?php echo $blocks->progress ?>
+		</div>
+	</div>
+</div>
+
+<div class="centre_content">
+
+	<div id="add_user">
+		<div class="title">Grant Permissions:</div>
+		<p>
+			Add authorized users like webmasters to assist with integration or to modify settings in your account:
+		</p>
+		
+		
+		<form method="post" action="/account/auth/pid/<?= $view->defaults->domain->publicid() ?>/type/user">
+			<div class="input_style"><input name="allowed" type="text" /></div>
+		</form>
+		<div class="submit button_blue">ADD</div>
+		
+		<div class="divider"></div>
+		
+		<div id="exisingusers_title">
+				Users Added
+		</div>
+		<div>
+			<ol>
+				<?php 
+					foreach ($view->defaults->domain->list_access() as $user) {
+						echo "<li>
+								<div class='existing_domain_wrap'>
+									<div class='authed_domain_box input_style_borderless'>
+										<input type=text value='$user->email' readonly></input>
+										
+										<div class='existing_domain_remove'>
+											<div class='existing_domain_remove_icon'></div>
+											<form method='post' action='/account/deauth/pid/".$view->defaults->domain->publicid()."/type/user' class='remove_domain'>
+												<input type='hidden' name='remove' value='$user->email'></input>
+											</form>
+										</div>
+									</div>
+								</div>
+							</li>";
+					}
+				?>
+			</ol>
+		</div>
+	</div>
+
+
+	<div id="navbuttons">
+		<div class="navbuttons_align">
+			<a href="/account/add"><div class="back button_black">BACK</div></a>
+			<a href="/account/config/pid/<?= $view->defaults->domain->publicid()?>"><div class="forward button_blue">NEXT STEP: CONFIGURE SETTINGS</div></a>
+		</div>
+	</div>
+
+
+</div>

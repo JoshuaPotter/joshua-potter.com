@@ -1,0 +1,273 @@
+/* html body */
+html, body {
+	margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    border: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+    color: #666666;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+    body {
+        background: #fbfbfb;
+    }
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, select, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    outline: 0;
+	font: inherit;
+	font-size: 100%;
+    text-decoration: none;
+	vertical-align: baseline;
+}
+
+    strong {
+        font-weight: 600;
+    }
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1.7em;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::selection {
+    background: #444444;
+    color: #dddddd;
+}
+
+::-moz-selection {
+    background: #444444;
+    color: #dddddd;
+}
+
+/* anchor */
+a {
+    color: #fe8974;
+}
+
+    a:hover {
+        color: #fd907e;
+    }
+    
+    a span, form input[type='submit'], form button {
+        cursor: pointer;
+    }
+    
+/* form */
+form label, form input[type='text'], form input[type='password'], form select, form textarea {
+    float: left;
+    padding: 0.625em 1.000em;
+    width: 338px;
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.313em;
+    color: #a3a6af;
+    font-weight: 300;
+    line-height: 1.313em;
+}
+
+    form label {
+        padding: 0;
+        border: 0;
+    }
+    
+    form textarea {
+        height: 4.750em;
+        max-height: 4.750em;
+    }
+    
+    form input[type='text']:focus, form input[type='password']:focus, form select:focus, form textarea:focus {
+        border-color: #a6a9b2;
+        color: #8c8c8c;
+    }
+    
+    form input[type='text'].error, form input[type='password'].error, form select.error, form textarea.error {
+        border-color: #ff5377;
+        color: #ff5377;
+    }
+
+form input::-moz-placeholder {
+    color: #cccccc;
+}
+
+form input:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+form input::-webkit-input-placeholder {
+    color: #cccccc;
+    padding: 2px 0 0 0;
+}
+
+/* button */
+a.button, input[type='submit'].button {
+    float: left;
+    width: 170px;
+    height: 54px;
+    background: #fe8974;
+    /*background-image: -moz-linear-gradient(top, #fe937f, #fe7d68);
+    background-image: -o-linear-gradient(top, #fe937f, #fe7d68);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fe937f), to(#fe7d68));*/
+    border: 1px solid #e3705c;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    -moz-box-shadow: inset 0 1px 0 #febeb2;
+    -o-box-shadow: inset 0 1px 0 #febeb2;
+    -webkit-box-shadow: inset 0 1px 0 #febeb2;
+    box-shadow: inset 0 1px 0 #febeb2;
+}
+
+    input[type='submit'].button {
+        width: 172px;
+        height: 56px;
+    }
+
+    a.button:hover, input[type='submit'].button:hover {
+        background: #fd907e;
+        /*background-image: -moz-linear-gradient(top, #fda291, #fd8f7d);
+        background-image: -o-linear-gradient(top, #fda291, #fd8f7d);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fda291), to(#fd8f7d));*/
+    }
+    
+    a.button.current, input[type='submit'].button.active {
+        background: #fe917d;
+        /*background-image: -moz-linear-gradient(top, #f77b66, #fe927f);
+        background-image: -o-linear-gradient(top, #f77b66, #fe927f);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f77b66), to(#fe927f));*/
+        color: #c65c4b;
+        -moz-box-shadow: inset 0 1px 0 #e3705c;
+        -o-box-shadow: inset 0 1px 0 #e3705c;
+        -webkit-box-shadow: inset 0 1px 0 #e3705c;
+        box-shadow: inset 0 1px 0 #e3705c;
+    }
+    
+    /* button gray */
+    a.button.gray, input[type='submit'].button.gray {
+        background: #f1f1f1;
+        /*background-image: -moz-linear-gradient(top, #f2f2f2, #efefef);
+        background-image: -o-linear-gradient(top, #f2f2f2, #efefef);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#efefef));*/
+        border: 1px solid #e2e2e2;
+        color: #aaaaaa;
+        text-align: center;
+        line-height: 54px;
+        -moz-box-shadow: inset 0 1px 0 #ffffff;
+        -o-box-shadow: inset 0 1px 0 #ffffff;
+        -webkit-box-shadow: inset 0 1px 0 #ffffff;
+        box-shadow: inset 0 1px 0 #ffffff;
+    }
+    
+        a.button.gray:hover, input[type='submit'].button.gray:hover {
+            background: #fbfbfb;
+            /*background-image: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+            background-image: -o-linear-gradient(top, #fbfbfb, #fafafa);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));*/
+            color: #999999;
+        }
+        
+        a.button.gray.active, input[type='submit'].button.gray.active {
+            background: #f2f2f2;
+            /*background-image: -moz-linear-gradient(top, #f0f0f0, #f3f3f3);
+            background-image: -o-linear-gradient(top, #f0f0f0, #f3f3f3);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f3f3f3));*/
+            -moz-box-shadow: inset 0 1px 0 #dedede;
+            -o-box-shadow: inset 0 1px 0 #dedede;
+            -webkit-box-shadow: inset 0 1px 0 #dedede;
+            box-shadow: inset 0 1px 0 #dedede;
+        }
+        
+/* checkbox toggle */
+form input[type='checkbox'] {
+    display: none;
+}
+
+a.check-toggle {
+    float: left;
+    padding-left: 0.250em;
+    width: 62px;
+    height: 24px;
+    background: #6acf75;
+    border: 2px solid #6acf75;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+    
+    a.check-toggle.no {
+        padding-right: 4px;
+        padding-left: 0;
+        background: #df4545;
+        border-color: #df4545;
+        text-align: right;
+    }
+    
+    a.check-toggle span {
+        float: right;
+        width: 28px;
+        background: #ffffff;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        text-indent: -99999px;
+    }
+        
+        a.check-toggle.no span {
+            float: left;
+        }

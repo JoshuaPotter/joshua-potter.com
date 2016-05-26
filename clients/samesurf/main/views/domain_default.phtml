@@ -1,0 +1,25 @@
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<div>
+
+<?php
+	$domains = $view->defaults->domains;
+	foreach($domains as $domain) {
+		echo $domain->domain() . "&nbsp;". $domain->publicid() . "&nbsp";
+		echo "<a href=\"/domain/listaccess/pid/" . $domain->publicid() . "\">users</a>";
+		echo "&nbsp";
+		echo "<a href=\"/domain/config/pid/" . $domain->publicid() . "\">config</a>";
+		echo "<br />";
+	}
+	echo "<a href=\"/domain/add\">add another domain</a>";
+?>
+
+</div>

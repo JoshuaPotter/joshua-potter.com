@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 15px Trebuchet MS, Arial, sans-serif;
+	background: #EBEDF0;
+}
+a {
+	text-decoration: none;
+	color: #AC1414;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	text-align: center;
+	font: 14pt Verdana, Geneva, sans-serif;
+}
+#header .ad {
+	font-color: #000000;
+}
+#header .logo {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background: #ffffff url('../images/HealthyFitness-Header04.gif') bottom center no-repeat;
+	height: 121px;
+}
+
+#content {
+	background: #ffffff;
+}
+#content .title {
+	margin: 0px;
+	text-align: left;
+	padding: 15px 8px 15px 15px;
+	background-color: #FFFFFF;
+	font: bold 28px/32px Trebuchet MS;
+	border-bottom: dotted 1px #666666;
+	color: #000000;
+}
+#content .title h1 {
+	font: bold 28px/32px Trebuchet MS;
+}
+#content .post {
+	padding: 8px 15px 10px 15px;
+	line-height: 140%;
+	color: #333333;
+	display: block;
+	overflow: auto;
+}
+#content .post .note {
+	padding: 2px;
+	background-color: rgb(239, 255, 247);
+	border: 1px dotted #000;
+}
+#content .post-body {
+	padding: 10px 0;
+	float: left;
+	width: 600px;
+}
+#content .post-body .ftd-image {
+	margin-right: 10px;
+	float: left; 
+	width: 300px;
+}
+#content .post-body .ftd-image img {
+	max-width: 100%;
+	height: auto
+}
+#content .post-body p {
+	margin-bottom: 1em;
+}
+#content .post-body h1 {
+	font: bold 26px/120% Arial, Arial, Helvetica;
+	line-height: 120%;
+	color: #333333;
+}
+#content .post .red-box {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 3px dashed red;
+}
+#content .post .comments {
+	margin: 20px 0;
+}
+#content .post .comments .commentbox {
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border: 2px dashed #ccc;
+	display: block;
+}
+#content .post .comments .commentbox .avatar {
+	margin-right: 8px;
+}
+#content .post .comments form {
+	margin: 20px 0;
+}
+#content .post .comments input {
+	padding: 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+#content .post .comments textarea {
+	margin-bottom: 10px;
+	padding: 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid #cccccc;
+	min-height: 100px;
+}
+#content .post .comments input[type="submit"] {
+	width: 25%;
+}
+#content .sidebar {
+	padding: 20px 10px;
+	border: 1px solid #ccc;
+	float: right;
+	width: 322px;
+}
+#content .sidebar p {
+	margin-bottom: 20px;
+}
+#content .sidebar h4 {
+	margin-bottom: 20px;
+	font: normal 14px/120% Arial, Arial, Helvetica;
+	line-height: 120%;
+}
+
+#footer {
+	padding: 10px;
+	background: #6A6A6A;
+	color: #e4e4e4;
+}
+#footer p {
+	margin-bottom: 10px;
+	font-size: 10px;
+}

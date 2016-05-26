@@ -1,0 +1,578 @@
+<html>
+	<head>
+		<title><?=$view->title?></title>
+		<link rel="shortcut icon" href="/static/favicon.ico" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='css/style.css'/>
+		<link rel='stylesheet' type='text/css' href='css/navigation.css'/>
+		<link rel='stylesheet' type='text/css' href='css/content.css'/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<div id="nav">
+				<div id="site_nav">
+					<div id="navlogo"></div>
+					<div id="navlogo_arrow"></div>
+					<div class="top_chop header_site_choose">
+						<div id="header_site_drop" class="drop_menu">
+							<a href="/"><div id="site_samesurf" class="site_drop_content">
+								<div id="logo_samesurf" class="link_logo"></div>
+								<div class="site_title">Samesurf.com</div>
+								<div class="site_description">Co-Browse Websites</div>
+								</div></a>
+							<a href="http://stage-video.samesurf.com/videos"><div id="site_videos" class="site_drop_content">
+								<div id="logo_samesurfvideo" class="link_logo"></div>
+								<div class="site_title">Samesurf Videos</div>
+								<div class="site_description">Co-Browse Videos</div>
+								</div></a>
+							<a href="#"><div id="site_sameslide" class="site_drop_content">
+								<div id="logo_sameslide" class="link_logo"></div>
+								<div class="site_title">Sameslide.com</div>
+								<div class="site_description">Co-Browse Presentations</div>
+								</div></a>
+							<a href="http://stage-video.samesurf.com"><div id="site_publicrooms" class="site_drop_content">
+								<div id="logo_publicrooms" class="link_logo"></div>
+								<div class="site_title">PublicRooms.com</div>
+								<div class="site_description">Co-Browsing with the Masses</div>
+								</div></a>
+						</div>
+					</div>
+				</div>
+				<div id="whats_samesurf">WHAT'S SAMESURF
+					<div class="top_chop whats_samesurf_chop">
+						<div id="whats_samesurf_body" class="drop_menu drop_menu_box">
+							<a href="/pages/howitworks"><div class="drop_menu_content">How It Works</div></a>
+							<a href="/pages/features"><div class="drop_menu_content">Features</div></a>
+							<a href="/pages/integration"><div class="drop_menu_content">Integration</div></a>
+							<a href="/pages/security"><div class="drop_menu_content">Security</div></a>
+							<a href="/pages/different"><div class="drop_menu_content">We're Different</div></a>
+							<a href="/pages/technology"><div class="drop_menu_content">Technology</div></a>
+							<a href="/pages/customization"><div class="drop_menu_content">Customization</div></a>
+							<a href="/pages/workflow"><div class="drop_menu_content">Workflow</div></a>
+							<a href="/pages/phonesupport"><div class="drop_menu_content">Phone Support</div></a>
+							<a href="/pages/livechat"><div class="drop_menu_content">Live Chat</div></a>
+							<a href="/pages/benefits"><div class="drop_menu_content no-bottom-border">Benefits</div></a>
+						</div>
+					</div>
+				</div>
+				<div id="uses">USES
+					<div class="top_chop uses_chop">
+						<div id="uses_body" class="drop_menu drop_menu_box">
+							<a href="/pages/uses"><div class="drop_menu_content">Primary Uses</div></a>
+							<a href="/pages/secondaryuses"><div class="drop_menu_content">Secondary Uses</div></a>
+							<a href="/pages/support"><div class="drop_menu_content">Online Support</div></a>
+							<a href="/pages/sales"><div class="drop_menu_content">Assisted Sales</div></a>
+							<a href="/pages/presentations"><div class="drop_menu_content">Presentations</div></a>
+							<a href="/pages/meetings"><div class="drop_menu_content">Meetings</div></a>
+							<a href="/pages/marketresearch"><div class="drop_menu_content">Market Research</div></a>
+							<a href="/pages/shop"><div class="drop_menu_content">Shop Together</div></a>
+							<a href="/pages/collaboration"><div class="drop_menu_content">Collaboration</div></a>
+							<a href="/pages/corptraining"><div class="drop_menu_content">Corporate Training</div></a>
+							<a href="/pages/remotecontrol"><div class="drop_menu_content">Remote Control</div></a>
+							<a href="/pages/browse"><div class="drop_menu_content">Browse Together</div></a>
+							<a href="/pages/watchvideos"><div class="drop_menu_content no-bottom-border">Watch Videos</div></a>
+						</div>
+					</div>
+				</div>
+				<div id="header_account">
+					<div id="header_account_head">
+						<div id="account_head_icon"></div>
+						<div id="account_head_text"></div>
+						<div id="account_head_arrow"></div>
+					</div>
+					<div id="header_account_body" class="drop_menu">
+						<a href="/login"><div class="login_default header_account_body_content">LOG IN</div></a>
+						<a href="/signup"><div class="login_default header_account_body_content">SIGN UP</div></a>
+						<a href="/help"><div class="login_default header_account_body_content">HELP</div></a>
+						<a href="/account"><div class="login_account header_account_body_content">ACCOUNT</div></a>
+						<a href="#"><div class=" login_account header_account_body_content">PREFERENCES</div></a>
+						<a href="#"><div class=" login_account header_account_body_content">ENABLE SITE</div></a>
+						<a href="/logout"><div class=" login_account header_account_body_content">LOG OUT</div></a>
+						<div id="header_account_bottom">
+							<div id="header_account_session">JOIN A SESSION</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sub_header">
+			<div id="sub_nav">
+				<div id="sub_navlinks">
+					<a href="/pages/#">START NOW</a>
+					<a href="/pages/howitworks">HOW IT WORKS</a>
+					<a href="/pages/requestdemo">REQUEST DEMO</a>
+					<a href="/pages/#">PRICING</a>
+					<a href="/pages/contactus">CONTACT US</a>
+				</div>
+			</div>
+		</div>
+		
+		<section id="categories" class="categories container">
+			<h1 class="main-heading">
+				Help Center
+			</h1>
+			<div class="row help-categories">
+				<div class="col-xs-3">
+					<a href="quick-guide.html" class="section">
+						<img src="images/section-quick-start-icon.png" class="img-responsive" alt="Quick Guide" />
+						<h1>
+							Quick Guide
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="for-individuals.html" class="section">
+						<img src="images/section-for-individuals-icon.png" class="img-responsive" alt="For Individuals" />
+						<h1>
+							For Individuals
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="for-support-sales.html" class="section">
+						<img src="images/section-for-support-sales-icon.png" class="img-responsive" alt="For Business" />
+						<h1>
+							For Business
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="for-websites.html" class="section">
+						<img src="images/section-for-websites-icon.png" class="img-responsive" alt="For Websites" />
+						<h1>
+							For Websites
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="tools.html" class="section active">
+						<img src="images/section-tools-icon.png" class="img-responsive" alt="Tools" />
+						<h1>
+							Features
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="faq.html" class="section">
+						<img src="images/section-faq-icon.png" class="img-responsive" alt="FAQ" />
+						<h1>
+							FAQ<span>s</span>
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="best-practices.html" class="section">
+						<img src="images/section-best-practices-icon.png" class="img-responsive" alt="Best Practices" />
+						<h1>
+							Best Practices
+						</h1>
+					</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="api.html" class="section">
+						<img src="images/section-api-icon.png" class="img-responsive" alt="API" />
+						<h1>
+							API<span>s</span>
+						</h1>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="tools" class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8">
+						<h1 class="section-heading">
+							Features
+						</h1>
+					</div>
+					<div class="col-xs-4">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-8 posts">
+						<article class="open">
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Co-Browsing
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-up"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Browse the web together in 
+											real-time from virtually any 
+											device or browser.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/co-browsing.png" alt="Co-Browsing" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Control Passing
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Request and pass leader controls to take turns
+											co-navigating through 
+											online and offline content.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/control-passing.png" alt="Control Passing" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Mouse Tracking
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Track each other's cursors 
+											while you auto-scroll to 
+											match the current leader's movements on each page.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/mouse-tracking.png" alt="Mouse Tracking" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Screen Drawing
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Collaborate and guide one another by sharing screen markings on webpages and the interactive whiteboard (coming soon).
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/screen-drawing.png" alt="Screen Drawing" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Audio &amp; Video Chat
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Enhance your experience through built-in audio and video chat featuring webRTC.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/audio-video-chat.png" alt="Audio & Video Chat" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Social Integration
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Exchange social messages, posts and invites from a  single place as you browse 
+											the web together (coming soon).
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/social-integration.png" alt="Social Integration" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Screen Sharing
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Activate screen sharing to
+											broadcast apps and offline
+											content from your desktop.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/screen-sharing.png" alt="Screen Sharing" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Upload &amp; Share
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Upload presentations to the cloud and guide participants  through each slide without installs from any device (coming soon).
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/upload-share.png" alt="Upload & Share" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Security
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Safeguard data via TLS/SSL encryption, field blocking and confining co-browsing to a single browser tab.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/security.png" alt="Security" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Authenticated Sharing
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Co-browse sites that require logins such as Facebook and Dropbox with people you 
+											trust and know well.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/authenticated-sharing.png" alt="Authenticated Sharing" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Analytics
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Gain valuable insights on site usage to develop campaigns that better reflect your users' patterns and preferences.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/analytics.png" alt="Analytics" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row heading">
+								<div class="col-xs-11 title">
+									<h1>
+										Text Chat
+									</h1>
+								</div>
+								<div class="col-xs-1 toggle">
+									<i class="fa fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>
+											Elevate the co-browsing experience by instantly communicating reactions  
+											to shared content via chat.
+										</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="text-center">
+											<img src="images/pages/features/text-chat.png" alt="Text Chat" />
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<div class="explore">
+							<a href="tools.html" class="explore-btn">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<div class="text">
+									Explore the Features
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 sidebar">
+						<article class="live-chat">
+							<h1>
+								Need Help Right Now?
+							</h1>
+							<div class="offline">
+								<img src="images/live-chat-offline-icon.png" alt="Live Chat" /><a href="#" class="btn">Live Chat Offline</a>
+							</div>
+							<!--<div class="online">
+								<img src="images/live-chat-icon.png" alt="Live Chat" /><a href="#" class="btn btn-success">Live Chat Online</a>
+							</div>-->
+						</article>
+						<article class="top-faq">
+							<h1>
+								Top FAQ's
+							</h1>
+							<ul>
+								<li><a href="index.html#article-1">What is Samesurf?</a></li>
+								<li><a href="index.html#article-2">How are Screen Sharing and Samesurf Co-Browsing Different?</a></li>
+								<li><a href="index.html#article-3">What is a Host?</a></li>
+								<li><a href="index.html#article-4">What is a Leader?</a></li>
+								<li><a href="index.html#article-5">What is a follower?</a></li>
+								<li><a href="index.html#article-6">How Do I Start a Room?</a></li>
+								<li><a href="index.html#article-7">How Do I Invite Others to Join a Room?</a></li>
+								<li><a href="index.html#article-8">Do I have to Download or Accept Any Installs for Co-Browsing?</a></li>
+								<li><a href="index.html#article-9">Does Samesurf Work on Virtually All Browsers and Devices?</a></li>
+								<li><a href="index.html#article-10">How Do I Request, Pass, or Take Back Leader Controls?</a></li>
+								<li><a href="index.html#article-11">How Do I Share Applications or Other Offline Content From My Desktop?</a></li>
+								<li><a href="index.html#article-12">Does Screen Sharing Work on Mobile Phones and Tablets?</a></li>
+							</ul>
+							<div class="view-more">
+								<a href="faq.html" class="btn btn-small btn-primary">View More FAQs</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src='js/layout.js'></script>
+		<script src='js/help-center.js'></script>
+	</body>
+</html>

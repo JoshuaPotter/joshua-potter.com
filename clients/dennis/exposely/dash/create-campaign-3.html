@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Exposely - Dashboard</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+		<!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+		<!-- font awesome -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- custom css -->
+		<link rel="stylesheet" type="text/css" href="../css/fonts/proxima-nova.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+	</head>
+
+	<body>
+		<div id="dash-container">
+			<div id="menu" role="navigation" class="dash-sidebar">
+				<div class="nav-wrap">
+					<div class="logo">
+						<a href="#" class="logo-img">
+							<img src="../img/logos/exposely-lg.png" alt="Exposely" />
+						</a>
+					</div>
+
+					<ul>
+						<li><a href="#" class="campaign-link active"><img src="img/icons/campaigns-icon.png" alt="Campaigns" /> Campaigns </a></li>
+						<li><a href="#" class="accounts-link"><img src="img/icons/accounts-icon.png" alt="Accounts" /> Accounts</a></li>
+						<li><a href="#" class="earnings-link last-child"><img src="img/icons/earnings-icon.png" alt="Campaigns" /> Earnings</a></li>
+					</ul>
+
+					<ul class="bottom-links">
+						<div class="account-info clearfix">
+							<img class="avatar-icon" src="img/avatar.jpg" />
+							<p>
+								MIHNEA ZAMFIR
+							</p>
+						</div>
+						<li>
+							<a href="#" class="settings-link"><img src="img/icons/settings-icon.png" alt="Settings" /> 
+								<p>Settings</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="log-out-link">
+								<img src="img/icons/log-out-icon.png" alt="Log Out" />
+								<p>
+									Log Out
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dash-content">
+				<div class="page-heading clearfix">
+					<div class="nav-button">
+						<i class="fa fa-bars fa-2x" id="nav-button-icon"></i>
+					</div>
+					<div class="page-title">
+						<h1>
+							Create Campaign
+						</h1>
+					</div>
+				</div>
+				<div class="step-counter clearfix">
+					<div class="row">
+						<div class="col-md-4 complete clearfix">
+							<div class="logo">
+								<div class="step-circle"></div>
+							</div>
+							<div class="text">
+								<h2>
+									Set General Info
+								</h2>
+								<h3>
+									Step 1
+								</h3>
+							</div>
+						</div>
+						<div class="col-md-4 complete clearfix">
+							<div class="logo">
+								<div class="step-circle"></div>
+							</div>
+							<div class="text">
+								<h2>
+									Select Audience
+								</h2>
+								<h3>
+									Step 2
+								</h3>
+							</div>
+						</div>
+						<div class="col-md-4 active clearfix">
+							<div class="logo">
+								<div class="step-circle"></div>
+							</div>
+							<div class="text">
+								<h2>
+									Confirm and Pay
+								</h2>
+								<h3>
+									Step 3
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form id="create-campaign-step-2" class="campaign-create-form">
+						<div class="col-md-9 form-main">
+							<div class="row campaign-description-overview">
+								<div class="block clearfix">
+									<div class="col-md-2">
+										<img class="img-responsive" src="img/campaign-img.png" alt="Campaign Image" />
+									</div>
+									<div class="col-md-10">
+										<h1>
+											Green Coffee Diet
+											<div class="btn yellow-btn ppc-btn">PAY PER CLICK</div>
+										</h1>
+										<p>
+											Campaign description. Lorem ipsum is simply dummy text for the type settings industry. Telling you information about the campaign. Woot.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row campaign-date-confirm">
+								<div class="col-md-6">
+									<div class="block">
+										<h4>
+											Start Date
+										</h4>
+										<p>
+											Mon March 21st at 7:00am
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="block">
+										<h4>
+											End Date
+										</h4>
+										<p>
+											Mon March 21st at 7:00am
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="block">
+										<h4>
+											Campaign URL
+										</h4>
+										<p>
+											<a href="#">Generate URL</a>
+										</p>
+									</div>
+									<div class="block">
+										<h4>
+											Targeted Platforms
+										</h4>
+										<p>
+											<i class="fa fa-twitter fa-fw fa-lg"></i>
+											<i class="fa fa-facebook fa-fw fa-lg"></i>
+											<i class="fa fa-instagram fa-fw fa-lg"></i>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 campaign-countries-confirm">
+									<div class="block">
+										<h4>
+											Available Countries
+										</h4>
+										<p>
+											map
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 campaign-targeted-devices-confirm">
+									<div class="block">
+										<h4>
+											Targeted Devices
+										</h4>
+										<p>
+											<i class="fa fa-desktop fa-fw fa-lg"></i>
+											<i class="fa fa-tablet fa-fw fa-lg"></i>
+											<i class="fa fa-mobile fa-fw fa-lg"></i>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 campaign-type-confirm">
+									<div class="block">
+										<h4>
+											Campaign Type
+										</h4>
+										<p>
+											<i class="fa fa-globe fa-fw f-2x"></i> Public
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="campaign-do-dont-confirm">
+								<div class="col-md-6 campaign-do-confirm">
+									<div class="block">
+										<p>
+											Do:
+										</p>
+										<ul>
+											<li>
+												Use <a href="#">#socialMedia</a>
+											</li>
+											<li>
+												Use at least one of these hashtags
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-6 campaign-dont-confirm">
+									<div class="block">
+										<p>
+											Don't:
+										</p>
+										<ul>
+											<li>
+												Mention our competitors
+											</li>
+											<li>
+												Use any of these keywords/hashtags
+											</li>
+											<li>
+												Attach any image/video
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<div class="block">
+									<h4>
+										Suggested Message
+									</h4>
+									<div class="message-wrapper">
+										<textarea id="campaign-create-suggested-message" class="input-text campaign-create-textarea" maxlength="80" name="campaign-sug-message">Take a look at this new coffee diet bit.l/83jnrd38r7d #coffee #diet</textarea> 
+										<div class="char-counter">
+											80 characters
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="campaign-pay">
+								<form id="campaign-payment-form">
+									<div class="block">
+										<h4>
+											Card Number
+										</h4>
+										<input id="campaign-card-number" class="input-text-alt2 create-campaign-input" type="text" name="campaign-card-number" placeholder="**** **** **** ****" />
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="block">
+												<h4>
+													Expiration Date
+												</h4>
+												<input id="campaign-expiration-date" class="input-text-alt2 create-campaign-input" type="text" name="campaign-expiration-date" placeholder="MM/YY" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="block">
+												<h4>
+													Security Code
+												</h4>
+												<input id="campaign-security-code" class="input-text-alt2 create-campaign-input" type="text" name="campaign-security-code" placeholder="CVC" />
+											</div>
+										</div>
+									</div>
+									<div class="block">
+										<h4>
+											Name on Card
+										</h4>
+										<input id="campaign-credit-card-name" class="input-text-alt2 create-campaign-input" type="text" name="campaign-credit-card-name" placeholder="NAME ON CARD" />
+									</div>
+								</form>
+							</div>
+							<div class="">
+								<div class="block">
+									<button class="btn blue">
+										Pay Now
+									</button>
+									<button class="btn gray-btn edit-campaign-btn">
+										Edit Campaign
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 form-side">
+							<div class="block">
+								<h4>
+									Total Earnings
+								</h4>
+								<span>
+									$5,351
+								</span>
+							</div>
+							<div class="block">
+								<h4>
+									Per Click
+								</h4>
+								<span>
+									$5.20
+								</span>
+							</div>
+							<div class="block">
+								<h4>
+									2,214
+								</h4>
+								<span>
+									Total Clicks
+								</span>
+							</div>
+			
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+
+	<script src="js/bigSlide.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>

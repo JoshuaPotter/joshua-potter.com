@@ -1,0 +1,41 @@
+#header {
+	font-family: "Oswald", sans-serif;
+	padding: 23px 0;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(230,228,228,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(230,228,228,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,228,228,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,228,228,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,228,228,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(230,228,228,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e4e4',GradientType=0 ); /* IE6-9 */
+	box-shadow: inset 0 0 1px 0 rgba(0,0,0,.15);
+	border-bottom: 1px solid #ffffff;
+}
+#header .slogan {
+	padding: 25px 15px 0;
+	text-align: right;
+	font-size: 20px;
+	font-weight: 300;
+	color: #585858;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+}
+
+@media all and (max-width: 991px) {
+	#header {
+		padding: 15px 0;
+	}
+	#header img {
+		display: inline-block;
+		max-width: 100%;
+		width: 200px;
+		height: auto;
+	}
+	#header div {
+		text-align: center !important;
+	}
+	#header .slogan {
+		padding: 10px 15px 0;
+		display: none;
+	}
+}

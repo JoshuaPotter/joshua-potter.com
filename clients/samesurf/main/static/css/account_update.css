@@ -1,0 +1,33 @@
+#update_first_name, #update_last_name, #login_reset_name, #password, #verify_password {
+	margin-top: 35px;
+}
+
+#update_first_name div, #update_last_name div, #login_reset_name div {
+	width: 400px;
+}
+
+#password .common_update, #verify_password .common_update {
+	width: 400px;
+}
+
+input[type=submit] {
+	margin-top: 35px;
+	width: 188px;
+	height: 60px;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+#step2_message {
+	margin-top:100px;
+	text-align:center;
+	font-size:180%;
+}
+
+#step2_instructions {
+	text-align:center;
+	width:340px;
+	line-height: 30px;
+	margin:25px auto;
+}

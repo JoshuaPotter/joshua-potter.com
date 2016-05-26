@@ -1,0 +1,48 @@
+html,
+body {
+	background: #333333; /* or #e5e5e5 for dark */
+}
+.img-responsive {
+	display: inline-block;
+}
+#main-container {
+	background: #ffffff;
+	-webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2);
+	box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2);
+	
+/* 	-webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2);
+	box-shadow: 0px 0px 32px 0px rgba(0,0,0,.2); */
+}
+.cta {
+	padding: 20px 35px;
+	display: inline-block;
+	font-size: 20px;
+	color: #ffffff;
+	border: 2px solid #ea5507;
+	border-radius: 5px;
+	background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+	text-decoration: none !important;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.cta:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+::selection {
+	background: #3E3F42; /* WebKit/Blink Browsers */
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #3E3F42; /* Gecko Browsers */
+	color: #ffffff;
+}

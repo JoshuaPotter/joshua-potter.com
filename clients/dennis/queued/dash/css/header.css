@@ -1,0 +1,46 @@
+#dash-header {
+	background: #3a4a63;
+}
+#dash-header .masthead,
+#dash-header .account-dropdown {
+	padding: 15px 20px;
+	float: left;
+}
+#dash-header .masthead {
+	width: calc(100% - 240px);
+}
+#dash-header .account-dropdown {
+	width: 240px;
+}
+#dash-header .logo {
+	float: left;
+}
+#dash-header .logo img {
+	height: 40px;
+}
+#dash-header .upgrade-btn {
+	padding: 10px 40px 10px 35px;
+	float: right;
+	background: #78c388;
+	color: #ffffff;
+	border-radius: 500px;
+	font-size: 14px;
+}
+#dash-header .upgrade-btn:hover {
+	background: #6caf7a;
+}
+#dash-header .account-dropdown {
+	background: #34445d;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+#dash-header .account-dropdown img {
+	margin-right: 15px;
+	border-radius: 500px;
+	width: 45px;
+	height: 45px;
+}
+#dash-header .account-dropdown i {
+	margin-left: 15px;
+}

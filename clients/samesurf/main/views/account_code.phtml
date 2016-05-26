@@ -1,0 +1,59 @@
+<?php
+	$this->setTitle("admin");
+	$this->addCSSFile("/static/css/common.css");
+	$this->addCSSFile("/static/css/common_form.css");
+	$this->addCSSFile("/static/css/signup_steps_common.css");
+	$this->addCSSFile("/static/css/account_step1.css");
+	$this->addCSSFile("/static/css/account_code.css");
+	$this->addJSFile("/static/js/account_step1.js");
+	$this->addCSSFile("/static/js/code_prettify/prettify.css");
+	$this->addJSFile("/static/js//code_prettify/prettify.js");
+?>
+
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<div class="banner">
+	<div class="banner_main">
+		<div class="banner_title">
+			<?php echo $blocks->progress ?>
+		</div>
+	</div>
+</div>
+
+<div class="centre_content">
+
+	<div class="title">DEPLOY YOUR CODE</div>
+	<p>Integrate this code into the header of every page that you'd like to enable for co-browsing:</p>
+<pre class="prettyprint linenums" ><div class="code_border"></div>&lt;script&gt;
+	&lt;!--
+		  (function(x,c) {
+			var b=[];var t=new Date().getTime();var p;try{p=parent.samesurf_sidebar_check;}catch(e){};p=p||false;
+			var s = document.createElement('script');s.id="samesurf.activate";s.type='text/javascript';s.async=true;
+			b.push('https:' == document.location.protocol ? 'https:/' : 'http:/');b.push(c);b.push("v/1/c");
+			b.push(document.location.hostname);b.push(x);b.push(p);b.push(t); s.src = b.join("/");
+			var t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+		  })(window.top==window.self, "code.samesurf.com");
+	--&gt;
+&lt;/script&gt;
+</pre>
+	<div id="navbuttons">
+		<div class="navbuttons_align">
+			<a href="/account/config/pid/<?= $view->defaults->domain->publicid() ?>"><div class="back_button button_black">BACK</div></a>
+			<div id="clipboard_copy" class="button_yellow">COPY TO CLIPBOARD</div>
+<!-- 			<div id="preview" class="button_blue">PREVIEW</div> -->
+			<form id="forward_form" method="post">
+				<input class="finish button_blue" type="submit" value="FINISH"/>
+			</form>
+		</div>
+	</div>
+
+
+</div>

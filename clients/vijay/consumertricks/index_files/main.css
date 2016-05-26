@@ -1,0 +1,181 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	background: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
+	color: #212121;
+}
+
+
+
+/*HACKS*/
+.nospace { padding-left: 0; padding-right: 0; }
+.nospace-xsx { padding-left: 0; padding-right: 0; }
+.clr { clear: left }
+.ninja { display: none; }
+.uppercase { text-transform: uppercase;}
+.cursor { cursor: pointer;}
+.text-right { text-align: right;}
+.text-center { text-align: center;}
+.text-upper {text-transform: uppercase;}
+.img-resp { width: 100%; height:auto;}
+.fs16 { font-size: 16px}
+.fs24 { font-size: 24px}
+.text-bold { font-weight: bold; ;}
+.inline-block { display: inline-block;}
+.fs16 { font-size: 16px}
+a, a:hover, a:focus { color: #00b4ff}
+.gap { height: 30px;}
+
+.top {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 2px #eeeeee solid
+}
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 15px 15px 15px 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-nav { padding-top: 10px;}
+.navbar-toggle {
+	font-size: 20px;
+	margin-right: 0
+}
+.navbar-nav li a {
+	color: #212121;
+	border-bottom: 2px transparent solid;
+	padding: 10px 15px;
+	font-size: 15px;
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav .active a {
+	color: #212121;
+	background: none;
+	border-bottom: 2px #f2bb48 solid;
+}
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 13px;
+	background: #585f69;
+	color: #ffffff
+}
+
+.footer h4 {color:#ffffff;position:relative; padding-bottom:10px;  border-bottom:4px solid #ffffff; }
+.footer h4:before{content:""; display:block; position:absolute; z-index:999; bottom:-4px;  border:2px solid #f2bb48; width: 90px}
+.footer-bottom {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	background: #3e4753;
+	color: #ffffff
+
+}
+
+.footer a, .footer-bottom a {
+	color: #f2bb48
+}
+
+.content {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.content h1{
+	color: #e19e1d;
+	font-weight: 300;
+	padding: 0;
+	margin: 0 0 20px 0
+}
+
+.content h5 {
+	border-top: 1px #cccccc solid;
+	padding: 7px 4px;
+	border-bottom: 1px #cccccc solid;
+	margin: 0 0 20px 0
+}
+.content p {
+	padding: 0;
+	margin: 0 0 20px 0;
+	line-height: 24px;
+}
+
+.content .bs-callout {
+	color: #5f5f5f
+}
+
+.content h2 {
+	font-weight: 400;
+	line-height: 36px;
+	font-size: 28px
+}
+
+.content ul, 
+.content ol {
+	margin: 0 0 20px 15px;
+	padding: 0 0 0 15px;
+}
+.content li {
+	padding: 5px 0
+}
+#map { width: 400px; height: 270px}
+
+.content .cta-rates {
+	background: #db9e1d;
+	color: #ffffff;
+	font-size: 20px;
+	display: inline-block;
+	padding: 6px 26px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.content .cta-rates:hover, .content .cta-rates:focus {
+	background: #c18c1a;
+	text-decoration: none;
+}
+
+/*ASIDE*/
+
+.aside h4 {color:#212121;position:relative; padding-bottom:10px;  border-bottom:4px solid #bdbdbd; margin-bottom: 20px }
+.aside h4:before{content:""; display:block; position:absolute; z-index:999; bottom:-4px;  border:2px solid #f2bb48; width: 100px}
+
+.aside .media-object { width: 80px; border:2px #ffffff solid;-webkit-box-shadow: 0 0 0 1px #ADADAD; box-shadow: 0 0 0 1px #ADADAD;}
+.aside .media-body { font-size: 15px}
+.aside .media-body a { color: #212121}
+.box {
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 0 1px #e67e22;
+	box-shadow: 0 0 0 1px #e67e22;
+	background: #eeeeee;
+	padding: 10px 30px;
+	margin-bottom: 30px
+}
+
+.box h3 { font-size: 24px; color: #e67e22; margin-bottom: 26px}
+.box .unl { display: inline-block; padding-bottom: 5px; border-bottom: 1px #212121 solid; font-weight: 800}
+.box span.red { color: #c40000}
+.box p { font-size: 16px; font-weight: 600;}
+.box span.green { color: #479049}
+.box .b800 { font-weight: 800}
+
+.box a { display: block; background: #85c887; color: #ffffff; padding: 8px 20px;-webkit-border-radius: 6px; border-radius: 6px;}
+.box a:hover { text-decoration: none; background: #72af74}
+
+/*Comments*/
+.comments h5 { font-weight: bold; border: none;}
+
+.comments .media-object { width: 64px; }
+.comments  .media-body { font-size: 13px; line-height: 22px;padding-left: 15px}

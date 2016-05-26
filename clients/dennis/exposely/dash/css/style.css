@@ -1,0 +1,90 @@
+html, body {
+	background: #fff;
+}
+.btn {
+	padding: 15px 35px;
+	border-radius: 0;
+	background: #147ea6;
+	border-bottom: 5px solid #addef0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.btn:hover {
+	color: #ffffff;
+	border-bottom: 5px solid #4ea8ca;
+}
+.btn-small {
+	padding: 10px 25px;
+}
+.reject-btn,
+.gray-btn {
+	background: #ffffff;
+	border: 3px solid #e7eff2;
+	color: #afc1c8;
+}
+.reject-btn:hover,
+.gray-btn:hover {
+	color: #afc1c8;
+	border: 3px solid #afc1c8;
+}
+.gray-btn span {
+	color: #000000;
+}
+.clear-btn {
+	background: transparent;
+	border: 3px solid rgba(255,255,255,.5);
+	color: rgba(255,255,255,.65);
+}
+.clear-btn:hover {
+	background: transparent;
+	border: 3px solid rgba(255,255,255,.75);
+	color: rgba(255,255,255,.85);
+}
+.reject-btn,
+.reject-btn:hover {
+	color: #c03a2d;
+}
+.red-btn {
+	background: #e15d76;
+	border-bottom: 5px solid #f2b8c3;
+	color: #ffffff;
+}
+.red-btn:hover {
+	color: #ffffff;
+	border-bottom: 5px solid #f28ea1;
+}
+.green-btn {
+	background: #2ecc71;
+	border: 3px solid #2ecc71;
+	color: #ffffff;
+}
+.green-btn:hover {
+	color: #ffffff;
+	background: #18ac57;
+	border: 3px solid #18ac57;
+}
+.edit-campaign-btn {
+	margin-left: 10px;
+}
+.yellow-btn {
+	color: #ffffff;
+	background: #e2a51a;
+	border: 3px solid #e2a51a;
+	border-radius: 30px;
+}
+.yellow-btn:hover {
+	color: #ffffff;
+	background: #e2a51a;
+	border: 3px solid #e2a51a;
+	border-radius: 30px;
+}
+.ppc-btn {
+	padding-left: 60px;
+	background: #e2a51a url('../img/icons/ppc-icon.png') 20px no-repeat;
+}
+.ppc-btn:hover {
+	padding-left: 60px;
+	background: #e2a51a url('../img/icons/ppc-icon.png') 20px no-repeat;
+}

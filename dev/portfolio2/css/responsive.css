@@ -1,0 +1,24 @@
+@media all and (max-width: 991px) {
+    #hero {
+        text-align: center;
+    }
+    #hero .row {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #hero .row-valign {
+        display: block;
+        width: auto;
+    }
+    #hero #title {
+        float: none;
+        width: auto;
+    }
+    #hero #title h1 {
+        font-size: 40px;
+    }
+    #hero #instructions,
+    #hero #devices {
+        display: none;
+    }
+}

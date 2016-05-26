@@ -1,0 +1,84 @@
+p {
+	color: rgb(156,156,156);
+	font-size: 14px;
+	line-height: 23px;
+}
+
+#progressbox {
+	margin-top: 65px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(201,201,201);
+	border-radius: 5px;
+	padding: 35px 27px 25px;
+	margin-bottom: 55px;
+}
+
+#progressbox_title {
+	font-family: gotham_mediumregular;
+	position: absolute;
+	top: -8px;
+	left: 347px;
+	background-color: rgb(245,245,245);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#progressbox_text {
+	margin-bottom: 25px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.box_white {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(237,237,237);
+	border-radius: 5px;
+	padding: 18px 15px 25px;
+	margin-bottom: 25px;
+}
+
+.banner_title {
+	font-size: 26px;
+	font-family: gotham_mediumregular;
+}
+
+.info_dot {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: rgb(87,147,217);
+	border-radius: 14px;
+	font-family: gotham_mediumregular;
+	display: inline-block;
+}
+
+.instruction_steps_header {
+	margin-bottom: 5px;
+}
+
+.instruction_steps_header_text {
+	color: rgb(55,55,55);
+	font-size: 18px;
+	margin-left: 13px;
+	font-family: gotham_mediumregular;
+	display: inline-block;
+}
+
+.instruction_steps_body_text {
+	padding-left: 42px;
+}
+
+#instructions_next {
+	width: 232px;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	margin: 55px auto 60px;
+	font-size: 16px;
+	font-family: gotham_mediumregular;
+}

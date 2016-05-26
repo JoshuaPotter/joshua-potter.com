@@ -1,0 +1,40 @@
+<?php
+	$this->setTitle("admin - step 2");
+
+	$this->addCSSFile("/static/css/common.css");
+	$this->addCSSFile("/static/css/common_form.css");
+	$this->addCSSFile("/static/css/signup_steps_common.css");
+	$this->addCSSFile("/static/css/signup_step2.css");
+
+	$this->addJSFile("/static/js/signup_step2.js");
+?>
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<div class="centre_content">
+
+	<div id="step2_message">An email has been sent to <span id="step2_email"><?= $view->defaults->email ?></span></div>
+
+	<div id="step2_instructions">Please follow the instructions in the email to continue through the setup process.</div>
+
+	<form id="resend_form" method="POST", action="">
+		<input type="hidden" value="resend"></input>
+	</form>
+
+	<div id="resend">
+			<div id="resend_message">Didn't receive your email?</div>
+			<div id="resend_button" class="button_red">
+				<div>RESEND VERIFICATION EMAIL</div>
+			</div>
+	</div>
+ 
+
+</div>		
+

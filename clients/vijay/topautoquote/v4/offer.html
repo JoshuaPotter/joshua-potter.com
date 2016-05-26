@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Top Auto Quote - The Most Trusted Auto Insurance Comparison Site</title>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700,600">
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div id="logo" class="col-md-6">
+						<a href="#"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+					<div id="slogan" class="col-md-6">
+						<img src="images/shield.png" alt="Shield" />
+						The <strong>Most Trusted</strong> Auto Insurance Comparison Site
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="content">
+			<div class="container">
+				<div class="title text-center">
+					<h1>Congratulations!</h1>
+					<h2>Click on a handful of companies below to get your rates.</h2>
+				</div>
+			</div>
+			<!--
+			<div class="block" style="margin-top: 20px">
+				<div class="container">
+					<form class="inner-block">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-3">
+										<label class="main-label">Home Owner?</label>
+										<div class="radio-label">
+											<input type="radio" name="home-owner" value="yes" id="home-owner-yes" checked> <label for="home-owner-yes">Yes</label>
+										</div>
+										<div class="radio-label">
+											<input type="radio" name="home-owner" value="no" id="home-owner-no"> <label for="home-owner-no">No</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<label class="main-label">Married?</label>
+										<div class="radio-label">
+											<input type="radio" name="married" value="yes" id="married-yes" checked> <label for="married-yes">Yes</label>
+										</div>
+										<div class="radio-label">
+											<input type="radio" name="married" value="no" id="married-no"> <label for="married-no">No</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<label class="main-label no-margin">Age?</label>
+										<select>
+											<option disabled selected>Select Age</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label class="main-label">Currently Insured?</label>
+										<select>
+											<option disabled selected>Select Company</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<input type="submit" value="SEE MATCHES" id="submit" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+-->
+			<div class="block text-center">
+				<div class="container">
+					<img src="images/bubble-arrow.png" class="arrow" alt="Arrow" /> <span class="title">Click on a handful of the companies below to get your rates.</span> <img src="images/bubble-arrow.png" class="arrow" alt="Arrow" />
+				</div>
+			</div>
+			<div class="block">
+				<div class="container">
+					OFFERS GO HERE
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						&copy; 2015 topautoquote.com All Rights Reserved.
+					</div>
+					<div class="col-md-6">
+						<a href="/">Home</a> |
+						<a href="/about.php">About Us</a> |
+						<a href="/contact.php">Contact Us</a> |
+						<a href="/faq.php">FAQ</a> |
+						<a href="/privacy.php">Privacy Policy</a> |
+						<a href="/terms.php">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input[name="insured"]').change(function() {
+					$('#insurance-details').slideToggle();
+				});
+			});
+		</script>
+	</body>
+</html>

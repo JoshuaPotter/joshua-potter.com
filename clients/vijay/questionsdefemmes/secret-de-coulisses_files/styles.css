@@ -1,0 +1,504 @@
+@charset "utf-8";
+body {
+	background-color:#f6f5f5;
+}
+* {
+	margin:0px;
+	padding:0px;
+}
+a {
+	text-decoration: none;
+	color:#ad208e;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+p {
+	font-size: 17.5px;
+line-height: 23px;
+}
+h1 {
+	font-size:185%;
+}
+#container {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#logo {
+	width: 450px;
+	background-image: url(logo.png);
+	height: 100px;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+	margin-left:30px;
+	text-indent: -99999px;
+	display: block;
+}
+
+#mainHeader {
+	background-color: #FFF;
+	height: 180px;
+	width: 100%;
+}
+
+
+#fullBanner {
+	background-color: #852ca7;
+	height: 40px;
+	width: 100%;
+}
+#nav {
+/*	font-family: 'Arimo', sans-serif;
+*/	width: 100%;
+	height:45px;
+	line-height:100px;
+	text-align:center;
+	border-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-bottom-color: #CCC;
+	margin-bottom: 30px;
+	font-family:Tahoma, Geneva, sans-serif;
+	
+}
+span {
+	
+}
+
+#nav ul {
+	margin-top:5px;
+padding-left:40px;
+	vertical-align:middle;
+	line-height:normal;
+}
+
+#nav ul li {
+	display: inline;
+	width: 100px;
+/*	height: 50px;*/
+	text-align:center;
+	padding-bottom:7px;
+	
+}
+
+#nav ul li a {
+	display: inline-block;
+	width: 160px;
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;s
+	font-size: 100%;
+	letter-spacing: .08em;
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/navBar.png);
+	background-repeat: no-repeat;
+	background-position: 158px 0px;
+	margin-bottom:15px;
+}
+#nav .last { 
+background:none!important;
+ }
+
+#nav ul .last {
+	background:none;
+}
+.navHome {
+	height:55px;
+	width:40px;
+	display: block;
+float: left;
+position: relative;
+text-indent:-9999em;
+background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/nav.png);
+	background-repeat: no-repeat;
+	background-position: 10px -15px;
+	cursor: pointer;
+	
+}
+
+
+
+#featured {
+	font-family: 'Dancing Script', cursive;
+	background-color: #F6F5F5;
+	height: 72px;
+	width: 955px;;
+	margin-bottom: 40px;
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	line-height:65px;
+	padding-left: 45px;
+	color: #333;
+}
+#featured h1 {
+	font-weight:500;
+	display:inline;
+	padding-left:5px;
+}
+#featured img {
+	display:inline;
+	padding-top:10px;
+	padding-right:15px;
+}
+#main {
+	width: 650px;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-left:25px;
+	padding-right:10px;
+	padding-bottom:15px;
+	margin-bottom:30px;
+}
+
+#main ol li {
+	padding-top: 5px;
+	margin-left: 20px;
+	list-position: outside;
+}
+#breadcrumbs {
+	text-transform: uppercase;
+	color: #F69;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	line-height:160%;
+	margin-bottom:20px;
+}
+
+#fullWidth {
+	width: 100%;
+}
+#fullText {
+	padding-left:20px;
+	}
+	#fullText p {
+		font-size:130%;
+		line-height:130%;
+	}
+#facebook {
+	width: 100%;
+}
+#footer {
+	background-color: #333;
+		width: 100%;
+		font-size:75%;
+		color:#FFF;
+		text-align:center;
+}
+
+
+#sidebar {
+	width: 280px;
+	margin-right:20px;
+	padding-top:25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+#sidebar p {
+font-size:95%;	
+}
+#related {
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/title.png);
+	background-repeat: no-repeat;
+	margin-bottom:30px;
+}
+#related img {
+	padding-bottom:10px;
+}
+#related h3 {
+		color:#ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform:uppercase;
+	font-size:22px;
+	padding-left:10px;
+	font-weight:normal;
+	padding-bottom:20px;
+}
+
+#beforeAfter {
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/title.png);
+	background-repeat: no-repeat;
+	
+}
+#beforeAfter h3 {
+		color:#ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform:uppercase;
+	font-size:22px;
+	padding-left:10px;
+	font-weight:normal;
+	padding-bottom:20px;
+}
+#beforeAfter img {
+	padding-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#banner-search {
+	margin-top:25px;
+}
+input {
+	float:left;
+	padding-left:10px;
+}
+#banner-search #navigationSearchInput{
+
+width: 250px;
+height: 30px;
+border: 1px solid #ccc;
+font: 12px/15px arial,sans-serif;
+color: #666;
+background: #FFF;
+}
+#socialMedia {
+	width: 340px;
+}
+
+#icons {
+	padding-top:40px;
+	width:180px;
+	height:50px;
+	padding-bottom:20px;
+	padding-left:10px;
+}
+#icons img {
+	padding:5px;
+}
+
+.copyright {
+	padding-top:15px;
+	padding-bottom:15px;
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+
+	color:#666;
+}
+
+/* CSS STYLE SHEET FOR OFFERS & FACEBOOK COMMENTS*/
+
+.pageheader {
+	text-align: center;
+	font-family: 'Georgia', 'Book Antiqua', Palatino, serif;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-style: italic;
+	line-height:120%;
+}
+.small p {
+	padding-left: 5px;
+	line-height: 140%!important;
+	font-size: 105%;
+	padding-right:5px;
+}
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px dotted #CCC;
+margin: 0;
+padding: 0;
+}
+.imgInline {
+	float:left;
+	display:inline;
+	padding-right:20px;
+	margin-top:3px;
+}
+.subjectheader {
+	font-size: 26px!important;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align:center;
+}
+.celebcaption {
+	width: 600px;
+	margin: auto;
+	text-align: center;
+	line-height:120%;
+/*	padding: 2px 5px;
+*/}
+
+.testdiaryp {
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 10px;
+    width: 400px;
+}
+.pfirst {
+	margin-top: 10px;
+}
+
+
+.testdiaryimg {
+	float: left;
+	width: 150px;
+}
+.day img {
+	padding-left:10px;
+	padding-bottom:5px;
+}
+.day {
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/bubble.jpg);
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-right: 5px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+.day h2 {
+	color:#F39;
+	text-transform:uppercase;
+	padding-bottom:5px;
+	text-align:right;
+	padding-right:15px;
+}
+.day-text {
+	margin-left: 14px;
+	width: 587px;
+	background-color: #CCC;
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/bubble-bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.day-text hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px dotted #F39;
+margin: 0;
+padding: 0;
+}
+.step {
+	border: thin solid #CCC;
+	margin-top: 15px;
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/step1.jpg);
+	background-repeat: no-repeat;	
+	padding-left:70px;
+	height:250px;
+	padding-top:20px;
+}
+.step p {
+	font-size:120%;
+}
+
+.step2 p {
+	font-size:120%;
+}
+.step #product1 {
+	padding-top:30px;
+	padding-right:20px;
+}
+.step h2 {
+	padding-left:20px;
+	color:#333;
+}
+.step2 {
+	border: thin solid #CCC;
+	margin-top: 15px;
+	background-image: url(http://frenchimages.s3-eu-west-1.amazonaws.com/images/step2.jpg);
+	background-repeat: no-repeat;
+	padding-left: 70px;
+	height: 280px;
+	background-position: 0px 5px;
+	padding-top:10px;
+}
+.step2 h2 {
+	padding-left:20px;
+	color:#333;
+}
+.step2 #product2 {
+	padding-right:20px;
+	padding-left:10px;
+}
+.pullleft {
+	float: left;
+}
+.pullright {
+	float: right;
+}
+/* CSS STYLE SHEET FOR OFFERS & FACEBOOK COMMENTS END*/
+
+/* EXIT STYLES*/
+
+.headline {
+	width:100%;
+	text-align:center;
+	margin-bottom:40px;
+}
+.exitheader {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 40px;
+	margin-top: 0.5em;
+	margin-bottom: 30px;
+}
+.subjectheader {
+	font-size:26px;
+	margin-top:1em;
+	margin-bottom:0.5em;
+}
+.subheader {
+	font-size: 30px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+}
+.column1 {
+	width:400px;
+	text-align:center;
+	padding-left:50px;
+	margin-top:30px;
+}
+
+.column2 {
+	width: 100px;
+	text-align: center;
+	margin-top: 130px;
+	
+}
+
+.column3 {
+	width:400px;
+	text-align:center;
+	padding-right:50px;
+		margin-top:30px;
+
+}
+.offer {
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.textbox1 {
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-size:150%;
+	line-height:130%;
+}
+.textbox1 p {
+	text-align:center;
+	
+}
+.textbox2 {
+	text-align:left;
+	font-size:120%;
+	line-height:130%;
+}
+.textbox2 p {
+	text-align:left;
+}

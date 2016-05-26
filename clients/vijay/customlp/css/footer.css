@@ -1,0 +1,38 @@
+#footer {
+	margin: 0 -15px 0;
+	background: #f7f7f7;
+	padding: 50px 30px;
+}
+#footer .big {
+	font-size: 27px;
+	text-transform: uppercase;
+}
+#footer .big,
+#footer p {
+	margin: 0 0 15px;
+	display: block;
+}
+#footer .big:last-child,
+#footer p:last-child {
+	margin: 0;
+}
+#footer .links {
+	margin-bottom: 50px;
+}
+#footer .links .navigation-title {
+	font-size: 16px;
+	margin: 0 0 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#footer .links a {
+	margin: 0 0 10px;
+	display: block;
+	color: #333333;
+}
+#footer .links .col-xs-4 {
+	border-right: 1px dotted rgba(0,0,0,.2);
+}
+#footer .links .col-xs-4:last-child {
+	border-right: none;
+}

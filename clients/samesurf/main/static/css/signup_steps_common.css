@@ -1,0 +1,43 @@
+#signup_step_tabs {
+	display:table;
+	height:61px;
+	width:100%;
+	font-size: 16px;
+}
+#signup_step_tabs div {
+	display:table-cell;
+	background-color:rgb(41, 46, 50);
+	color:white;
+	vertical-align:middle;
+	text-align:center;
+	font-size:11px;
+}
+#signup_step1_tab {
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+#signup_step4_tab {
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+#signup_step2_tab, #signup_step3_tab, #signup_step4_tab, #signup_step5_tab, #signup_step6_tab {
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:black;
+}
+
+div#signup_tab_text {
+	display: inline-block;
+	line-height: 61px;
+	background-color: rgb(91,157,233);
+}
+
+div#signup_arrow_tab {
+	border-color: transparent;
+	border-style: solid;
+	border-width: 31px 0px 30px 19px;
+	border-left-color: rgb(91,157,233);
+	display: inline-block;
+	float: right;
+}

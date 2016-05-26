@@ -1,0 +1,99 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Proxima Nova';
+	background: #f2f2f2;
+}
+a {
+	color: #147ea6;
+}
+
+.button {
+	margin: 0 10px 10px;
+	padding: 15px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	-webkit-transition: all 175ms ease-out;
+	-moz-transition: all 175ms ease-out;
+	-o-transition: all 175ms ease-out;
+	transition: all 175ms ease-out;
+}
+.button:hover {
+	text-decoration: none;
+}
+.rounded-btn {
+	border-radius: 30px;
+}
+.yellow-btn {
+	color: #ffffff;
+	background: #e2a51a;
+	border: 1px solid #e2a51a;
+}
+.yellow-btn:hover {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	background: transparent;
+}
+.clear-btn {
+	color: #ffffff;
+	background: transparent;
+	border: 1px solid #ffffff;
+}
+.clear-btn:hover {
+	color: #147ea6;
+	border: 1px solid #ffffff;
+	background: #ffffff;
+}
+.blue-btn {
+	color: #ffffff;
+	background: #147ea6;
+	border: 1px solid #147ea6;
+}
+.blue-btn:hover {
+	color: #147ea6;
+	border: 1px solid #147ea6;
+	background: transparent;
+}
+.skip-btn {
+	color: #95a5b7;
+	background: #ecf0f2;
+	border: 1px solid #ecf0f2;
+}
+.skip-btn:hover {
+	color: #95a5b7;
+	border: 1px solid #95a5b7;
+	background: transparent;
+}
+.circle-lg {
+	width: 128px;
+	height: 128px;
+	border-radius: 300px;
+	-webkit-transition: all 175ms ease-out;
+	-moz-transition: all 175ms ease-out;
+	-o-transition: all 175ms ease-out;
+	transition: all 175ms ease-out;
+}
+.blue-circ {
+	background: #147ea6;
+}
+.blue-circ:hover {
+	background: #7fb7c9;
+}
+.blue-text {
+	color: #147ea6;
+}
+.responsive {
+	display: none;
+}
+
+@media all and (max-width: 991px) {
+	.responsive {
+		display: block;
+	}
+}

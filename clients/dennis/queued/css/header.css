@@ -1,0 +1,50 @@
+.header {
+	text-align: center;
+}
+.header .headings {
+	padding: 100px 0 35px;
+}
+.header .headings h1 {
+	font-size: 50px;
+}
+.header .headings h2 {
+	font-size: 28px;
+}
+.header .headings h1,
+.header .headings h2 {
+	font-weight: 100;
+}
+
+.home-header {
+	background: url('../img/home-header-bg.jpg') top center no-repeat;
+	background-size: cover;
+}
+.home-header .headings {
+	color: #ffffff;
+}
+.home-header .headings h2 {
+	color: #aabed7;
+}
+.home-header .buttons {
+	margin-bottom: 30px;
+}
+.home-header .buttons .button {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.home-header .buttons .create-account {
+	margin-top: 30px;
+	display: block;
+	color: #aabed7;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.home-header .buttons .create-account:hover {
+	text-decoration: none;
+}
+
+@media all and (max-width: 991px) {
+	.header .headings {
+		padding: 0 0;
+	}
+}

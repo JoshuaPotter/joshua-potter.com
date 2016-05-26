@@ -1,0 +1,100 @@
+<?php
+	$this->setTitle("admin");
+	$this->addCSSFile("/static/css/common.css");
+	$this->addCSSFile("/static/css/common_form.css");
+	$this->addCSSFile("/static/css/signup_steps_common.css");
+	$this->addCSSFile("/static/css/account_step1.css");
+	$this->addJSFile("/static/js/account_step1.js");
+?>
+
+	<div id="sub_header">
+		<div id="sub_nav">
+			<div id="sub_navlinks">
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">REQUEST DEMO</a>
+					<a href="#">PRICING</a>
+					<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+<div class="banner">
+	<div class="banner_main">
+		<div class="banner_title">
+			<?php echo $blocks->progress ?>
+		</div>
+	</div>
+</div>
+
+<div class="centre_content">
+
+	<div id="main_content">
+		<div id="adddomain">
+			<div id="adddomain_title">
+				Add Domains:
+			</div>
+			<p>
+				Input eligible domains for co-browsing or click the checkbox to allow Co-Browsing of the Entire Web:
+			</p>
+			
+			<form action="/account/add" method="post">
+				<div class="input_style" id="domainname">	
+				<input type="text" name="domain"></input>
+			</div>
+			<div id="adddomain_submit" class="button_blue">
+				<div>ADD</div>
+			</div>
+			<div class="all_web_checkbox_wrap">
+				<span id="all_web_or">OR</span>
+				<div class="custom_checkbox">
+					<input type="checkbox" name="all_web"></input>
+					<div class="custom_checkbox_tick"></div>
+				</div>
+				<span id="all_web_checkbox_text">Enable Co-browsing of the Entire Web</span>
+			</div>
+			</form>
+			
+		</div>
+	
+		<div class="divider"></div>
+	
+		<div id="existingdomains">
+			<div id="exisingdomains_title">
+				Domains Added
+			</div>
+			<div>
+				<ol>
+					<?php
+						$domains = $view->defaults->domains;
+						foreach($domains as $domain) : 
+					?>
+					<li>
+						<div class="existing_domain_wrap">
+							<div class="existing_domain input_style_borderless">
+								<input type=text value="<?= $domain->domain() ?>" readonly></input>
+								<div class="existing_domain_remove">
+									<div class="existing_domain_remove_icon"></div>
+									<form method="post" action="/account/remove" class="remove_domain">
+										<input type="hidden" name="pid" value="<?= $domain->publicid()?>"></input>
+									</form>
+								</div>
+								<input class="edit_domain_value" type="hidden" value="/account/auth/pid/<?= $domain->publicid()?>"></input>		
+							</div>
+						</div>
+					</li>
+					<?php endforeach ?>
+				</ol>
+			</div>
+		</div>
+	</div>
+	
+	<div id="navbuttons">
+		<div class="navbuttons_align">
+			<a href="/account"><div class="back button_black">BACK</div></a>
+			<a id="edit_domain">
+				<div id="next_step"class="button_blue">NEXT STEP: GRANT PERMISSIONS</div>
+			</a>
+		</div>
+	</div>
+
+</div>		
+

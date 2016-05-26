@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-black-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-black-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-black-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-black-webfont.svg#proxima_nova_blregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-extrabold-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-extrabold-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-extrabold-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-extrabold-webfont.svg#proxima_nova_thbold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-bold-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-bold-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-bold-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-semibold-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-semibold-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-semibold-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-semibold-webfont.svg#proxima_nova_ltbold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-regular-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-regular-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-regular-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'www-samesurf';
+  src: url('http://font2.samesurf.com/new/proximanova-light-webfont.eot');
+  src: url('http://font2.samesurf.com/new/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://font2.samesurf.com/new/proximanova-light-webfont.woff') format('woff'),
+       url('http://font2.samesurf.com/new/proximanova-light-webfont.ttf') format('truetype'),
+       url('http://font2.samesurf.com/new/proximanova-light-webfont.svg#proxima_nova_ltregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+* {
+	padding:0px;
+	margin:0px;
+	font-family: www-samesurf, Helvetica;
+}
+
+html, body {
+	width:100%;
+}
+
+#topBar {
+    background: url('/static/images/bg_header.png') repeat-x;
+    height: 45px;
+    width: 100%;
+}
+
+body {
+	background: url('/static/images/bg_white.png') repeat;
+}
+
+
+.divider {
+    background: url('/static/images/divider.png') repeat-x;
+    border: none;
+    height: 2px;
+    width: 915px;
+    margin-bottom: 20px;
+}
+
+.pagetop	{
+	margin-top: 20px;
+}
+
+.pagemiddle	{
+	margin-top: 20px;
+}
+
+.pagemiddle span.title {
+	font-size: 32px;
+	font-weight: 100px;
+	color: rgb(61,61,61);
+	margin bottom:20px;
+}
+
+.centrepage	{
+	width: 915px;
+	margin: 0 auto;
+}

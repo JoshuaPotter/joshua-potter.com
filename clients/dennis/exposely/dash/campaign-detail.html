@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Exposely - Dashboard</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+		<!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- custom css -->
+		<link rel="stylesheet" type="text/css" href="../css/fonts/proxima-nova.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+	</head>
+
+	<body>
+		<div id="dash-container">
+			<div id="menu" role="navigation" class="dash-sidebar">
+				<div class="nav-wrap">
+					<div class="logo">
+						<a href="#" class="logo-img">
+							<img src="../img/logos/exposely-lg.png" alt="Exposely" />
+						</a>
+					</div>
+
+					<ul>
+						<li><a href="#" class="campaign-link active"><img src="img/icons/campaigns-icon.png" alt="Campaigns" /> Campaigns </a></li>
+						<li><a href="#" class="accounts-link"><img src="img/icons/accounts-icon.png" alt="Accounts" /> Accounts</a></li>
+						<li><a href="#" class="earnings-link last-child"><img src="img/icons/earnings-icon.png" alt="Campaigns" /> Earnings</a></li>
+					</ul>
+
+					<ul class="bottom-links">
+						<div class="account-info clearfix">
+							<img class="avatar-icon" src="img/avatar.jpg" />
+							<p>
+								MIHNEA ZAMFIR
+							</p>
+						</div>
+						<li>
+							<a href="#" class="settings-link"><img src="img/icons/settings-icon.png" alt="Settings" /> 
+								<p>Settings</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="log-out-link">
+								<img src="img/icons/log-out-icon.png" alt="Log Out" />
+								<p>
+									Log Out
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dash-content">
+				<div class="page-heading clearfix">
+					<div class="nav-button">
+						<i class="fa fa-bars fa-2x" id="nav-button-icon"></i>
+					</div>
+					<div class="page-title">
+						<h1>
+							Campaign Details
+						</h1>
+					</div>
+					<div class="search">
+						<div class="search-bar">
+							<input id="search" type="text" class="input-search" name="campaign-search" />
+						</div>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+				</div>
+				<div id="campaign-detail-container">
+					<div class="row">
+						<div class="col-md-9 campaign-content">
+							<div class="campaign-photo" style="background-image: url('https://download.unsplash.com/photo-1428342319217-5fdaf6d7898e');">
+								<div class="campaign-photo-actions">
+									<i class="fa fa-times" id="campaign-photo-remove"></i>
+									<i class="fa fa-check" id="campaign-photo-check"></i>
+									<i class="fa fa-upload" id="campaign-photo-upload"></i>
+								</div>
+							</div>
+							<div class="campaign-description">
+								<div class="campaign-title">
+									Green Coffee Diet
+								</div>
+								<div class="campaign-description">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus neque in sem ornare, tristique sagittis velit auctor. Aenean lobortis blandit ligula, eget blandit lorem cursus sit amet. Sed elementum nisl quis metus eleifend, eget varius nunc porta. Nullam mattis sollicitudin tortor, et molestie lectus iaculis vel.
+								</div>
+								<div class="campaign-info">
+									<div class="row">
+										<div class="col-md-6">
+											<strong>Destination: </strong> <a href="#">http://www.viralnova.com/story-of-a-boy-named-lucas/</a>
+										</div>
+										<div class="col-md-3">
+											<strong>Start:</strong> March 21st @ 7:00am
+										</div>
+										<div class="col-md-3">
+											<strong>End:</strong> March 21st @ 7:00am
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="campaign-details">
+								<div class="row">
+									<div class="col-md-6 campaign-specifics-container">
+										<div class="campaign-specifics">
+											<div class="row">
+												<div class="col-xs-6">
+													<div class="specifics-title">
+														Campaign URL
+													</div>
+													<div class="specifics-text">
+														<a href="#">bit.ly/1AUDpXw</a> <i class="fa fa-refresh"></i>
+													</div>
+													<div class="border-bottom">
+														
+													</div>
+												</div>
+												<div class="col-xs-6">
+													<div class="specifics-title">
+														Targeted Devices
+													</div>
+													<div class="specifics-text">
+														<i class="fa fa-mobile"></i>
+														<i class="fa fa-tablet"></i>
+														<i class="fa fa-desktop"></i>
+													</div>
+													<div class="border-bottom">
+														
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-6">
+													<div class="specifics-title">
+														Available Countries
+													</div>
+													<div class="specifics-text">
+														
+													</div>
+												</div>
+												<div class="col-xs-6">
+													<div class="specifics-title">
+														Targeted Platforms
+													</div>
+													<div class="specifics-text">
+														<i class="fa fa-facebook"></i>
+														<i class="fa fa-twitter"></i>
+														<i class="fa fa-pinterest"></i>
+														<i class="fa fa-instagram"></i>
+														<i class="fa fa-tumblr"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 campaign-guidelines-container">
+										<div class="campaign-guidelines">
+											<div class="campaign-guidelines-header">
+												Campaign Guidelines
+											</div>
+											<div class="clearfix">
+												<div class="col-md-6">
+													<div class="guideline">
+														Use #socialMedia
+													</div>
+													<div class="guideline">
+														Use at leaast one of these hashtags
+													</div>
+													<div class="guideline">
+														Use at leaast one of these hashtags
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="guideline">
+														Use #socialMedia
+													</div>
+													<div class="guideline">
+														Use at leaast one of these hashtags
+													</div>
+													<div class="guideline">
+														Use at leaast one of these hashtags
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="campaign-message">
+								<div class="campaign-message-title">
+									Suggested Message
+								</div>
+								<div class="campaign-message-textarea">
+									<textarea>Lorem ipsum dolor sit amet, consectetur #Hashtag adipiscing elit. Quieuis mod http://bit.ly/1AUDpXw</textarea>
+									<div class="char-counter">
+										<span class="char">80</span> CHARACTERS
+									</div>
+								</div>
+								<div class="campaign-message-account">
+									<div class="row">
+										<div class="col-md-8">
+											ACCOUNT: 
+											<select>
+												<option>LucasKriebel123</option>
+											</select>
+											TOTAL REACH: <span class="total-reach">27.3 K</span>
+										</div>
+										<div class="col-md-4 submission-link">
+											<a href="#" class="campaign-submit">SHARE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 campaign-sidebar clearfix">
+							<div class="sidebar-section">
+								<div class="sidebar-icon campaign-type">
+									
+								</div>
+								<div class="sidebar-title">
+									Pay Per Click
+								</div>
+								<div class="sidebar-subtitle">
+									Campaign Type
+								</div>
+								<div class="bottom-border">
+									
+								</div>
+							</div>
+							<div class="sidebar-section">
+								<div class="sidebar-icon">
+									<i class="fa fa-dollar"></i>
+								</div>
+								<div class="sidebar-title">
+									$16,451.00
+								</div>
+								<div class="sidebar-subtitle">
+									Total Earnings
+								</div>
+								<div class="bottom-border">
+									
+								</div>
+							</div>
+							<div class="sidebar-section">
+								<div class="sidebar-icon">
+									<i class="fa fa-repeat"></i>
+								</div>
+								<div class="sidebar-title">
+									13
+								</div>
+								<div class="sidebar-subtitle">
+									Conversions
+								</div>
+								<div class="bottom-border">
+									
+								</div>
+							</div>
+							<div class="sidebar-section">
+								<div class="sidebar-icon">
+									<i class="fa fa-bar-chart"></i>
+								</div>
+								<div class="sidebar-title">
+									$18.75
+								</div>
+								<div class="sidebar-subtitle">
+									CPC Estimate
+								</div>
+								<div class="bottom-border">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bigSlide.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,208 @@
+#navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	padding: 26px 0;
+	background-image: transparent;
+	background-position: top center;
+	background-repeat: repeat-x;
+	-webkit-transition: all 175ms ease-in-out;
+	-moz-transition: all 175ms ease-in-out;
+	-o-transition: all 175ms ease-in-out;
+	transition: all 175ms ease-in-out;
+}
+.nav-dark {
+	background: rgba(0,0,0,.75);
+}
+#navigation .logo {
+	float: left;
+}
+#navigation #nav-menu {
+	display: block;
+}
+#navigation .nav-button { 
+	display: none;
+}
+#navigation .responsive-nav {
+	display: none ;
+}
+#navigation .main-nav {
+	display: block;
+}
+#navigation ul {
+	margin: 0;
+	padding: 5px 0;
+	list-style-type: none;
+	float: right;
+}
+#navigation ul li {
+	margin-left: 45px;
+	position: relative;
+	float: left;
+}
+#navigation ul li a {
+	padding: 8px 0;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	color: #ffffff;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	-webkit-transition: border 175ms ease-in-out;
+	-moz-transition: border 175ms ease-in-out;
+	-o-transition: border 175ms ease-in-out;
+	transition: border 175ms ease-in-out;
+}
+#navigation ul li .active,
+#navigation ul li a:hover {
+	border-bottom: 1px solid #209ccb;
+}
+#navigation ul li .dropdown:hover {
+	border-bottom: 1px solid transparent;
+}
+#navigation ul li .login {
+	padding: 8px 25px;
+	border: 1px solid #ffffff;
+	border-radius: 30px;
+	-webkit-transition: all 175ms ease-in-out;
+	-moz-transition: all 175ms ease-in-out;
+	-o-transition: all 175ms ease-in-out;
+	transition: all 175ms ease-in-out;
+}
+#navigation ul li .login:hover {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	color: #209ccb;
+}
+#navigation ul li .dropdown-wrap {
+	position: absolute;
+	top: 26px;
+	right: 0;
+	padding-top: 25px;
+	display: none;
+}
+#navigation ul li ul {
+	padding: 0;
+	width: 175px;
+	list-style-type: none;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#navigation ul li:hover .dropdown-wrap {
+	display: block;
+}
+#navigation ul li ul li {
+	margin: 0;
+	display: block;
+	width: 100%;
+	float: left;
+}
+#navigation ul li ul li a {
+	margin: 0;
+	padding: 13px 19px;
+	border-bottom: 1px solid #ffffff;
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	-webkit-transition: all 175ms ease-in-out;
+	-moz-transition: all 175ms ease-in-out;
+	-o-transition: all 175ms ease-in-out;
+	transition: all 175ms ease-in-out;
+}
+.nav-dark ul li ul li a {
+	background: rgba(0,0,0,.75);
+}
+#navigation ul li ul li a:hover {
+	color: #147ea6;
+	background: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+@media all and (max-width: 991px) {
+	#navigation {
+		padding: 0;
+	}
+	.nav-dark {
+		padding: 0 !important;
+	}
+	#navigation .container {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	#navigation .logo {
+		padding: 15px 0;
+		margin: 0 20px;
+		display: inline-block;
+		float: none;
+	}
+	#navigation .nav-button {
+		padding: 20px 20px 15px;
+		float: right;
+		display: inline-block;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	#navigation #nav-menu {
+		display: none;
+	}
+	#navigation .responsive-nav {
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}
+	#navigation .main-nav {
+		display: none;
+	}
+	#navigation ul {
+		margin: 10px 0 -15px;
+		padding: 5px 0 0;
+		float: none;
+		display: block;
+		background: #282828;
+		width: 100%;
+	}
+	#navigation ul li {
+		margin-left: 0;
+		position: relative;
+		float: none;
+	}
+	#navigation ul li a {
+		margin: 0 0 5px;
+		padding: 10px 20px;
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+	#navigation ul li a:hover {
+		color: #209ccb;
+	}
+	#navigation ul li .login {
+		margin: 0;
+		padding: 10px 20px;
+		text-align: left;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+	#navigation ul li .login:hover {
+		background: transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	border-bottom: 1px solid #209ccb;
+		color: #209ccb;
+	}
+	#navigation ul li .dropdown i {
+		display: none;
+	}
+	#navigation ul li .dropdown:hover {
+		border-bottom: 1px solid #209ccb;
+	}
+	#navigation ul li:hover .dropdown-wrap {
+		display: none;
+	}
+}

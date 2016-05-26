@@ -1,0 +1,137 @@
+#nav {
+	position: relative;
+	margin-bottom: 60px;
+}
+#nav .logo {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	display: block;
+	padding: 20px 20px 8px;
+	float: left;
+	background: #b42f5b;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(156, 41, 82, 0.75);
+	color: #ffffff;
+	-webkit-transition: padding 150ms ease-out;
+	-moz-transition: padding 150ms ease-out;
+	-o-transition: padding 150ms ease-out;
+	transition: padding 150ms ease-out;
+}
+#nav .logo:hover {
+	padding-top: 30px;
+	text-decoration: none;
+}
+#nav .logo h3 {
+	font-weight: 700;
+}
+#nav .logo .light {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+}
+#nav ul {
+	float: right;
+	margin: 0;
+	padding: 30px 0;
+	list-style-type: none;
+	text-shadow: 0px 2px 0px rgba(22, 59, 129, 0.3);
+}
+#nav ul li {
+	position: relative;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+}
+#nav ul li a {
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#nav ul li a:hover {
+	background: #628dad;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+}
+#nav ul li ul {
+	margin-top: -2px;
+	position: absolute;
+	z-index: 300;
+	padding: 10px 10px 15px;
+	float: none;
+	width: 100.3%;
+	background: #628dad;
+	border-radius: 5px;
+	display: none;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+}
+#nav ul li:hover ul {
+	display: block;
+}
+#nav ul li:hover > a {
+	background: #628dad;
+}
+#nav ul li ul li {
+	margin: 0;
+	float: none;
+	display: block;
+	width: 100%;
+}
+#nav ul li ul li a {
+	padding: 10px 0 5px;
+	display: block;
+	text-align: center;
+	border-top: 1px solid #547f9f;
+	border-radius: 0;
+}
+#nav ul li ul li a:hover {
+	background: #547f9f;
+}
+#nav .first-child {
+	border-top: none !important;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#nav .last-child {
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#nav .signin {
+	display: inline-block;
+	margin: -10px 0 0 0;
+	padding-left: 18px;
+	padding-right: 18px;
+	background: #628dad;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(77, 120, 152, 0.75);
+}
+#nav .signin:hover {
+	background: #497a9e;
+}
+#nav .signin:active {
+	margin: -8px 0 -2px 0;
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(77, 120, 152, 0.75);
+	-moz-box-shadow:    0px 2px 0px 0px rgba(77, 120, 152, 0.75);
+	box-shadow:         0px 2px 0px 0px rgba(77, 120, 152, 0.75);
+}

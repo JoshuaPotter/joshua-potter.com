@@ -1,0 +1,384 @@
+body {
+  font-size:15px;
+  background:#f4e9f5;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a {
+  color:#700683;
+  font-weight:bold;
+  text-decoration: none;
+}
+a:hover {
+  color:#edbbf6;
+}
+.container {
+  width:710px;
+  margin:20px auto;
+  padding:15px;
+  color:#222;
+  border:5px solid #e9cfed;
+}
+.logo {
+  font-size:33px;
+  font-weight:bold;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-bottom:10px;
+}
+.logo span {
+  background:#e1b2e4;
+  color:#000;
+  width:300px;
+  height:100px;
+  padding:10px;
+}
+.slogan {
+  display:block;
+  border:1px solid #e9cfed;
+  background-color:#f4e9f5;
+  padding:10px;
+  font-size:18px;
+  padding-left:20px;
+  font-weight:normal;
+  margin:10px 0 10px;
+}
+.slogan a {
+  background-color:#f4e9f5 !important;
+  font-weight:bold;
+}
+.content {
+  background:#fff;
+  padding:10px 25px 25px 25px;
+  line-height:23px;
+  border:1px solid #d99bdd;
+  text-align:justify;
+  margin-top:5px
+}
+.content p {
+  margin:5px 0 12px 0;
+}
+.title {
+  font-family:Arial, Helvetica, sans-serif;
+  padding:0 0 15px 0;
+  font-size:33px;
+  font-weight:bold;
+  line-height:37px;
+  text-align:left;
+  color:#00F;
+  border-bottom:1px solid #e9cfed;
+  margin-bottom:15px;
+}
+.offer {
+  margin:20px 0;
+  border:1px solid #e9cfed;
+
+  padding:10px;
+}
+.step {
+  padding:0 0 5px 0;
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+.p_image {
+  float:left;
+  margin-right:15px;
+  border:3px solid #e9cfed;
+  background:#fff;
+}
+.p_image:hover {
+  border:3px solid #700683;
+}
+.p_image img {
+  width:110px;
+  height:162px;
+  background:#fff;
+}
+.p_image a {
+  background:#fff;
+  padding:0;
+}
+.clear {
+  clear:both;
+}
+.avatar {
+  float:left;
+  margin-right:10px;
+}
+.comment {
+  border:1px solid #ccc;
+  padding:7px;
+  background:#f7f7f7;
+  margin-bottom:20px;
+}
+.comment a {
+  background:#f7f7f7 !important;
+  font-weight:bold !important;
+}
+.number {
+  float:right;
+  color:#000;
+  padding:10px;
+  font-size:16px;
+  font-weight:bold;
+  margin:22px 0 0 0;
+}
+.name {
+  font-weight:bold;
+  font-size:16px;
+  padding:3px;
+}
+.date {
+  background:#e1e1e1;
+  border:1px solid #ccc;
+  padding:2px;
+  font-weight:bold;
+  font-size:12px;
+  color:#555;
+}
+.pic {
+  float:left;
+  border:1px solid #ccc;
+  padding:5px;
+  margin:5px 10px 5px 10px;
+  background:#FFF;
+}
+.text {
+  font-size:12px;
+}
+.commentbox label {
+  width:100px;
+  font-size:12px;
+  height:22px;
+  font-weight:bold;
+  display:block;
+  float:left;
+  border:1px solid #e9cfed;
+  background-color:#f4e9f5;
+  padding:0 5px;
+  margin:0 8px 1px 0;
+}
+.commentbox input {
+}
+.commentbox input:focus {
+  background-color:#FFC;
+}
+.commentbox textarea {
+  border:1px solid #C9F;
+  border-left:5px solid #C9F;
+  width:500px;
+  height:180px;
+}
+.red {
+  color:#900;
+}
+.green {
+  color:#090;
+}
+.cname {
+  background:url("../img/user_green.png") no-repeat 4px 3px;
+  width:300px;
+  float:left;
+  height:23px;
+  border:1px solid #C9F;
+  border-left:5px solid #C9F;
+  margin-bottom:5px;
+  padding:0 0 0 25px;
+}
+.cemail {
+
+  width:300px;
+  float:left;
+  height:23px;
+  border:1px solid #C9F;
+  border-left:5px solid #C9F;
+  margin-bottom:5px;
+  padding:0 0 0 25px;
+}
+.cwebsite {
+
+  width:300px;
+  float:left;
+  height:23px;
+  border:1px solid #C9F;
+  border-left:5px solid #C9F;
+  margin-bottom:5px;
+  padding:0 0 0 25px;
+}
+.csubmitcomment {
+  width:200px !important;
+  background:#C9F !important;
+  color:#fff !important;
+  margin-left:120px;
+  font-size:14px;
+  margin-top:10px;
+  font-weight:bold;
+  padding:6px !important;
+}
+.footer {
+  padding:20px 0 0 0;
+  text-align:center;
+}
+.footer a {
+  font-size:16px !important;
+  background:none !important;
+}
+h2 {
+  line-height:33px;
+  font-size:20px;
+  text-align:left;
+}
+.position1 {
+  position:absolute;
+  bottom:0px;
+  left:1px;
+  font-weight:bold;
+  padding:5px 10px;
+  background:#da4ae3;
+  color:white;
+}
+.position2 {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  font-weight:bold;
+  padding:5px 10px;
+  background:#da4ae3;
+  color:white;
+}
+fieldset {
+  border:1px solid #ccc;
+}
+
+img {
+  max-width:100%;
+}
+
+/************************* BOBBY **********************************************
+*/
+.logo2 {
+  width: 100%;
+  height: auto;
+}
+.logo2 img {
+  width: 100%;
+  height: auto;
+}
+
+.logo2 {
+  display: none;
+
+}
+
+
+/***********************************************************************
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .slogan img {
+    width: auto !important;
+  }
+  .comment img {
+    width: auto !important;
+  }
+
+  .container {
+    width: 95%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    width: 100% !important;
+
+  }
+  .slogan {
+    width: 92%;
+    height: auto;
+  }
+  .cemail {width: 92%;}
+  .cname {width: 92%;}
+  .cwebsite {width: 92%;}
+}
+@media (min-width: 321px) and (max-width: 480px) {
+
+  .logo2 {
+    display:block;
+  }
+
+  .slogan img {
+    width: auto !important;
+  }
+  .comment img {
+    width: auto !important;
+  }
+  .container {
+    width: 95%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    width: 100% !important;
+
+  }
+  .logo {
+    display: none;
+  }
+  .slogan {
+    width: 92%;
+    height: auto;
+  }
+  .cemail {width: 92%;}
+  .cname {width: 92%;}
+  .cwebsite {width: 92%;}
+}
+
+
+
+/*Styles for screen 600px and lower*/
+@media (max-width: 320px) {
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display:block;
+  }
+
+  .slogan img {
+    width: auto !important;
+  }
+  .comment img {
+    width: auto !important;
+  }
+  .container {
+    width: 90%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    width: 100% !important;
+
+  }
+  .commentbox label { width:100% !important}
+
+  .slogan {
+    width: 92%;
+    height: auto;
+  }
+
+  .cemail {width: 92%;}
+  .cname {width: 92%;}
+  .cwebsite {width: 92%;}
+
+  .csubmitcomment { margin-left: 0px; }
+  .position1 { display: none; }
+  .position2 { display: none; }
+}

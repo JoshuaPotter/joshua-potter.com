@@ -1,0 +1,340 @@
+/*
+
+Applicable Pages
+	- Landing
+	- Profile/Photo/Settings
+
+Table of Contents
+	- Landing Header
+	- Profile/Photo/Settings Header
+
+*/
+
+/* Landing Header */
+
+#landing-header {
+	position: relative;
+	height: 100vh;
+	background: url('../img/bg.jpg') center center no-repeat;
+	background-size: cover;
+	display: block;
+}
+#landing-header .cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+}
+#landing-header .buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	text-align: center;
+}
+#landing-header .buttons a {
+	padding: 25px 25px 25px 55px;
+	background-position: 15px center;
+	border-radius: 4px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 16px;
+}
+#landing-header .buttons .responsive {
+	display: none;
+}
+#landing-header .buttons .facebook {
+	margin-right: 30px;
+	background-color: #3b579d;
+	background-image: url('../img/logos/facebook/facebook-share-icon.png');
+	background-repeat: no-repeat;
+}
+#landing-header .buttons .twitter {
+	background-color: #00B0ED;
+	background-image: url('../img/logos/twitter/twitter-share-icon.png');
+	background-repeat: no-repeat;
+}
+#landing-header .buttons .facebook:hover {
+	background-color: #354F8F;
+}
+#landing-header .buttons .twitter:hover {
+	background-color: #089ACC;
+}
+@media all and (max-width: 1100px) {
+	#landing-header {
+		height: 500px;
+		background: #2F3030 url('../img/bg-responsive.jpg') center center no-repeat;
+		background-size: cover;
+	}
+	#landing-header .buttons {
+		padding: 25px 0;
+		bottom: -47px;
+		background: none;
+		border: none;
+	}
+	#landing-header .buttons a {
+		display: none;
+	}
+	#landing-header .buttons .responsive {
+		padding: 20px 20px;
+		display: inline-block;
+		background-position: center center;
+	}
+	#landing-header .buttons .facebook {
+		margin-right: 10px;
+	}
+}
+
+/* Responsive Landing v2 */
+.mobile-responsive {
+	display: none;
+}
+@media all and (max-width: 1175px) {
+	.mobile-responsive {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	
+	#mobile-header {
+		padding: 23px 4%;
+		background: #fafafa;
+		color: #404257;
+		text-align: center;
+	}
+	#mobile-header .landing-nav-responsive-button {
+		padding: 3px 0;
+		float: left;
+		cursor: pointer;
+	}
+	#mobile-header h2 {
+		margin: 0;
+		padding: 0;
+	}
+	#mobile-header ul {
+		margin: 0;
+		padding: 5px 0;
+		list-style-type: none;
+		text-align: left;
+		display: none;
+	}
+	#mobile-header ul li a {
+		padding: 20px 0;
+		border-bottom: 1px solid #eaeaea;
+		color: #404257;
+		text-decoration: none;
+		display: block;
+		-webkit-transition: padding 175ms ease-out;
+		-moz-transition: padding 175ms ease-out;
+		-o-transition: padding 175ms ease-out;
+		-ms-transition: padding 175ms ease-out; 
+		transition: padding 175ms ease-out;
+	}
+	
+	#get-podium {
+		padding: 32px 0;
+		background: #30363E url('../img/icons/music-note.png') 4% center no-repeat;
+		color: #ffffff;
+		text-align: center;
+		text-decoration: none;
+	}
+	#get-podium p {
+		font-size: 18px;
+	}
+	#get-podium .close-get-podium {
+		float: right;
+		font-size: 22px;
+		display: none;
+	}
+	.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+	}
+	
+	#responsive-content {
+		padding: 10px 4%;
+		background: #ffffff;
+	}
+	#responsive-content .tab-selector ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		border-radius: 5px;
+		border: 1px solid #30363E;
+		background: #30363E;
+	}
+	#responsive-content .tab-selector ul li {
+		padding: 10px 0;
+		display: inline-block;
+		float: left;
+		font-size: 14px;
+		text-align: center;
+		background: #ffffff;
+		border-right: 1px solid #30363E;
+		color: #30363E;
+		width: 33.11%;
+		cursor: pointer;
+	}
+	#responsive-content .tab-selector ul .active {
+		background: #30363E;
+		color: #ffffff;
+	}
+	#responsive-grid {
+		padding: 0 0 10px 4%;
+	}
+	#responsive-grid .grid {
+		display: none;
+	}
+	#responsive-grid .show-grid {
+		display: block;
+	}
+	#responsive-grid .grid ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	#responsive-grid .grid ul li {
+		position: relative;
+		border-radius: 5px;
+		background: #30363E;
+		width: 47%;
+		height: 148px;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		float: left;
+	}
+	#responsive-grid .grid ul li a {
+		position: absolute;
+		border-radius: 5px;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		background-position: center center;
+		background-size: cover;
+	}
+	#responsive-grid .grid ul li a:hover {
+		opacity: .3;
+	}
+}
+
+/* Photo/Settings/Profile Header */
+
+#main-header {
+	margin-bottom: 30px;
+	padding: 30px 0;
+	overflow: visible;
+}
+#main-header .top {
+	padding: 30px 0;
+	top: 0;
+	z-index: 1000;
+}
+#main-header .resize {
+	padding: 8px 0;
+}
+#main-header .container {
+	margin: 0 auto;
+	width: 1170px;
+	overflow: visible;
+	background: #f6f6f6;
+	-webkit-transition: padding 50ms ease-out;
+	-moz-transition: padding 50ms ease-out;
+	-o-transition: padding 50ms ease-out;
+	-ms-transition: padding 50ms ease-out; 
+	transition: padding 50ms ease-out;
+}
+#main-header .logo {
+	float: left;
+	display: inline-block;
+}
+#main-header .logo img {
+	max-width: 100%;
+	height: auto;
+}
+#main-header .logo h2 {
+	display: none;
+}
+#main-header .navigation {
+	position: relative;
+	padding: 8px 0;
+	float: right;
+	display: inline-block;
+	overflow: visible;
+}
+#main-header .navigation i {
+	padding: 10px;
+	color: #9ea9ba;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-transition: color 175ms ease-out;
+	-moz-transition: color 175ms ease-out;
+	-o-transition: color 175ms ease-out;
+	-ms-transition: color 175ms ease-out; 
+	transition: color 175ms ease-out;
+}
+#main-header .navigation i:hover {
+	color: #8994a4;
+}
+#main-header .navigation ul {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	position: absolute;
+	display: none;
+	top: 50px;
+	right: -25px;
+	width: 145px;
+	list-style-type: none;
+	z-index: 500;
+	-webkit-transition: padding 175ms ease-out;
+	-moz-transition: padding 175ms ease-out;
+	-o-transition: padding 175ms ease-out;
+	-ms-transition: padding 175ms ease-out; 
+	transition: padding 175ms ease-out;
+}
+#main-header .navigation ul li {
+	text-align: left;
+}
+#main-header .navigation ul li a {
+	padding: 15px 10px 15px 25px;
+	border-bottom: 1px solid #eaeaea;
+	display: block;
+	text-decoration: none;
+	color: #3a3f47;
+	background-position: left center;
+	background-repeat: no-repeat;
+	-webkit-transition: color 175ms ease-out;
+	-moz-transition: color 175ms ease-out;
+	-o-transition: color 175ms ease-out;
+	-ms-transition: color 175ms ease-out; 
+	transition: color 175ms ease-out;
+}
+#main-header .navigation ul li .no-border {
+	border-bottom: 1px solid #ffffff;
+}
+#main-header .navigation ul li a:hover {
+	color: #000000;
+	border-bottom: 1px solid #87cb17;
+}
+#main-header .navigation ul li .profile {
+	background-image: url('../img/icons/menu-profile.png');
+}
+#main-header .navigation ul li .settings {
+	background-image: url('../img/icons/menu-settings.png');
+}
+#main-header .navigation ul li .signout {
+	background-image: url('../img/icons/menu-signout.png');
+}
+@media all and (max-width: 1200px) {
+	#main-header .container {
+		width: 1100px;
+	}
+}

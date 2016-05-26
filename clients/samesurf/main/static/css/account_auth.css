@@ -1,0 +1,145 @@
+div#signup_step1_tab, div#signup_step2_tab {
+	background-color:rgb(91, 157, 233);
+}
+
+div#signup_step2_tab {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: rgb(79,137,209);
+}
+
+div#signup_step3_tab {
+	border-left-width: 0px;
+	border-left-style: none;
+	border-left-color: transparent;
+}
+
+form {
+	display:inline-block;
+	width:440px;
+	margin-top: 10px;
+}
+
+#add_domain, #add_user {
+	margin-top: 30px;
+	padding: 30px 15px;
+	background-color: #ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(237,237,237);
+	border-radius: 5px;
+}
+
+.submit {
+	display: inline-block;
+	width: 58px;
+	height: 46px;
+	line-height: 48px;
+	font-size: 13px;
+	border-radius: 4px;
+	margin-left: 10px;
+	color: white;
+	text-align: center;
+	font-family: gotham_mediumregular;
+}
+
+.entry_dismiss {
+	display: none;
+	width: 10px;
+	height: 10px;
+	float: right;
+	margin-top: 4px;
+	margin-right: 20px;
+	background-image: url(/static/images/entry_dismiss.png);
+}
+
+
+ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+#add_domain {
+	margin-top:20px;
+}
+
+.title {	
+	font-size: 14px;
+	font-family: gotham_mediumregular;
+	color:rgb(61, 61, 61);
+}
+
+
+#exisingusers_title {
+	color: rgb(140,140,140);
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.existing_domain {
+	width:500px;
+	display:inline-block;
+	background-color: rgb(245,245,245);
+}
+
+.primary_domain_box {
+	width:539px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 5px;
+	background-color: rgb(245,245,245);
+	margin-bottom:10px;
+	padding-left: 15px;
+	display: inline-block;
+}
+
+.authed_domain_link {
+	width: 12px;
+	height: 36px;
+	margin-left: 11px;
+	margin-right: 11px;
+	vertical-align: middle;
+	display: inline-block;
+	background-image: url(/static/images/authed_domain_link.png);
+}
+
+.authed_domain_add {
+	width: 12px;
+	height: 36px;
+	margin-left: 11px;
+	margin-right: 11px;
+	vertical-align: middle;
+	display: inline-block;
+	background-image: url(/static/images/authed_domain_add.png);
+}
+
+.authed_domain_box {
+	background-color: rgb(245,245,245);
+}
+
+.existing_domain_remove {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	border-radius:4px;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	display: inline-block;
+}
+
+.existing_domain_remove_icon {
+	width: 30px;
+	height: 30px;
+	background-image: url(/static/images/domain_remove.png);
+}
+
+.existing_domain_remove_icon_hover {
+	background-image: url(/static/images/domain_remove_hover.png);
+}
+
+.input_style {
+	margin-top:0px;
+}
