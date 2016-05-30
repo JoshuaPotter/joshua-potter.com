@@ -128,8 +128,8 @@ body.fixed-nav #navigation {
 
 body.fixed-nav #page {
 	margin: 0;
-	margin-left: 105px;
-	width: calc(100% - 105px);
+	margin-left: 90px;
+	width: calc(100% - 75px);
 }
 
 #page {
@@ -138,12 +138,12 @@ body.fixed-nav #page {
 
 #page .container-fluid {
 	position: relative;
-	max-width: 1302px;
+	max-width: 1350px;
 }
 
 #page #header {
 	position: absolute;
-	top: 56px;
+	top: 45px;
 	left: 0;
 	right: 0;
 }
@@ -189,13 +189,13 @@ body.fixed-nav #page {
 	vertical-align: middle;
 }
 
-#spotify {
+#spotifyJs {
 	position: absolute;
-	bottom: 50px;
+	bottom: 45px;
 	left: 0;
 }
 
-#spotify #cover {
+#spotifyJs #cover {
 	position: absolute;
 	bottom: calc(100% + 15px);
 	left: 0;
@@ -210,11 +210,11 @@ body.fixed-nav #page {
 	transition: all .4s ease-in-out;
 }
 
-#spotify.playing #cover {
+#spotifyJs.playing #cover {
 	display: block;
 }
 
-#spotify #cover .progress {
+#spotifyJs #cover .progress {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -224,7 +224,7 @@ body.fixed-nav #page {
 	border-radius: 0;
 }
 
-#spotify #cover .progress .active {
+#spotifyJs #cover .progress .active {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -235,7 +235,7 @@ body.fixed-nav #page {
 }
 
 
-/* #spotify:hover:before {
+/* #spotifyJs:hover:before {
     border: solid;
     border-color: #41D565 transparent;
     border-width: 8px 9px 0 9px;
@@ -247,12 +247,12 @@ body.fixed-nav #page {
 } */
 
 
-/* #spotify.active #cover {
+/* #spotifyJs.active #cover {
 	display: block;
 } */
 
-#spotify.active:hover #cover,
-#spotify.active:hover #cover:hover {
+#spotifyJs.active:hover #cover,
+#spotifyJs.active:hover #cover:hover {
 	display: block;
 }
 
@@ -270,13 +270,13 @@ body.fixed-nav #page {
 }
 
 
-/* #spotify .animation .fa-stack {
+/* #spotifyJs .animation .fa-stack {
     position: absolute;
     left: -44%;
     z-index: 3;
 }
 
-#spotify .animation .fa-spotify {
+#spotifyJs .animation .fa-spotify {
     
     color: #22D762;
     font-size: 250px;
@@ -285,7 +285,7 @@ body.fixed-nav #page {
     z-index: 5;
 }
 
-#spotify .animation .fa-circle {
+#spotifyJs .animation .fa-circle {
     color: #EEEFF5;
     top: 190%;
     font-size: 300px;
@@ -316,14 +316,14 @@ body.fixed-nav #page {
 	z-index: 1;
 }
 
-#spotify .animation .waveform:nth-of-type(2) {
+#spotifyJs .animation .waveform:nth-of-type(2) {
 	height: 380px;
 	width: 360px;
 	animation: spin 6666ms infinite linear 130ms;
 	z-index: 2;
 }
 
-#spotify .animation .waveform:nth-of-type(3) {
+#spotifyJs .animation .waveform:nth-of-type(3) {
 	left: -10px;
 	height: 340px;
 	width: 340px;
@@ -332,39 +332,39 @@ body.fixed-nav #page {
 	z-index: 3;
 }
 
-#spotify .animation .waveform:nth-of-type(4) {
+#spotifyJs .animation .waveform:nth-of-type(4) {
 	left: -25px;
 	animation: spin 5555ms infinite linear 70ms;
 	transform: rotate(42deg);
 	z-index: 4;
 }
 
-#spotify .song {
+#spotifyJs .song {
 	font-size: 19px;
 	line-height: 1.2;
 	color: inherit;
 }
 
-#spotify .song a {
+#spotifyJs .song a {
 	color: inherit;
 }
 
-#spotify .song .track {
+#spotifyJs .song .track {
 	font-size: 25px;
 	font-family: "Playfair Display", serif;
 	font-weight: 900;
 }
 
 
-/* #spotify .song .artist {
+/* #spotifyJs .song .artist {
 	margin-bottom: 15px;
 }
 
-#spotify .song .preview {
+#spotifyJs .song .preview {
 	font-size: 14px;
 } */
 
-#spotify .album {
+#spotifyJs .album {
 	position: absolute;
 	top: 33px;
 	left: 30px;
@@ -372,7 +372,7 @@ body.fixed-nav #page {
 	z-index: 2;
 }
 
-#spotify .album img {
+#spotifyJs .album img {
 	width: auto;
 	max-height: 110px;
 	display: inline-block;
@@ -394,28 +394,28 @@ body.fixed-nav #page {
 	transition: all .25s linear;
 }
 
-#spotify.playing #cover .album img,
-#spotify #cover .album:hover img {
+#spotifyJs.playing #cover .album img,
+#spotifyJs #cover .album:hover img {
 	margin-left: 8px;
 }
 
-#spotify #cover .album:hover .record {
+#spotifyJs #cover .album:hover .record {
 	left: 45px;
 }
 
-#spotify.playing #cover .album:hover .record,
-#spotify.playing .album .record {
+#spotifyJs.playing #cover .album:hover .record,
+#spotifyJs.playing .album .record {
 	left: 64px;
 }
 
-#spotify .album .record #Path-1,
-#spotify .album .record #Path-1-Copy,
-#spotify .album .record #Path-1-Copy-3,
-#spotify .album .record #Path-1-Copy-4 {
+#spotifyJs .album .record #Path-1,
+#spotifyJs .album .record #Path-1-Copy,
+#spotifyJs .album .record #Path-1-Copy-3,
+#spotifyJs .album .record #Path-1-Copy-4 {
 	stroke: rgba(255,255,255,.3);
 }
 
-#spotify .album .record .disc {
+#spotifyJs .album .record .disc {
 	position: absolute;
 	top: 10px;
 	left: 0;
@@ -424,11 +424,11 @@ body.fixed-nav #page {
 	border-radius: 50%;
 }
 
-#spotify.playing .album .record .disc {
+#spotifyJs.playing .album .record .disc {
 	animation: spin 7s linear infinite;
 }
 
-#spotify .album .record .eye {
+#spotifyJs .album .record .eye {
 	content: "";
 	position: absolute;
 	width: 12px;
@@ -452,41 +452,41 @@ body.fixed-nav #page {
 	}
 }
 
-#spotify #feed {
+#spotifyJs #feed {
 	padding-top: 20px;
 	color: #8C8C8D;
 }
 
-#spotify #feed:hover,
-#spotify #feed:focus {
+#spotifyJs #feed:hover,
+#spotifyJs #feed:focus {
 	text-decoration: none;
 }
 
-#spotify #feed .track,
-#spotify #feed strong {
+#spotifyJs #feed .track,
+#spotifyJs #feed strong {
 	font-weight: 500;
 	color: #32353a;
 }
 
-#spotify #feed span {
+#spotifyJs #feed span {
 	vertical-align: middle;
 	display: none;
 }
 
-#spotify #feed span.spotify {
+#spotifyJs #feed span.spotify {
 	color: #24CF5F;
 }
 
-#spotify.active #feed span {
+#spotifyJs.active #feed span {
 	display: inline-block;
 }
 
-#spotify #feed i {
+#spotifyJs #feed i {
 	vertical-align: middle;
 	color: inherit;
 }
 
-#spotify.active #feed i {
+#spotifyJs.active #feed i {
 	margin-left: 3px;
 	margin-right: 3px;
 	color: #24CF5F;
