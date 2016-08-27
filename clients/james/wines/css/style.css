@@ -1,0 +1,498 @@
+html,
+body {
+    background: #4e2a74;
+    font-family: "sofia-pro",sans-serif;
+    overflow-x: hidden;
+}
+#left-sidebar {
+    width: 500px;
+    float: left;
+    background: #4e2a74 url(../img/left-sidebar-bg.png) top right no-repeat;
+	background-size: contain;
+	min-height: 900px;
+}
+#sidebar-align {
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 140px;
+    float: right;
+    max-width: 359px;
+    padding: 0 40px;
+}
+#brand {
+    margin: 40px 0;
+    display: inline-block;
+}
+#brand img,
+#brand h1,
+#brand h2 {
+    float: left;
+}
+#brand h1,
+#brand h2 {
+    margin-left: 15px;
+}
+#brand h1 {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
+#brand h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #9865cf;
+    font-weight: 400;
+}
+#left-sidebar .panel {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+}
+#left-sidebar .panel .panel-heading {
+    padding: 2px 0;
+    color: #9865cf;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    letter-spacing: .85px;
+}
+#left-sidebar .panel .panel-heading hr {
+    display: none;
+}
+#left-sidebar .panel .panel-body {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight:300;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+#content {
+    padding: 25px 0;
+    width: calc(100% - 500px);
+    background: #ffffff;
+    min-height: 100%;
+    float: left;
+    padding-left: 110px;
+	z-index: 5;
+}
+#content .navbar {
+    position: relative;
+    z-index: 5;
+    border-radius: 0;
+    background: transparent;
+    border: transparent;
+}
+#content .navbar li a {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 40px;
+    color: rgba(73, 65, 82, 0.4);
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+}
+#content .navbar li a:hover {
+    background: transparent;
+    color: rgba(73, 65, 82, 0.75);
+}
+#content .navbar li.active a {
+    background: transparent;
+    color: #512c78;
+    border-bottom: 2px solid #512c78;
+}
+#content .navbar li.login {
+    margin-top: 6px;
+}
+#content .navbar li.login a {
+    border: 2px solid rgba(73, 65, 82, 0.2);
+    border-radius: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 16px;
+}
+#content .navbar li.login a:hover {
+    border-color: rgba(73, 65, 82, 0.75);
+}
+#profile {
+    margin-top: 70px;
+	margin-bottom: 30px;
+}
+#profile #product {
+	position: relative;
+}
+#profile h3 {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    font-size: 40px;
+    color: #4f2b76;
+}
+#profile h4 {
+    position: relative;
+    z-index: 2;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #cfc1de;
+    text-transform: uppercase;
+}
+#profile span.bg-title {
+    position: absolute;
+    top: -90px;
+    left: 168px;
+    letter-spacing: 20px;
+    line-height: 1;
+    margin: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 240px;
+    font-weight: 700;
+    color: rgba(63, 0, 131, 0.1);
+}
+#profile #bottle {
+    position: fixed;
+    top: 128px;
+    left: 360px;
+}
+#profile #rating {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 125px;
+    margin-left: -125px;
+    margin-top: 70px;
+    font-size: 18px;
+    background: url(../img/rating-bg.png) top center repeat-x;
+    background-size: cover;
+}
+#profile #rating i {
+	margin-top: 26px;
+    font-size: 24px;
+    color: rgba(73, 65, 82, 0.4);
+    cursor: pointer;
+}
+#profile #rating i:focus,
+#profile #rating i:hover {
+	box-shadow: none;
+	outline: none;
+    color: rgba(73, 65, 82, 0.75);
+}
+#profile h3.popover-title {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 400;
+}
+#profile #rating a {
+	margin-left: 15px;
+	margin-right: 100px;
+	font-size: 18px;
+	color: #cecece;
+}
+#profile #rating a:hover {
+    color: rgba(73, 65, 82, 0.75);
+}
+#purchase {
+	padding-top: 40px;
+    padding-left: 125px;
+    margin-left: -125px;
+}
+#purchase #prices span {
+	display: inline-block;
+	margin-top: 5px;
+	vertical-align: top;
+	line-height: 1;
+}
+#purchase span.original-price {
+	font-size: 32px;
+	color: #d6d6d6;
+	margin-right: 20px;
+}
+#purchase span.our-price {
+	font-size: 48px;
+	color: #4f2b76;
+}
+#purchase #cta {
+	margin-left: 80px;
+}
+.btn-group button:first-child {
+	border-radius: 0;
+	padding: 12px 20px 15px 30px;
+	-webkit-border-top-left-radius: 500px;
+	-webkit-border-bottom-left-radius: 500px;
+	-moz-border-radius-topleft: 500px;
+	-moz-border-radius-bottomleft: 500px;
+	border-top-left-radius: 500px;
+	border-bottom-left-radius: 500px;
+	font-weight: 600;
+}
+.btn-group button:nth-of-type(2) {
+	border-radius: 0;
+	padding: 12px 30px 15px 20px;
+	-webkit-border-top-right-radius: 500px !important;
+	-webkit-border-bottom-right-radius: 500px !important;
+	-moz-border-radius-topright: 500px !important;
+	-moz-border-radius-bottomright: 500px !important;
+	border-top-right-radius: 500px !important;
+	border-bottom-right-radius: 500px !important;
+}
+.btn-group button {
+	font-size: 24px;
+	font-weight: 300;
+}
+.btn-group button .glyphicon {
+	font-size: 18px;
+	margin-left: 15px;
+	font-weight: 400;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #4e2a74;
+    border-color: #4e2a74;
+    border-left-color: #6d4794;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3a1f57;
+    border-color: #3a1f57;
+    border-left-color: #6d4794;
+}
+.btn-primary.dropdown-toggle {
+	background: #6d4794;
+	border-color: #6d4794;
+    border-right-color: #6d4794;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+	background: #3a1f57 !important;
+	border-color: #3a1f57 !important;
+	outline: none !important;
+}
+.btn-primary:focus {
+	outline: none;
+}
+.dropdown-menu {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.dropdown-menu>li>a:hover {
+	background: rgba(0,0,0,.135);
+}
+#purchase .text-center {
+	margin: 5px 0;
+	color: #4e2a74;
+	font-size: 16px;
+	font-weight: 500;
+}
+#description {
+	padding-top: 40px;
+	padding-right: 40px;
+}
+#description p {
+	margin-bottom: 40px;
+	max-width: 900px;
+	font-weight: 400;
+	color: #534a58;
+	font-size: 16px;
+	line-height: 1.5;
+}
+#description .lead {
+	font-size: 24px;
+}
+#description .quote {
+	padding: 40px 120px 0;
+	max-width: 900px;
+	color: #534a58;
+	background: url(../img/quote-bg.png) left top no-repeat;
+}
+#description .quote p {
+	margin-bottom: 40px;
+	font-size: 24px;
+	line-height: 1.4;
+}
+#description .quote p.source {
+	margin-bottom: 60px;
+	font-size: 16px;
+	color: #c7c7c7;
+}
+.btn-secondary {
+	border-radius: 500px;
+	padding: 10px 30px;
+	font-size: 16px;
+	color: #594e62;
+	border-color: rgba(89, 78, 98, 0.3);
+}
+.btn-secondary:hover {
+	background: rgba(89, 78, 98, 0.05);
+}
+footer {
+	position: relative;
+	z-index: 5;
+}
+footer .container-fluid {
+	max-width: 1580px;
+}
+#subfooter {
+	padding: 50px 0;
+	background: #f9f8f9;
+	color: #cac4cf;
+}
+#subfooter #brand {
+	margin-top: 0;
+	margin-bottom: 30px;
+	max-width: 280px;
+}
+#subfooter #brand h1 {
+	color: #4a2471;
+}
+#subfooter #brand h2 {
+	color: #9581a9;
+}
+#subfooter label {
+	margin-bottom:10px;
+	color: #534a58;
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+#subfooter .input-group {
+	display: block;
+	max-width: 400px;
+	margin-bottom: 40px;
+}
+#subfooter input[type='email'] {
+	border-radius: 500px;
+	padding: 25px;
+	padding-right: 110px;
+	font-size: 16px;
+	color: #534a58;
+	border: none;
+	width: 100%;
+	box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.15);
+}
+#subfooter button {
+	border-radius: 500px;
+	padding: 16px 25px;
+	font-weight: 300;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 16px;
+	line-height: 1;
+	color: #ffffff;
+	background: #4a2471;
+	border-color: #4a2471;
+	z-index: 5;
+}
+#subfooter button:hover {
+	background: #3a1f57;
+	border-color: #3a1f57;
+}
+#subfooter #copyright {
+	font-size: 12px;
+	color: rgba(83, 74, 88, 0.5);
+}
+#subfooter ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#subfooter ul li {
+	padding: 10px 0;
+}
+#subfooter ul li a {
+	font-size: 16px;
+	color: #534a58;
+}
+#subfooter p {
+	font-size: 16px;;
+	color: #b8b3bc;
+}
+#footer {
+	padding: 40px 0;
+	background: #ffffff;
+}
+#footer .text-left {
+	margin-top:10px;
+}
+#footer a {
+	color: rgba(83, 74, 88, 0.5);
+}
+#footer a:hover {
+	color: rgba(83, 74, 88, 0.85);
+}
+#footer .social a {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 25px;
+	font-size: 12px;
+}
+@media all and (max-width: 1280px) {
+    #left-sidebar {
+        width: 359px;
+    }
+	#sidebar-align {
+		left: 0;
+	}
+    #content {
+        width: calc(100% - 359px);
+    }
+    #profile #bottle {
+        position: fixed;
+        left: 220px;
+    }
+    #profile span.bg-title {
+        left: 60px;
+    }
+	#profile {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	#profile h3 {
+		font-size: 36px;
+	}
+	#profile span.bg-title {
+		top: -60px;
+		font-size: 200px;
+		letter-spacing: 10px;
+	}
+	#profile #rating {
+		margin-top: 30px;
+		padding-bottom: 30px;
+	}
+	#purchase span.original-price {
+		font-size: 28px;
+	}
+	#purchase span.our-price {
+		font-size: 40px;
+	}
+	#purchase #cta {
+		margin-left: 40px;
+	}
+	#description p {
+		margin-bottom: 25px;
+	}
+	#description .quote p,
+	#description .lead {
+		font-size: 22px;
+	}
+	#description .quote {
+		padding: 20px 80px 0;
+	}
+	.btn-group button {
+		padding-top: 15px;
+		padding-bottom: 25px;
+		font-size: 20px;
+	}
+	#left-sidebar .panel .panel-body {
+		margin-bottom: 10px;
+	}
+}

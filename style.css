@@ -1,0 +1,135 @@
+html,
+body {
+	background: #fcfcfc;
+	color: #070600;
+	font-family: "proxima-nova",sans-serif;
+}
+#main {
+	margin-top: 100px;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+	margin-bottom: 0;
+	font-size: 50px;
+}
+h1,
+h2 {
+	margin-top: 0;
+	color: #070600;
+	font-weight: 100;
+}
+p {
+	margin-bottom: 0;
+	color: #70777d;
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: 300;
+}
+p a {
+	color: #070600;
+	font-size: 1.2em;
+}
+p a:hover,
+p a:focus,
+p a:active {
+	color: #070600;
+	text-decoration: none;
+	opacity: .7;
+}
+.page-blurb {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-size: 22px;
+	line-height: 33px;
+}
+.bio {
+	font-weight: 300;
+	color: #70777d;
+	margin: 0
+}
+.social {
+	margin-top: 15px;
+}
+.social a {
+	color: rgba(103, 113, 121, 0.4);
+}
+.social a:hover {
+	color: rgba(103, 113, 121, 0.7);
+}
+.container .jumbotron {
+	margin-bottom: 5px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #00a5ff;
+	border-radius: 3px !important;
+	display: block;
+	height: 230px;
+}
+.container .jumbotron:hover,
+.container .jumbotron:focus,
+.container .jumbotron:active{
+	text-decoration: none;
+	opacity: .75;
+}
+.container .appearly {
+	background: #1FA2CB url('appearly.png') center no-repeat;
+}
+.container .pepperweb {
+	background: #F05255 url('pepperweb.png') center no-repeat;
+}
+.container .spiritt {
+	background: #43c3ef;
+}
+.container .samesurf {
+	background: #3498db url('http://www.samesurf.com/images/logo.png') center no-repeat;
+}
+.portfolio  {
+	margin-bottom: 40px;
+}
+.portfolio p {
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.footer {
+	margin-bottom: 100px;
+}
+@media all and (max-width: 991px) {
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+@media all and (max-width: 768px) {
+	h1 {
+		margin-bottom: 5px;
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	#main {
+		margin-top: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.page-blurb {
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+	.footer {
+		margin-bottom: 40px;
+	}
+	.footer,
+	.footer .text-right {
+		text-align: center !important;
+	}
+}

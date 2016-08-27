@@ -42,7 +42,7 @@ function spotifyJs(user, key, spotifyUser, animations) {
 										</div>\
 									</div>\
 								</div><a href="https://open.spotify.com/user/' + spotifyUser + '" target="_blank" id="feed" title="Follow me on Spotify">\
-									<span>I"m currently listening to </span>\
+									<span>I\'m currently listening to </span>\
 									<strong></strong><span class="track"></span><strong></strong> \
 									<span>by</span>\
 									<span class="artist"></span>\

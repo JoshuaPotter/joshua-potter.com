@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Work At Home Special Report!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="./index_files/bootstrap.css" rel="stylesheet">
+    <link href="./index_files/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+        #navi {
+            width: 100%;
+            float: left;
+            margin: 0 0 0 0;
+            padding: 0;
+            list-style: none;
+            background-color: #487998;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+        
+        #navi li {
+            float: left;
+        }
+        
+        #navi li a {
+            display: block;
+            padding: 8px 15px!important;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+            border-right: 1px solid #ccc;
+        }
+        
+        #sidebar {
+            width: 75px;
+            position: absolute;
+            margin-left: -105px;
+            margin-top: -25px;
+            padding: 6px;
+            background: #FFF;
+            border: #cccccc solid 1px;
+            z-index: 100;
+            display: none;
+        }
+    </style>
+    <script>
+        function today() {
+            var mydate = new Date();
+            var year = mydate.getYear();
+            if (year < 1000) year += 1900;
+            var day = mydate.getDay();
+            var month = mydate.getMonth();
+            var daym = mydate.getDate();
+            if (daym < 10) daym = "0" + daym;
+            var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            document.write("" + dayarray[day] + ", " + daym + " " + montharray[month] + ", " + year + "");
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript">
+        var usDoRedirect = true;
+        var popup = null;
+        jQuery(document).ready(function() {
+            var image_path = 'index_files/gc_pop2.png';
+            //A. Safari
+
+            //B. Internet Explorer
+
+            if (jQuery.browser.msie) {
+                image_path = 'index_files/ie_pop2.png';
+            }
+
+            //C. Mozilla Firefox
+            if (jQuery.browser.mozilla) {
+                image_path = 'index_files/ff_pop.png';
+            }
+
+            //D. Chrome
+            if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+                image_path = 'index_files/gc_pop2.png';
+            }
+
+            //if ($.browser.opera)
+
+            alert_message = "Are you sure you don't want to take advantage of the Online Wealth Markets System?\n\nDo not forget - this will only be available for a limited time. Since there is a 30 day money back guarantee, there is no risk to you. This is your chance to Change Your Life.\n\nDo not Miss out on this once in a lifetime opportunity!\n\nClick **Stay on this Page** below to reconsider.";
+
+
+            popup = jQuery(document.body).append('<div id="popupBrowserImg" style="position: fixed; top:10px; right: 10px; display: none; "> <img src="' + image_path + '"/> </div>');
+            dialog_style = jQuery(document.body).append('<style> #dialog  { text-align: left; }   .alert-dialog{width: auto; } </style>');
+            dialog = jQuery(document.body).append('<div id="dialog" title="Are you sure you want to leave this page?" style="display: none;"> <pre>' + alert_message + '</pre></div>');
+
+            redirectURL = "click.php";
+
+            // solo como prueba una imagen display:none;
+            //jQuery(document.body).append('<div id="rrrr" ><img src="http://www.hollywoodreporter.com/sites/default/files/2012/12/img_logo_blue.jpg" /></div>').css('top', '100px');
+            //document.getElementById('rrrr').style.display='none';
+
+            //Verificamos si la capa esta oculta o no y como resultado
+            //indicamos que cambie su valor distinto al actual. "none" o "block"
+
+            /** 
+             * The first setTimeout method has a delay of 1ms. This is just to add the function into the UI queue. 
+             * Since setTimeout runs asynchronously the Javascript interpreter will continue by directly calling 
+             * the return statement, which in turn triggers the browsers modal dialog. This will block the UI queue 
+             * and the code from the first setTimeout is not executed, until the modal is closed. 
+             * If the user pressed cancel, it will trigger another setTimeout which fires in about one second. 
+             * If the user confirmed with ok, the user will redirect and the second setTimeout is never fired.
+             **/
+
+
+
+            redirectInterval = setInterval(function() {
+
+                if (jQuery('#redirectWebkit').val() == '1') {
+                    usDoRedirect = false;
+                    clearInterval(redirectInterval);
+                    jQuery('#redirectWebkit').val('0');
+                    top.location.assign(redirectURL);
+                }
+            }, 2000);
+
+
+            window.onbeforeunload = function(e) {
+
+                //open thickbox
+                if (usDoRedirect) {
+
+                    jQuery('#popupBrowserImg').show();
+
+                    // Microsoft Internet Explorer
+                    if (jQuery.browser.msie) {
+                        alert(alert_message);
+
+                        setTimeout(function() {
+                            setTimeout(function() {
+                                // Avoid print dialog again
+                                usDoRedirect = false;
+                                top.location.assign(redirectURL);
+                            }, 1000);
+                        }, 1);
+
+                        return '';
+                    }
+
+                    // Mozilla Firefox
+                    if (jQuery.browser.mozilla) {
+                        //alert(alert_message);
+
+                        setTimeout(function() {
+                            setTimeout(function() {
+                                // Avoid print dialog again
+                                usDoRedirect = false;
+                                top.location.assign(redirectURL);
+                            }, 1000);
+                        }, 1);
+
+                        //return '';
+
+                        jQuery("#dialog").dialog({
+                            //position: {my: "center top", at: "center top", of: window },
+                            resizable: false,
+                            dialogClass: "alert-dialog",
+                            //width: 880,
+                        });
+                        jQuery(".alert-dialog").css("width", "auto");
+                        jQuery(".alert-dialog").css("top", "0");
+                        //alert_dialog_width =  jQuery(".alert-dialog").css("width");
+                        var alert_dialog_position = jQuery(".alert-dialog").position();
+                        console.log(alert_dialog_position.left);
+                        alert_dialog_width = jQuery(".alert-dialog").width();
+                        //alert_dialog_left =   position.left ; //jQuery(".alert-dialog").attr("left");
+                        console.log(alert_dialog_position.left);
+                        var alert_dialog_new_left_position = alert_dialog_position.left - (alert_dialog_width / 3);
+                        console.log(alert_dialog_new_left_position);
+                        jQuery(".alert-dialog").css("left", alert_dialog_new_left_position);
+                        jQuery(".alert-dialog").css("z-index", 9999);
+
+                        console.log(alert_dialog_width);
+
+                        return ' ';
+
+
+                    }
+
+
+                    // Opera
+                    // Opera doesn't support onbeforeunload method
+
+                    // Google Chrome and Apple Safari and releases after version 12.14 of Opera
+                    if (jQuery.browser.webkit) {
+
+                        jQuery('#popupBrowserImg').show();
+                        jQuery("#popupBrowserImg").css({
+                            display: "block"
+                        });
+                        jQuery('#redirectWebkit').val('1');
+
+                        //  setTimeout(function() {
+                        //      return alert_message;
+                        //  }, 50);     
+
+                        return alert_message;
+                    }
+                }
+
+            };
+
+            jQuery('a').click(function() {
+                usDoRedirect = false;
+            });
+            jQuery('form').submit(function() {
+                usDoRedirect = false;
+            });
+        });
+    </script>
+    <style type="text/css">
+        :root #header + #content > #left > #rlblock_left {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+    <input type="hidden" name="redirectWebkit" id="redirectWebkit" value="0">
+
+    <style id="stylerStyle"></style>
+    <script id="stylerScript"></script>
+    <script type="text/javascript">
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        var usdConverter = function(unit, amount) {
+            var currency;
+            switch (unit) {
+                case 'Costa Rican Colón':
+                    currency = amount * 536.25;
+                    break;
+                case 'Krone':
+                    currency = amount * 8.61;
+                    break;
+                case 'Euro':
+                    currency = amount * 0.91;
+                    break;
+                case 'Czech Koruna':
+                    currency = amount * 24.56;
+                    break;
+                case 'Hong Kong Dollar':
+                    currency = amount * 7.75;
+                    break;
+                case 'Danish Krone':
+                    currency = amount * 6.82;
+                    break;
+                case 'Malaysian Ringgit':
+                    currency = amount * 4.11;
+                    break;
+                case 'Omani Rial':
+                    currency = amount * 0.38;
+                    break;
+                case 'Qatari Riyal':
+                    currency = amount * 3.64;
+                    break;
+                case 'Saudi Riyal':
+                    currency = amount * 3.74;
+                    break;
+                case 'Swedish Krona':
+                    currency = amount * 8.48;
+                    break;
+                case 'Swiss Franc':
+                    currency = amount * 0.99;
+                    break;
+                case 'New Taiwan Dollar':
+                    currency = amount * 32.92;
+                    break;
+                case 'Dollar':
+                    currency = amount * 1;
+                    break;
+                case 'Dirham':
+                    currency = amount * 3.67;
+                    break;
+                default:
+                    currency = amount * 1 + 200;
+            }
+            var converted = Math.round(currency);
+            return document.write('€' + numberWithCommas(converted) + '');
+        }
+    </script>
+
+
+
+
+
+    <h1 style="text-align:center; font-size: 15px; margin: 5px 0;">Advertorial Disclaimer</h1>
+
+    <div class="container">
+        <div class="row">
+            <header id="header">
+                <div id="header-top" class="row-fluid">
+                    <div class="row-fluid">
+                        <div class="span2 logo">
+                            <div class="col-xs-6 col-sm-12">
+                                <img src="./index_files/logo.png" style="width: 100%;max-width: 133px" alt="">
+                            </div>
+                            <div class="col-xs-6 visible-xs">
+                                <ul class="social-btn pull-right" style="margin:0">
+                                    <li class="twitter"><a href="click.php">Twitter</a></li>
+                                    <li class="facebook"><a href="click.php">Facebook</a></li>
+                                    <li class="linkedin"><a href="click.php">Linkedin</a></li>
+                                    <li class="pinterest"><a href="click.php">Pinterest</a></li>
+                                    <li class="rss"><a href="click.php">Rss</a></li>
+                                    <li class="">
+                                        <div class="search-form" style="padding: 0;width: 20px;height: 20px;margin: 0 3px;">
+                                            <button class="ss">Search</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span5 trend">
+                            <strong>Trending:</strong> How To Make Money From Home
+                        </div>
+                        <div class="span5 hidden-xs">
+                            <div class="search-form pull-right">
+                                <input type="search" value="Search...">
+                                <button class="ss">Search</button>
+                            </div>
+                            <ul class="social-btn pull-right">
+                                <li class="twitter"><a href="click.php">Twitter</a></li>
+                                <li class="facebook"><a href="click.php">Facebook</a></li>
+                                <li class="linkedin"><a href="click.php">Linkedin</a></li>
+                                <li class="pinterest"><a href="click.php">Pinterest</a></li>
+                                <li class="rss"><a href="click.php">Rss</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-default visible-xs" role="navigation" style="position:static;background:transparent">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="http://dailynews-reports.com/multi/workathome/461/?c1=Seine-Saint-Denis&amp;c2=France#">WAHC</a>
+                    </div>
+                    <script type="text/javascript">
+                        jQuery('.navbar-toggle').click(function(e) {
+                            jQuery('.navbar-ex1-collapse').slideToggle();
+                        });
+                    </script>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="click.php">Home</a></li>
+                            <li><a href="click.php">Finance</a></li>
+                            <li><a href="click.php">Tech</a></li>
+                            <li><a href="click.php">Economy</a></li>
+                            <li><a href="click.php">Media</a></li>
+                            <li><a href="click.php"> All Stories</a></li>
+                            <li><a href="click.php">Portfolios</a></li>
+                            <li><a href="click.php">Market News</a></li>
+                            <li><a href="click.php">Video</a></li>
+                            <li><a href="click.php">Investing</a></li>
+                            <li><a href="click.php">More</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+
+                <div class="container">
+                    <nav id="main-nav" class="row-fluid hidden-xs">
+                        <ul>
+                            <li><a href="click.php">Home</a></li>
+                            <li><a href="click.php">Finance</a></li>
+                            <li><a href="click.php">Tech</a></li>
+                            <li><a href="click.php">Economy</a></li>
+                            <li><a href="click.php">Media</a></li>
+                            <li><a href="click.php"> All Stories</a></li>
+                            <li><a href="click.php">Portfolios</a></li>
+                            <li><a href="click.php">Market News</a></li>
+                            <li><a href="click.php">Video</a></li>
+                            <li><a href="click.php">Investing</a></li>
+                            <li><a href="click.php">More</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="xrow">
+            <div class="col-md-12" style="margin-top:10px;margin-bottom:10px;border-bottom:#ff0000 solid 4px;">
+                <h2 style="margin-top:0;margin-bottom:0;padding:0;font-weight:bold;color:#000">
+      <span style="color: #ff0000;"><u>EXPOSED:</u></span> Seine-saint-denis Mom Makes <script>usdConverter('Euro',6000);</script>/Month From Home And You Won't Believe How She Does It! 
+    </h2>
+                <div style="padding-bottom:10px;"><em>Career News France Investigates Work From Home Opportunities.</em></div>
+            </div>
+        </div>
+        <div class="xrow">
+            <div class="col-md-8" id="mainText" style="text-align:justify;">
+                <div id="sidebar">
+                    <p>
+                        <a href="click.php"><img src="./index_files/social-share.jpg" alt="" height="281" width="61"></a>
+                    </p>
+                </div>
+                <p style="padding:10px 0;text-align: left;">As Seen On: <img alt="" src="./index_files/as-seen-on-logos-uk.jpg.png" style="max-width: 265px; width: 100%;"></p>
+                <div class="mainnewsimg" style="font-size: 11.6px; line-height: 1.5em;width: 155px;float: left;margin: 0 20px 0 0;"><img alt="" src="./index_files/nataliecomputer.jpg" width="160"> Emma puts her computer to work and makes money while working from home. She says that <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a> has helped
+                    change her financial life and recommends it to everyone. </div>
+                <div style="width:100%;display: table-cell;">
+                    <div class="pull-left"><span style="vertical-align:middle;">By <a href="click.php">Amanda Winston</a></span> | </div>
+                    <div class="pull-left"><img style="width:15px;height:15px;verticle-align:middle;" src="./index_files/pageviews.jpg" alt="views" title="views" height="15" width="15"><span style="color:#ff0000;vertical-align:middle;"> <a href="click.php" style="color:#ff0000;">1,791,978</a></span>                        |</div>
+                    <div class="pull-left"> <img style="width:15px;height:15px;verticle-align:middle;" src="./index_files/comments.jpg" alt="comments" title="comments" height="15" width="15"><span style="color:#124878;vertical-align:middle;"> <a href="click.php" style="color:#124878;">386</a></span></div>
+                </div>
+                <p style="text-align: left;display: -webkit-box;"><b>Ever Considered Working From Home?</b></p>
+                <p>Emma Martin from Seine-saint-denis never thought that she would work online, until curiosity got the best of her and she filled out a simple online form. Before she knew it, she discovered her secret to beating the recession, and being
+                    able to provide for her family while at home with her three children.</p>
+                <p>I read Emma's blog last month and decided to feature her story in our weekly consumer report. In our phone interview she told me her amazing story. "I actually make about
+                    <script>
+                        usdConverter('Euro', 5000);
+                    </script>-
+                    <script>
+                        usdConverter('Euro', 6000);
+                    </script> a month working from home. It's enough to comfortably replace my old jobs' income, especially considering I only work about 15-18 hours a week from home.</p>
+                <div style="clear: both;"></div>
+                <div class="results" style="text-align: center">
+                    <a href="click.php" target="_blank"><img class="contentImage" style="width:100%;" alt="" src="./index_files/WorkAtHome_Check_1.png"></a>
+                </div>
+                <!--
+                <div class="results" style="background: #ffffcc;text-align: center">
+                    <p style="text-align: center;padding:6px; color: #1E0AC4;"><em><b>You could be receiving cheques like this</b></em></p>
+                </div>
+                -->
+                <p>Working online has been a financial windfall for Emma, who struggled for months to find a decent job but kept hitting dead ends. "I lost my job shortly after the recession hit, I needed reliable income, I was not interested in the "get
+                    rich quick" scams you see all over the internet. Those are all pyramid scams or stuff which you have to sell to your friends and family. I just needed a legitimate way to earn a living for me and my family. The best part of working
+                    online is that I am always home with the kids. Thanks to the Online Wealth Markets Kit I am giving my kids the childhood they deserve." </p>
+                <p>I asked her about how she started her life-changing journey. "It was pretty easy, <a href="click.php" target="_blank"><strong>I filled out a short form</strong></a> and applied for a work-at-home kit. There is a small activation fee; it's
+                    not really free but it was only
+                    <script>
+                        usdConverter('Euro', 5);
+                    </script>. I got the kit and within four weeks I was making over
+                    <script>
+                        usdConverter('Euro', 3000);
+                    </script> a month. It's really simple, I am not a computer whiz, but I can use the internet. I don't even have to sell anything and nobody has to buy anything. Companies are constantly recruiting people for this, you should try it."
+                    </p>
+                <p>The companies you work with are worth over 100 billion dollars and are the most used sites in the internet market place, like Amazon, Google, Walmart, Delta, Apple and more... You're using the top ranked sites in the world, over 50 percent
+                    of all internet traffic flows through them everyday. It's a great opportunity and this has been helping people work at home for over 5 years. Why not get in with the internet's best and biggest companies? </p>
+                <p>There are plenty of scams on the internet claiming you can make
+                    <script>
+                        usdConverter('Euro', 30000);
+                    </script> a month, but that is exactly what they are - scams. From my conversation with Emma, "I am making a good salary from home, which is amazing, under a year ago I was jobless in a horrible economy. I thank God every day that
+                    I filled out that form."</p>
+                <p>Quickly, Emma Martin was able to use the simple <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a> to make it out of the recession.</p>
+                <blockquote><i>"I actually make <script>usdConverter('Euro',5000);</script>-<script>usdConverter('Euro',6000);</script> from home every month." </i><br><b>- Emma Martin</b></blockquote>
+                <p>Emma had never shared her story before, this is the first time she's going public.</p>
+                <h3 style="text-align:left">Here's how to get started:</h3>
+                <div class="offer">
+                    <div><span style="background-color: #ffff00;"><b>(Offer Still Available As Of: <script>today();</script>)</b></span></div>
+                    <p></p>
+                    <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 1:</b> Go to <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a>, and fill out the
+                        form to get instant activation.</div>
+                    <p></p>
+                    <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 2:</b> Follow the instructions at <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a>                        and set up your account. Then they will show you what to do. Everything gets tracked.</div>
+                    <p></p>
+                    <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 3:</b> Deposit your earnings by cheque or direct bank transfer. (Making money has never been so easy. Get ready
+                        for your life to change.) </div>
+                    <p></p>
+                    <p><b>Associated Links:</b></p>
+                    <p><a href="click.php" target="_blank"><strong>Online Wealth Markets - OFFICIAL WEBSITE</strong></a></p>
+                    <p></p>
+                </div>
+                <p>We rarely do these special reports because the reality is that there are a lot of scams out there, but this was just too good to keep away from the public. Try it out and send us your thoughts!</p>
+                <p>Would you like to share a financial tip for next week? If so, please send us an email.</p>
+                <p></p>
+                <div id="commentsSection">
+                    <div style="border-bottom:#ff0000 solid 4px;margin-bottom:15px;">
+                        <h3>ADD COMMENT</h3></div>
+                    <p>Please remember to keep comments respectful. Abusive comments will not be tolerated, and will result in both the removal of the comment as well as a permanent ban to the user who posted it.</p>
+                    <p style="color:#999;">*Only registered users can comment. <a href="click.php"><u>LOGIN</u></a></p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Name" type="name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Comments</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <!-- end comments input -->
+                <div id="comments">
+                    <div style="border-bottom:#ff0000 solid 4px;margin-bottom:15px;">
+                        <h3>COMMENTS</h3></div>
+                    <div style="border-bottom: 1px dotted #000; border-top: 1px dotted #000;"><strong>Comments</strong>(Showing 1-20 of 47)</div>
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male04.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Simon</h4> Does this really work? I mean the whole working at home stuff? Has anyone tried this yet? Looks promising...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male10.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Kenneth</h4> Simon: you have to work and use the computer and internet, and if you can do that and dedicate some time each day then you can do this with no problem. I have been working with this for a month and have made over
+                            <script>
+                                usdConverter('Euro', 1500);
+                            </script> already. let me know if you need more help.
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male05.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Ben</h4> I'd just like to add my story; I think others would like to hear it. I too was always leery about work at home offers because they always seemed to be scams. But soon after hit by recession, I was a little frightened. I wanted
+                            to have a backup plan just in case. So, I tried <b>Online Wealth Markets (cuz they offered a 365Day Moneyback Guarantee)</b>. It worked like a charm - I was earning money right away! I eventually did get laid off, just as I
+                            had feared, but since I had been using the Online Wealth Markets I had money to fall back on. Now I'm doing better than I had at my job!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male06.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Jake T</h4> Gonna get it tomorrow...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female07.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Danielle</h4> Thanks for the info, just started this 4 weeks ago. I've got my FIRST cheque total of
+                            <script>
+                                usdConverter('Euro', 200);
+                            </script>, pretty cool!!!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male07.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Alexander</h4> I was kind of worried about the entire thing. I've never worked from home, But Yeah, I did just join and all is good. so I will post back how it goes!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female05.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Jane</h4> I just wanted to tell everyone I got my first cheque today for
+                            <script>
+                                usdConverter('Euro', 500);
+                            </script>!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female06.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Liz</h4> This is amazing! With all the scams online it was hard to find a legit system now a days, thanks for the info...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female09.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Kate</h4> Even though I was not very pleased ordering online didn't wanna miss out on this offer, Great service and many thanks for the information, I have gone and ordered.
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female10.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Lyn</h4> It's nice to read your story Ben....glad you are making some money' Gives me hope that it will work for me too! hopefully I could come out of my college debt...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-female11.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Jess</h4> I just got the package. Thanks for the advice! I will keep in touch.. I could be making some extra money soon...:)
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php">
+                            <img class="media-object" src="./index_files/img-user-white-male11.jpg" alt="user comment" height="75" width="75">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Alex G</h4> Just a quick notice... It does work but you have to be able to use a computer at least somewhat. If you can use email, etc. then you'll be fine.
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-female12.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Mel</h4> I think this is great and will come in really handy right now. I'm not the best computer user but I think I can post links!!! :)
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-female13.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Sue</h4> I just started 6 weeks ago and I've gotten 2 cheque for a total of
+                            <script>
+                                usdConverter('Euro', 1600);
+                            </script>...this is the best decision I made in a long time! Thank you for giving me this extraordinary opportunity to make extra money from home. This extra cash has changed my life in so many ways, thank you!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-female14.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Angie</h4> I will do anything to never have to work in a 4 x 4 cubicle ever again...if I could be my own boss that would be amazing...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-male12.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Nigel</h4> The timing of this couldn't be better, We are struggling too and this could be our answer.
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-female16.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Jen</h4> Does this really work guys..? I'm a bit skeptical.. how much effort do I have to put?
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-female17.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Carrie</h4> Hey Jen, I'm using it now and it's awesome! I've signed up for my account and have been bringing in fat paycheques. For real, my first week I made
+                            <script>
+                                usdConverter('Euro', 302);
+                            </script> and the second week I doubled it and then it kinda snowballed to
+                            <script>
+                                usdConverter('Euro', 120);
+                            </script> a day! Just folllow the course.. they will help you out...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-male13.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Josh D</h4> Thanks for the info, just started this 5 weeks ago. I've got 2 cheques for a total of
+                            <script>
+                                usdConverter('Euro', 550);
+                            </script>, pretty cooll!
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                    <!-- user comment -->
+                    <div class="media">
+                        <a class="pull-left" href="click.php"><img class="media-object" src="./index_files/img-user-white-male14.jpg" alt="user comment" height="75" width="75"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Posted by Wes</h4> I ordered it today.. can't wait to get my hands on it.. thanks for the info...
+                        </div>
+                    </div>
+                    <!-- end user comment -->
+                </div>
+                <!-- end actual comments -->
+            </div>
+            <div class="col-md-4" id="rightContent" style="background-color: #efecca;">
+                <p>
+                </p>
+                <div class="righttxt">
+                    <p><em><b>Featured In The Media:</b></em></p>
+                    <center><iframe width="240" height="205" src="./index_files/wk146G4L0bA.html" frameborder="0" allowfullscreen=""></iframe></center>
+                    <hr>
+                    <div align="center"><img alt="" src="./index_files/mom-221.jpg" style="text-align:center;width:100%;">
+                    </div>
+                    <p>Emma Martin from Seine-saint-denis is a regular mom who lost her job last year, and after an unsuccessful job hunt, she started working online. I interviewed her about her amazing story and she revealed her steps for success. </p>
+                    <div class="offer">
+                        <p></p>
+                        <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 1:</b> Go to <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a>, and fill out
+                            the form to get instant activation.</div>
+                        <p></p>
+                        <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 2:</b> Follow the instructions at <a href="click.php" target="_blank"><strong>Online Wealth Markets</strong></a>                            and set up your account. Then they will show you what to do. Everything gets tracked.</div>
+                        <p></p>
+                        <div><img class="alignleft" alt="" src="./index_files/iconRedArrow.png" height="20" width="21"> <b style="color: #f7941d">Step 3:</b> Deposit your earnings into your bank account! Enjoy Life!</div>
+                        <p></p>
+                        <div><span style="background-color: #ffff00;"><b>(Offer Still Available As Of: <script>today();</script>)</b></span></div>
+                        <p></p>
+                    </div>
+                    <hr>
+                    <p>Advertisement</p>
+                    <div align="center">
+                        <a href="click.php" target="_blank"><img alt="" src="./index_files/ads_img.jpg" style="text-align:center;width:100%;"></a>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <center>
+                    <p>
+                        <img alt="" src="./index_files/relatedvideos.jpg" style="max-width: 164px;width:100%;">
+                    </p>
+                    <strong>Work At Home Special Report!</strong>
+                    <br>
+                    <iframe width="148" height="107" src="./index_files/Onyx3tb_dE4.html" frameborder="0" allowfullscreen=""></iframe><br>
+                    <em><span style="font-size: 10px;">(Click on Video to Play)
+           </span></em>
+                    <p><span style="font-size: 13px;">Millions of people from around the country are now making a living from home!</span></p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="footer">
+        <div class="container">
+            <p style="background:#CCC;font-size:12px;margin:15px 0 0;padding:15px;" align="center">
+                (c)
+                <script type="text/javascript">
+                    var mydate = new Date()
+                    document.write(mydate.getFullYear());
+                </script> Copyright Smarter Ways to Live. All Rights reserved.</p>
+        </div>
+    </div>
+    <div class="container" id="disclaimer" style="font-size: 12px">
+        <p style="text-align: center; font-weight: bold;">TERMS AND CONDITIONS CAREFULLY READ AND AGREE TO PURCHASE TERMS BELOW BEFORE ORDERING:</p>
+        <p style="text-align: center;"><a href="click.php">Privacy Policy</a></p>
+        <p>We are not affiliated in any way with any news publication © All trademarks on this web site whether registered or not, are the property of their respective owners. The authors of this web site are not sponsored by or affiliated with any of the
+            third-party trade mark or third-party registered trade mark owners, and make no representations about them, their owners, their products or services.</p>
+        <p>It is important to note that this site and the comments/answers depicted above is to be used as an illustrative example of what some individuals have achieved with this/these products. This website, and any page on the website, is based loosely
+            off a true story, but has been modified in multiple ways including, but not limited to: the story, the photos, and the comments. Thus, this page, and any page on this website, are not to be taken literally or as a non-fiction story. This page,
+            and the results mentioned on this page, although achievable for some, are not to be construed as the results that you may achieve on the same routine. I UNDERSTAND THIS WEBSITE IS ONLY ILLUSTRATIVE OF WHAT MIGHT BE ACHIEVABLE FROM USING THIS/THESE
+            PRODUCTS, AND THAT THE STORY/COMMENTS DEPICTED ABOVE IS NOT TO BE TAKEN LITERALLY. This page receives compensation for clicks on or purchase of products featured on this site.</p>
+        <p style="text-align: center; font-weight: bold;">IMPORTANT CONSUMER DISCLOSURE</p>
+        <p>The term "advertorial" is a combination of "advertisement" and "editorial" written in an editorial format as an independent news story, when in fact the advertisement may promote a particular product or interest. Advertorials take factual information
+            and report it in an editorial format to allow the author, often a company marketing its products, to enhance or explain certain elements to maintain the reader's interest. A familiar example is an airline's in-flight magazines that provide
+            an editorial reports about travel destinations to which the airline flies.</p>
+        <p>As an advertorial, I UNDERSTAND THIS WEBSITE IS ONLY ILLUSTRATIVE OF WHAT MIGHT BE ACHIEVABLE FROM USING THIS PROGRAM, AND THAT THE STORY DEPICTED ABOVE IS NOT TO BE TAKEN LITERALLY. This page receives compensation for clicks on or purchase of
+            products featured on this site. This program is not a job but an educational opportunity that can help individuals learn how to earn money through their entrepreneurial efforts. Anyone who decides to buy any program about making money will
+            not necessarily make money simply by purchasing the program. People who think "I bought these materials so I'm going to automatically make money" are wrong. As any type of education has so many variables, it is impossible to accurately state
+            what you may expect to achieve, however, people who bought the program not only bought the program, but also undertook additional training and education, applied the principles to an area of the market that was growing, kept their commitments
+            and continued to learn. If you do what the individuals depicted did, you may generally expect to achieve a great education in the area of your choice, but you should not expect to earn any specific amount of money. Typical users of the starter
+            materials that don't enroll in coaching, don't keep their commitments and don't implement what they learn, generally make no money. Though the success of the depicted individual is true, her picture and name have been changed to protect her
+            identity. Consistent with the advertorial concept, the comments posted in the comment section are also representative of typical comments and experiences which have been compiled into a comment format to illustrate a dialogue, however, the
+            comments are not actual posts to this webpage and have been compiled or generated for illustrative purposes only.</p>
+        <p>We are not affiliated in any way with CNN, WebTV, News Channel 1, ABC, NBC, CBS, U.S. News or FOX, and all such trademarks on this web site, whether registered or not, are the property of their respective owners. The authors of this web site are
+            not sponsored by or affiliated with any of the third-party trade mark or third-party registered trade mark owners, and make no representations about them, their owners, their products or services.</p>
+    </div>
+
+
+
+    <div id="popupBrowserImg" style="position: fixed; top:10px; right: 10px; display: none; "> <img src="./index_files/gc_pop2.png"> </div>
+    <style>
+        #dialog {
+            text-align: left;
+        }
+        
+        .alert-dialog {
+            width: auto;
+        }
+    </style>
+    <div id="dialog" title="Are you sure you want to leave this page?" style="display: none;"> <pre>Are you sure you don't want to take advantage of the Online Wealth Markets System?
+
+Do not forget - this will only be available for a limited time. Since there is a 30 day money back guarantee, there is no risk to you. This is your chance to Change Your Life.
+
+Do not Miss out on this once in a lifetime opportunity!
+
+Click **Stay on this Page** below to reconsider.</pre></div>
+</body>
+
+</html>

@@ -7,8 +7,6 @@ if(!$conn) {
 	$data = array('text' => "I can't access the lore archives right now. I have contacted @josh and the error should be resolved within 48-72 hours.");
 }
 
-mysql_select_db('appearly_slackpins', $conn);
-
 $token = $_POST['token'];
 $trigger = strtolower($_POST['trigger_word']);
 $user = strtolower($_POST['user_name']);
@@ -33,7 +31,7 @@ if($token != 'ERG5AMSBBAUvEwe1cLxTRHsR'){
 			} else if ($lore == "latest") {
 				$sql = "SELECT * FROM lore ORDER BY lore_id DESC LIMIT 1";
 			} else if ($lore == "stats") {
-				$count = mysql_query("SELECT COUNT(1) FROM lore");
+				$count = mysql_query("SELECT COUNT(*) FROM lore");
 				$rows = mysql_fetch_array($count);
 				$occurrence = mysql_query("SELECT submitted_by,COUNT(*) as count FROM lore GROUP BY submitted_by ORDER BY count DESC");
 				$mostSubmitted = mysql_fetch_array($occurrence);
