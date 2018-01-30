@@ -27,6 +27,9 @@
 	-moz-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
+	-webkit-box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow:    6px 5px 15px 0px rgba(0, 0, 0, 0.12);
+	box-shadow:         6px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
 .spotifyJS.playing #cover {
@@ -141,6 +144,8 @@
 	left: 30px;
 	width: 150px;
 	z-index: 2;
+	background: transparent url('http://i.imgur.com/pRl0a8C.png') center no-repeat;
+	background-size: 40%;
 }
 
 .spotifyJS .album img {
@@ -150,12 +155,21 @@
 	z-index: 2;
 	margin-left: 20px;
 	position: relative;
-	-moz-transition: all .25s linear;
-	-o-transition: all .25s linear;
-	transition: all .25s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.spotifyJS.playing #cover .album img,
+.spotifyJS #cover .album:hover img {
+	opacity: .7;
 }
 
 .spotifyJS .record {
+	display: none;
+}
+
+/* .spotifyJS .record {
 	position: absolute;
 	top: -4px;
 	left: 30px;
@@ -163,6 +177,7 @@
 	-moz-transition: all .25s linear;
 	-o-transition: all .25s linear;
 	transition: all .25s linear;
+	display: none;
 }
 
 .spotifyJS.playing #cover .album img,
@@ -213,7 +228,7 @@
 	-moz-transition: all 1s linear;
 	-o-transition: all 1s linear;
 	transition: all 1s linear;
-}
+} */
 
 .spotifyJS #feed {
 	padding-top: 20px;

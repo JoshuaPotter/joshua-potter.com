@@ -5,7 +5,7 @@ body,
 }
 
 body {
-	font-family: "brandon-grotesque", sans-serif;
+	font-family: "proxima-nova", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	color: #32353a;
 	overflow-x: hidden;
@@ -167,13 +167,13 @@ body.fixed-nav nav {
 }
 
 header {
-	position: fixed;
+	font-family: "proxima-nova", sans-serif;
+	position: absolute;
 	top: 50px;
 	left: 0;
-	width: calc(100% - 105px);
-	padding: 0 40px;
-	margin-left: 105px;
+	right: 0;
 	z-index: 5;
+	padding: 0 15px;
 }
 
 header#light {
@@ -187,7 +187,7 @@ header .col-md-6 {
 
 header h1,
 header h2 {
-	margin: 0;
+	margin: 8px 0 0;
 	line-height: 1;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -198,6 +198,23 @@ header h2 {
 header h2 {
 	font-size: 13px;
 	font-weight: 400;
+}
+
+header .btn,
+header .btn:active,
+header .btn:focus {
+	background: transparent;
+	color: inherit;
+	border: 1px solid #ffffff !important;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+header .btn:hover {
+	background: #ffffff;
+	color: #457792 !important;
 }
 
 .page {
@@ -217,26 +234,40 @@ header h2 {
 }
 
 #home {
-	background: #eeeff5;
+/* 	background: #eeeff5; */
 	z-index: 1;
+	background: #267ba9;
+	color: #ffffff;
+}
+
+.spotifyJS #feed {
+	color: #ffffff;
+}
+
+.spotifyJS #feed .track, .spotifyJS #feed strong {
+	color: #a5d1e8;
+}
+
+#home .hero {
+	min-height: 550px;
 }
 
 #home .hero span {
 	line-height: 90px;
 	display: block;
-	font-size: 110px;
+	font-size: 100px;
 	font-weight: 700;
 }
 
 #home .hero span:last-child {
-	font-size: 90px;
+	font-size: 80px;
 }
 
 #skills,
 #work {
-	padding-top: 150px;
-	padding-bottom: 150px;
-	font-size: 36px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 32px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f5f9+0,eeeff5+100 */
 	background: rgb(244,245,249); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(244,245,249,1) 0%, rgba(238,239,245,1) 100%); /* FF3.6-15 */
@@ -245,17 +276,8 @@ header h2 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f9', endColorstr='#eeeff5',GradientType=0 ); /* IE6-9 */
 }
 
-#skills {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-#skills .page .hero {
-	min-height: calc(100vh - 1px - 200px);
-}
-
-#work .page .hero {
-	min-height: calc(100vh - 1px - 300px);
+#skills .page .hero,#work .page .hero {
+	min-height: calc(100vh - 1px - 100px);
 }
 
 .hero a {
@@ -272,27 +294,53 @@ header h2 {
 
 #skills .hero .col-md-12,
 #work .hero .col-md-12 {
-	margin-bottom: 1em;
+	margin-bottom: 30px;
 }
 
-#skills .hero .row:nth-of-type(2) {
-	margin-bottom: .9em;
-	font-size: 30px;
+#skills .hero .row:nth-of-type(2) .col-md-12 {
+	margin-bottom: 15px;
+	font-size: 28px;
 }
 
 #skills h3 {
 	display: block;
-	margin: 0 0 .75em;
+	margin: 30px 0 15px;
 	font-weight: 700;
 }
 
 #skills ul {
-	font-family: "brandon-grotesque", sans-serif;
+	font-family: inherit;
+}
+
+#skills .badges {
+	margin-left: -5px;
+	margin-right: -5px;
+	padding-left: 0;
+}
+
+#skills .badges li {
+	padding: 7px 7px 0;
+	background: #ffffff;
+	list-style-type: none;
+	float: left;
+	border-radius: 4px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+#skills .badges li svg {
+	margin-bottom: 0;
 }
 
 #skills ul li {
 	font-size: 22px;
 	margin-bottom: 5px;
+	font-family: "proxima-nova", sans-serif;
+}
+
+#skills ul li:last-child {
+	margin-bottom: 0;
 }
 
 #work ul {
@@ -302,7 +350,7 @@ header h2 {
 }
 
 #work ul li {
-	padding: 1em 0;
+	padding: .75em 0;
 	border-bottom: 2px solid rgba(50, 53, 58, .05);
 }
 
@@ -319,13 +367,13 @@ header h2 {
 	border-bottom: none;
 }
 
-#work ul li:first-child a {
+/* #work ul li:first-child a {
 	color: #1fa2cb;
 }
 
 #work ul li:last-child a {
 	color: #1FD660;
-}
+} */
 
 #work ul li .row {
 	margin-bottom: 8px;
@@ -352,9 +400,17 @@ header h2 {
 }
 
 #work ul li .title {
-	font-family: "brandon-grotesque", sans-serif;
+	font-family: "proxima-nova", sans-serif;
 	font-size: inherit;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+#work ul li .title a {
+    color: #32353a;
+}
+
+#work ul li .title a:hover {
+    color: #32353a;
 }
 
 #work ul li .role {
@@ -364,20 +420,30 @@ header h2 {
 }
 
 #work ul li .date {
-	font-family: "brandon-grotesque", sans-serif;
+	font-family: "proxima-nova", sans-serif;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #adb1c8;
 	text-transform: uppercase;
 }
 
 #work ul li .website {
-	font-family: "brandon-grotesque", sans-serif;
-	font-size: 15px;
-	font-weight: 700;
-	color: #adb1c8;
-	text-transform: uppercase;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	color: #ffffff;
+/* 	color: #adb1c8;
+	text-transform: uppercase; */
 }
+
+#work ul li .website .label {
+	font-size: inherit;
+	font-weight: inherit;
+}
+/* 
+#work ul li .website:hover {
+	color: #898eab;
+} */
 
 @media all and (max-width: 1679px) {
 	#pane .container-fluid {
@@ -404,8 +470,11 @@ header h2 {
 	nav #pages li a {
 		font-size: 36px;
 	}
+	#home .hero {
+		min-height: 450px;
+	}
 	#home .hero span {
-		line-height: 1;
+		line-height: 1.1;
 		font-size: 90px;
 	}
 	#home .hero span:last-child {
@@ -415,8 +484,8 @@ header h2 {
 	#work {
 		font-size: 28px;
 	}
-	#skills .hero .row:nth-of-type(2) {
-		font-size: 24px;
+	#skills .hero .row:nth-of-type(2) .col-md-12 {
+		font-size: 26px;
 	}
 	#skills h3,
 	#work ul li .role {
@@ -448,22 +517,109 @@ header h2 {
 	#pane .container-fluid {
 		width: 90%;
 	}
+	#home .hero {
+		min-height: 400px;
+	}
 	#home .hero span {
-		line-height: 1;
-		font-size: 70px;
+		font-size: 66px;
 	}
 	#home .hero span:last-child {
-		font-size: 60px;
+		font-size: 48px;
 	}
 	#skills,
 	#work {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	#skills ul {
-		margin-bottom: 1em;
+		margin-bottom: 0;
 	}
 	#skills ul li,
 	#work ul li .role {
 		font-size: 18px;
+	}
+	#skills .hero .col-md-12,
+	#work .hero .col-md-12 {
+		margin-bottom: 20px;
+	}
+	#skills .hero .row:nth-of-type(2) .col-md-12 {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	#skills h3 {
+		margin-top: 15px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	nav {
+		padding: 25px 20px 0;
+		width: 65px;
+	}
+	#pane {
+		margin-left: 65px;
+		width: calc(100% - 65px);
+	}
+/* 	body {
+		padding-top: 50px;
+	}
+	nav {
+		left: 0;
+		right: 0;
+		width: auto;
+		height: 50px;
+		padding: 15px 40px;
+	}
+	nav .navigation-interaction {
+		display: inline-block;
+	}
+	#pane {
+		width: auto;
+		margin-left: 0;
+	}
+	#pane .container-fluid {
+		width: auto;
+	} */
+	.page {
+		padding: 0;
+	}
+	#skills,
+	#work {
+		padding: 40px 0;
+	}
+	#skills,
+	#work,
+	#skills .hero .row:nth-of-type(2) .col-md-12 {
+		font-size: 22px;
+	}
+	#skills .hero .col-md-12, 
+	#work .hero .col-md-12 {
+		line-height: 1.6;
+	}
+	#work ul li .col-md-6
+	#skills .page .hero,
+	#work .page .hero {
+		min-height: initial;
+	}
+	#work ul li .col-md-6 {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	#home .hero span {
+		line-height: 1.1;
+		font-size: 58px;
+	}
+	#home .hero span:last-child {
+		font-size: 44px;
+	}
+	#skills,
+	#work,
+	#skills .hero .row:nth-of-type(2) .col-md-12 {
+		font-size: 20px;
+	}
+	#skills .hero .col-md-12, 
+	#work .hero .col-md-12 {
+		line-height: 1.75;
 	}
 }

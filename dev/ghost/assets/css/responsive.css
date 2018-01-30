@@ -1,0 +1,97 @@
+@media all and (max-width: 991px) {
+	h1 {
+		font-size: 34px;
+	}
+	h2 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.navbar-header {
+		width: 50%;
+		float: left;
+	}
+	.navbar-toggle {
+		margin-right: -15px;
+		visibility: visible;
+	}
+	.navbar-brand {
+		margin-left: -15px;
+	}
+	.navbar-right {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+	}
+	.pushy-open-left .site-overlay,
+	.pushy-open-right .site-overlay {
+	  background-color: rgba(0, 0, 0, .5);
+	}
+	#page {
+		padding-top: 30px;
+	}
+	#page .texture {
+		opacity: .5;
+	}
+	#page header h1 {
+		margin-top: 20px;
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 0;
+	}
+	#post {
+		margin: 10px 0 20px;
+	}
+	#post .aside .author {
+		margin-bottom: 10px;
+	}
+	#post .post-container {
+		margin: initial;
+	}
+	#post .aside-parent {
+		position: static;
+	}
+	#post .aside {
+		position: static;
+	}
+	#post .col-lg-8 {
+		max-width: none;
+	}
+	#post .post-container p {
+		font-size: 15px;
+		line-height: 27px;
+	}
+	#post .post-container blockquote {
+		margin: 0 10px 20px;
+		padding: 5px 15px;
+		background: #ffffff;
+	}
+	#post .post-container blockquote p {
+		margin: 0;
+		font-weight: 400;
+		line-height: 27px;
+		color: #333333;
+	}
+	#post .share .social,
+	#post .btn.comments {
+		margin-bottom: 5px;
+		margin-right: 5px;
+		padding: 5px 13px;
+		border: 2px solid #bfbfbf;
+		color: #969696;
+		font-weight: 600;
+	}
+	#post .share {
+		padding-top: 20px;
+	}
+	#post hr {
+		margin: 40px 0;
+	}
+	#footer {
+		padding: 15px 0;
+		margin-top: 20px;
+		text-align: left;
+	}
+	.text-right {
+		text-align: left !important;
+	}
+}
