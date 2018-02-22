@@ -239,10 +239,9 @@ p strong {
 	opacity: .5;
 }
 .disclaimer {
-	color: #70777d;
+	color: #BEC1C4;
 	margin-top: 60px;
 	font-family: 'Open Sans', sans-serif;
-	opacity: .5;
 }
 @media all and (max-width: 1200px) {
 	.container .jumbotron {
@@ -256,6 +255,7 @@ p strong {
 	#hero {
 		padding-left: 15px;
 		padding-right: 15px;
+		padding-bottom: 90px;
 	}
 	h1 {
 		font-size: 36px;
@@ -275,7 +275,7 @@ p strong {
 	}
 	.expertise .col-md-4 {
 		margin-bottom: 30px;
-	}
+	}git pull
 	.expertise .col-md-4:last-child {
 		margin-bottom: 0;
 	}

@@ -1,15 +1,16 @@
-(function($) {
+(function ($) {
+	
 	$.fn.spotifyJS = function(options) {
 		var settings = $.extend({
-			lastFmUsername:"",
-			lastFmKey:"",
-			spotifyUsername:"",
+			lastFmUsername: "",
+			lastFmKey: "",
+			spotifyUsername: "",
 			//default
-			albumCover:true,
-			progressBar:true,
-			waves:true,
-			animated:true,
-			adaptiveColors:true,
+			albumCover: true,
+			progressBar: true,
+			waves: true,
+			animated: true,
+			adaptiveColors: true,
 			albumTitleLength:27
 		}, options);
 		
@@ -94,7 +95,7 @@
 
 		function run() {
 			$.ajax({
-					url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + settings.lastFmUsername + "&api_key=" + settings.lastFmKey + "&limit=1&format=json",
+					url: "//ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + settings.lastFmUsername + "&api_key=" + settings.lastFmKey + "&limit=1&format=json",
 					type: "GET",
 					dataType: "json",
 				})
@@ -115,6 +116,10 @@
 										url: "https://api.spotify.com/v1/search?q=" + "track:" + encodeURIComponent(json.recenttracks.track[0].name) + " artist:" + encodeURIComponent(json.recenttracks.track[0].artist['#text']) + " album:" + encodeURIComponent(json.recenttracks.track[0].album['#text']) + "&type=track&limit=1",
 										type: "GET",
 										dataType: "json",
+										headers: {
+											'Authorization':'Bearer BQDhsSsnO2AOQvUe3OoR87xlk6_DccB6xzumTeLvPWkZhW43etPYYTBwJAFyyp4k76y3sQ149sobonPJrEOnva1FjGylLJHGz__T1UOw8U41nV-0SvU6eJVRvuSgkOki7ZBGKQBXdXs',
+											'Content-Type':'application/json'
+										}
 									})
 									.always(function() {
 										console.log('Getting metadata from Spotify');
