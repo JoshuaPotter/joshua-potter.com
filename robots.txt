@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /admin
-Disallow: /clients
 Disallow: /dev
 Disallow: /slack
